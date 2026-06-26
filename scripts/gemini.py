@@ -46,7 +46,7 @@ def generate_json(
     api_key: str | None = None,
     model: str | list[str] = DEFAULT_MODELS,
     temperature: float = 0.5,
-    max_output_tokens: int = 8192,
+    max_output_tokens: int = 16384,
     retries: int = 5,
     throttle_sec: float = 3.0,
 ) -> dict:
