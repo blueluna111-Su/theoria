@@ -11,20 +11,57 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "loss-aversion",
-      "flow",
-      "dunbars-number"
+      "construal-level",
+      "opportunity-cost",
+      "cognitive-dissonance"
     ],
-    "day": 3,
-    "cycle_started": "2026-06-26"
+    "day": 1,
+    "cycle_started": "2026-06-27"
   },
-  "completed": [],
+  "completed": [
+    {
+      "id": "loss-aversion",
+      "completed_date": "2026-06-27",
+      "last_seen": "2026-06-27",
+      "review_due": [
+        "2026-07-04",
+        "2026-07-18",
+        "2026-08-26"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "flow",
+      "completed_date": "2026-06-27",
+      "last_seen": "2026-06-27",
+      "review_due": [
+        "2026-07-04",
+        "2026-07-18",
+        "2026-08-26"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "dunbars-number",
+      "completed_date": "2026-06-27",
+      "last_seen": "2026-06-27",
+      "review_due": [
+        "2026-07-04",
+        "2026-07-18",
+        "2026-08-26"
+      ],
+      "reviews_done": 0
+    }
+  ],
   "used_ids": [
     "loss-aversion",
     "flow",
-    "dunbars-number"
+    "dunbars-number",
+    "construal-level",
+    "opportunity-cost",
+    "cognitive-dissonance"
   ],
-  "last_run_date": "2026-06-26",
+  "last_run_date": "2026-06-27",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
