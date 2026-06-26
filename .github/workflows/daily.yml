@@ -5,6 +5,11 @@ on:
     # 21:30 UTC = 05:30 台北（清晨、避開整點尖峰）。GitHub cron 為盡力而為，可能延遲。
     - cron: "30 21 * * *"
   workflow_dispatch:        # 允許手動觸發（第一次與測試用）
+    inputs:
+      replenish:
+        description: "強制補充理論池一批（不論存量）"
+        type: boolean
+        default: false
 
 permissions:
   contents: write           # 讓 workflow 能 commit 回 main，觸發 Pages 重建
@@ -29,7 +34,7 @@ jobs:
       - name: Generate today's content + render
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-        run: python scripts/run_daily.py
+        run: python scripts/run_daily.py ${{ (github.event_name == 'workflow_dispatch' && inputs.replenish) && '--replenish-now' || '' }}
 
       - name: Commit & push if changed
         run: |

@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from datetime import date, datetime
 from pathlib import Path
@@ -34,6 +35,7 @@ def main() -> int:
     ap.add_argument("--date", help="override today (YYYY-MM-DD)")
     ap.add_argument("--force", action="store_true", help="advance even if already run today")
     ap.add_argument("--no-generate", action="store_true", help="skip Gemini; render existing only")
+    ap.add_argument("--replenish-now", action="store_true", help="force a pool top-up regardless of stock")
     args = ap.parse_args()
 
     today = date.fromisoformat(args.date) if args.date else taipei_today()
@@ -58,6 +60,16 @@ def main() -> int:
         for r in reviews:  # make sure review theories have content (should already)
             if not args.no_generate:
                 ensure_content(r["id"])
+
+    # 自動補充理論池：存量低於門檻（或被強制）時請 AI 提一批新理論
+    if not args.no_generate and os.environ.get("THEORIA_MOCK") != "1":
+        try:
+            import replenish
+            added = replenish.maybe_replenish(state, force=args.replenish_now)
+            if added:
+                print(f"  + 理論池自動補充 {len(added)} 個：{[a['name_zh'] for a in added]}")
+        except Exception as e:  # noqa: BLE001 — 補充失敗不應讓每日生成失敗
+            print(f"  ! 理論池補充略過（{e}）")
 
     (REPO / "index.html").write_text(
         render.render_index(state, reviews, today, generated_at), encoding="utf-8")
