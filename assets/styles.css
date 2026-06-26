@@ -1,0 +1,174 @@
+/* ============ 每日三理 · Theoria — prototype styles ============ */
+:root{
+  --paper:#faf7f1;
+  --paper-2:#fffdf9;
+  --ink:#262017;
+  --ink-soft:#5b5346;
+  --ink-faint:#8a8170;
+  --line:#e7e0d2;
+  --accent:#2f6f6a;
+  --accent-soft:#e6efed;
+  --shadow:0 1px 2px rgba(40,30,15,.05), 0 6px 18px rgba(40,30,15,.06);
+  /* domain colors */
+  --econ:#9a6a14;     --econ-bg:#f6ecd6;
+  --psych:#5a4ba8;    --psych-bg:#ece8fa;
+  --social:#1f7a6b;   --social-bg:#dcefea;
+  --health:#a64158;   --health-bg:#f7e1e6;
+  --humanities:#9b5a2b; --humanities-bg:#f3e4d6;
+}
+*{box-sizing:border-box}
+html{ -webkit-text-size-adjust:100% }
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  line-height:1.85; font-size:17px; letter-spacing:.01em;
+}
+.wrap{ max-width:720px; margin:0 auto; padding:0 22px }
+a{ color:var(--accent); text-decoration:none }
+a:hover{ text-decoration:underline }
+
+/* ---------- header ---------- */
+.site-header{ border-bottom:1px solid var(--line); background:var(--paper); position:sticky; top:0; z-index:5; backdrop-filter:saturate(1.1) blur(4px) }
+.header-inner{ display:flex; align-items:center; justify-content:space-between; padding:14px 0 }
+.brand{ display:flex; align-items:baseline; gap:10px }
+.brand h1{ font-size:21px; margin:0; letter-spacing:.06em }
+.brand .en{ font-size:12px; color:var(--ink-faint); letter-spacing:.22em; text-transform:uppercase }
+.nav{ display:flex; gap:18px; font-size:15px }
+.nav a{ color:var(--ink-soft); padding-bottom:2px }
+.nav a.active{ color:var(--ink); border-bottom:2px solid var(--accent) }
+
+/* ---------- today meta ---------- */
+.hero{ padding:34px 0 8px }
+.hero .date{ color:var(--ink-faint); font-size:14px; letter-spacing:.08em }
+.hero .lead{ font-size:15px; color:var(--ink-soft); margin-top:6px }
+.cycle{ display:flex; align-items:center; gap:12px; margin-top:18px; font-size:13px; color:var(--ink-soft) }
+.cycle-dots{ display:flex; gap:7px }
+.dot{ width:9px; height:9px; border-radius:50%; background:var(--line); border:1px solid #d8d0bf }
+.dot.filled{ background:var(--accent); border-color:var(--accent) }
+.dot.current{ box-shadow:0 0 0 4px var(--accent-soft) }
+
+/* ---------- sections ---------- */
+.section{ padding:14px 0 10px }
+.section-eyebrow{ font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-faint); margin:30px 0 14px; display:flex; align-items:center; gap:10px }
+.section-eyebrow::after{ content:""; flex:1; height:1px; background:var(--line) }
+
+/* ---------- theory card ---------- */
+.theory{
+  background:var(--paper-2); border:1px solid var(--line); border-radius:14px;
+  padding:22px 24px; margin:16px 0; box-shadow:var(--shadow);
+}
+.card-head{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px }
+.theory-name{ font-size:22px; margin:6px 0 2px; letter-spacing:.02em }
+.theory-name .en{ display:block; font-size:12.5px; color:var(--ink-faint); letter-spacing:.12em; font-weight:400; margin-top:3px }
+.theory-meta{ font-size:13px; color:var(--ink-faint); margin-top:4px }
+.tag{ font-size:12px; padding:3px 10px; border-radius:999px; white-space:nowrap; font-weight:600 }
+.tag--econ{ color:var(--econ); background:var(--econ-bg) }
+.tag--psych{ color:var(--psych); background:var(--psych-bg) }
+.tag--social{ color:var(--social); background:var(--social-bg) }
+.tag--health{ color:var(--health); background:var(--health-bg) }
+.tag--humanities{ color:var(--humanities); background:var(--humanities-bg) }
+
+/* arc breadcrumb */
+.arc{ display:flex; gap:6px; margin:16px 0 4px; flex-wrap:wrap }
+.arc-step{ font-size:12px; color:var(--ink-faint); padding:4px 11px; border-radius:8px; background:#f1ece0; border:1px solid transparent }
+.arc-step.current{ color:var(--accent); background:var(--accent-soft); border-color:#cfe2df; font-weight:600 }
+.arc-step.done{ color:var(--ink-soft) }
+
+.day-badge{ display:inline-block; font-size:12.5px; color:var(--accent); font-weight:600; margin:14px 0 2px }
+
+/* prose */
+.prose{ margin-top:6px }
+.prose p{ margin:.55em 0 }
+.prose ul{ margin:.4em 0; padding-left:1.25em }
+.prose li{ margin:.3em 0 }
+.prose strong{ color:var(--ink); font-weight:700 }
+.peek{ font-size:13.5px; color:var(--ink-faint); border-left:2px solid var(--line); padding:2px 0 2px 12px; margin:10px 0 }
+
+/* examples — 學習黏著劑，刻意做得醒目 */
+.eg{ margin:8px 0; padding:5px 0 5px 14px; border-left:3px solid #d9cdb6; color:var(--ink-soft); font-size:15.5px }
+.eg .eg-label{ display:inline-block; font-size:11px; font-weight:700; color:var(--accent); background:var(--accent-soft);
+  border-radius:5px; padding:1px 7px; margin-right:8px; letter-spacing:.06em; vertical-align:1px }
+.eg b{ color:var(--ink) }
+.scene .eg{ border-left-color:#e0d3ba; margin:8px 0 0 }
+
+.scene{ background:#f7f2e8; border-radius:10px; padding:12px 15px; margin:10px 0 }
+.scene b{ color:var(--accent) }
+.action-box{ background:var(--accent-soft); border:1px solid #cfe2df; border-radius:10px; padding:13px 16px; margin:14px 0 4px; font-size:15.5px }
+.action-box .label{ font-size:12px; letter-spacing:.12em; color:var(--accent); font-weight:700; text-transform:uppercase; display:block; margin-bottom:4px }
+.mnemonic{ margin:16px 0 0; padding-top:14px; border-top:1px dashed var(--line); font-size:15px; color:var(--ink-soft) }
+.mnemonic b{ color:var(--ink) }
+
+/* ---- Day 3 「收成日」專用 ---- */
+.harvest-tag{ display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; color:#7a5a14;
+  background:#f6ecd6; border:1px solid #e6d4a8; border-radius:999px; padding:4px 13px; margin:2px 0 6px }
+.subhead{ font-size:16px; font-weight:700; color:var(--ink); margin:24px 0 8px; padding-bottom:6px;
+  border-bottom:1px solid var(--line); display:flex; align-items:center; gap:9px }
+.subhead .ico{ font-size:17px }
+.app-map{ margin:8px 0 4px }
+.app-row{ display:grid; grid-template-columns:84px 1fr; gap:14px; padding:11px 0; border-bottom:1px dashed var(--line) }
+.app-row:last-child{ border-bottom:none }
+.app-domain{ font-size:13px; font-weight:700; color:var(--accent); padding-top:2px }
+.app-body{ font-size:15.5px }
+.app-body .eg{ margin:6px 0 0 }
+.checklist{ background:var(--accent-soft); border:1px solid #cfe2df; border-radius:12px; padding:16px 18px; margin:18px 0 }
+.checklist .ct{ display:block; font-weight:700; color:var(--accent); font-size:12.5px; letter-spacing:.06em; margin-bottom:10px }
+.checklist ul{ list-style:none; margin:0; padding:0 }
+.checklist li{ position:relative; padding:7px 0 7px 28px; font-size:15.5px; border-bottom:1px dashed #cfe2df }
+.checklist li:last-child{ border-bottom:none }
+.checklist li::before{ content:"☐"; position:absolute; left:2px; top:6px; color:var(--accent); font-size:17px }
+
+/* tabs (showcase) */
+.tabs{ display:flex; gap:6px; margin:16px 0 10px; border-bottom:1px solid var(--line) }
+.tab-btn{ font:inherit; font-size:13.5px; cursor:pointer; background:none; border:none; padding:8px 12px;
+  color:var(--ink-faint); border-bottom:2px solid transparent; margin-bottom:-1px }
+.tab-btn.active{ color:var(--accent); border-bottom-color:var(--accent); font-weight:600 }
+.tab-panel{ display:none }
+.tab-panel.active{ display:block }
+
+/* ---------- review ---------- */
+.review-card{ background:#fbf3ec; border:1px solid #ecdfd2; border-radius:14px; padding:18px 22px; margin:14px 0; box-shadow:var(--shadow) }
+.review-top{ display:flex; align-items:center; gap:8px; font-size:12px; color:var(--ink-faint); letter-spacing:.06em }
+.review-top .tag{ font-size:11px; padding:2px 8px }
+.review-q{ font-size:18px; margin:10px 0 2px; font-weight:600 }
+.review-q .name{ color:var(--accent) }
+.review-due{ font-size:12px; color:var(--ink-faint); margin-top:4px }
+.reveal-btn{ font:inherit; font-size:14px; cursor:pointer; margin-top:12px; background:var(--accent); color:#fff; border:none; border-radius:8px; padding:8px 16px }
+.reveal-btn:hover{ background:#27605b }
+.review-a{ display:none; margin-top:14px; padding-top:14px; border-top:1px dashed #e3d3c4 }
+.review-a.show{ display:block }
+.review-a .mnemonic{ border-top:none; padding-top:10px }
+
+/* ---------- archive ---------- */
+.domain-group{ margin:26px 0 }
+.domain-title{ font-size:15px; margin:0 0 12px; display:flex; align-items:center; gap:10px }
+.domain-title .count{ font-size:12px; color:var(--ink-faint); font-weight:400 }
+.chip-list{ display:flex; flex-wrap:wrap; gap:10px }
+.chip{ background:var(--paper-2); border:1px solid var(--line); border-radius:10px; padding:10px 14px; font-size:14.5px; box-shadow:var(--shadow); min-width:0 }
+.chip .en{ display:block; font-size:11px; color:var(--ink-faint); letter-spacing:.08em }
+.chip.due{ border-color:#cfe2df; background:var(--accent-soft) }
+.chip .badge{ font-size:10.5px; color:var(--accent); font-weight:700; margin-left:6px }
+.legend{ font-size:13px; color:var(--ink-faint); margin:8px 0 0 }
+
+/* ---------- footer ---------- */
+.site-footer{ border-top:1px solid var(--line); margin-top:40px; padding:24px 0 50px; color:var(--ink-faint); font-size:13px }
+.note{ background:#fff8e8; border:1px solid #f0e2bd; border-radius:10px; padding:12px 16px; font-size:13.5px; color:#6b5d34; margin:18px 0 }
+
+/* ---------- 手機 / 窄螢幕 ---------- */
+@media (max-width:480px){
+  body{ font-size:16px; line-height:1.8 }
+  .wrap{ padding:0 16px }
+  .header-inner{ padding:12px 0 }
+  .brand h1{ font-size:19px }
+  .hero{ padding:24px 0 6px }
+  .lead{ font-size:14.5px }
+  .theory{ padding:18px 15px; border-radius:12px }
+  .theory-name{ font-size:20px }
+  .tabs{ gap:4px }
+  .tab-btn{ flex:1; padding:8px 4px; font-size:13.5px; text-align:center }
+  .tab-day{ white-space:nowrap }
+  .tab-sub{ display:none }
+  .subhead{ font-size:15px }
+  .app-row{ grid-template-columns:58px 1fr; gap:10px }
+  .review-card,.checklist{ padding:15px 16px }
+  .scene{ padding:11px 13px }
+}

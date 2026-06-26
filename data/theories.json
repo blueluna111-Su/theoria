@@ -1,0 +1,63 @@
+{
+  "_comment": "資料模型雛形 — 每日由 AI 生成/排程器更新。網站從這支檔案 render。示範兩條軸：arc（3天深度弧）+ review（間隔複習排程）。",
+  "meta": {
+    "generated": "2026-06-26",
+    "timezone": "Asia/Taipei",
+    "cycle": { "start": "2026-06-25", "day": 2, "length": 3 },
+    "active": ["loss-aversion", "flow", "dunbars-number"]
+  },
+  "review_policy": {
+    "_comment": "理論跑完3天弧後進入複習佇列；之後在遞增間隔被叫回。可調。",
+    "intervals_days": [7, 21, 60],
+    "cards_per_day": 2
+  },
+  "theories": [
+    {
+      "id": "loss-aversion",
+      "name_zh": "損失趨避",
+      "name_en": "Loss Aversion",
+      "domain": "行為經濟",
+      "domain_class": "econ",
+      "author": "Kahneman & Tversky",
+      "year": 1979,
+      "status": "active",
+      "cycle_start": "2026-06-25",
+      "mnemonic": "白撿的不稀罕，到手的不能丟。",
+      "arc": {
+        "day1": { "title": "入門全貌", "body": "一篇完整、夠深的文章：核心概念＋機制（參考點/曲線更陡/演化）＋『不是討厭風險』＋應用快覽＋侷限。" },
+        "day2": { "title": "進階與爭論", "body": "參考點可被框架操弄／稟賦·處置·現狀·沉沒成本是同一家族／Gal 等對穩健性與可複製性的爭議／邊界條件。" },
+        "day3": { "title": "實戰與內化", "body": "被它影響時的三解法（重設參考點/現金檢驗/預先承諾）／合乎倫理地用它／現實中如何反咬／與機會成本組合／今天就能做。" }
+      },
+      "review": { "completed_date": null, "due_dates": [], "review_count": 0 }
+    },
+    { "id": "flow", "name_zh": "心流", "name_en": "Flow", "domain": "心理", "domain_class": "psych",
+      "author": "Csikszentmihalyi", "year": 1975, "status": "active", "cycle_start": "2026-06-25",
+      "mnemonic": "甜蜜帶＝挑戰恰好踩在能力邊緣。",
+      "review": { "completed_date": null, "due_dates": [], "review_count": 0 } },
+    { "id": "dunbars-number", "name_zh": "鄧巴數字", "name_en": "Dunbar's Number", "domain": "社會·人類學", "domain_class": "social",
+      "author": "Robin Dunbar", "year": 1992, "status": "active", "cycle_start": "2026-06-25",
+      "mnemonic": "穩定關係的上限，約 150 人。",
+      "review": { "completed_date": null, "due_dates": [], "review_count": 0 } },
+
+    { "id": "opportunity-cost", "name_zh": "機會成本", "name_en": "Opportunity Cost", "domain": "經濟", "domain_class": "econ",
+      "author": "古典經濟學", "year": null, "status": "completed", "cycle_start": "2026-05-18",
+      "mnemonic": "真正的成本不是你付了什麼，而是你放棄了什麼。",
+      "review": { "completed_date": "2026-05-20", "due_dates": ["2026-05-27", "2026-06-10", "2026-06-26"], "next_due": "2026-06-26", "review_count": 2 } },
+    { "id": "placebo-effect", "name_zh": "安慰劑效應", "name_en": "Placebo Effect", "domain": "健康", "domain_class": "health",
+      "author": "醫學·心理生理", "year": null, "status": "completed", "cycle_start": "2026-06-01",
+      "mnemonic": "期待本身就是一劑藥。",
+      "review": { "completed_date": "2026-06-03", "due_dates": ["2026-06-10", "2026-06-24"], "next_due": "2026-06-26", "review_count": 1 } },
+
+    { "id": "cognitive-dissonance", "name_zh": "認知失調", "name_en": "Cognitive Dissonance", "domain": "心理", "domain_class": "psych", "status": "completed" },
+    { "id": "sunk-cost", "name_zh": "沉沒成本謬誤", "name_en": "Sunk Cost Fallacy", "domain": "行為經濟", "domain_class": "econ", "status": "completed" },
+    { "id": "maslow", "name_zh": "馬斯洛需求層次", "name_en": "Maslow's Hierarchy", "domain": "心理", "domain_class": "psych", "status": "completed" },
+    { "id": "social-proof", "name_zh": "從眾效應", "name_en": "Social Proof", "domain": "社會·人類學", "domain_class": "social", "status": "completed" },
+    { "id": "tragedy-commons", "name_zh": "公地悲劇", "name_en": "Tragedy of the Commons", "domain": "經濟", "domain_class": "econ", "status": "completed" },
+    { "id": "circadian", "name_zh": "晝夜節律", "name_en": "Circadian Rhythm", "domain": "健康", "domain_class": "health", "status": "completed" },
+    { "id": "overton-window", "name_zh": "奧弗頓之窗", "name_en": "Overton Window", "domain": "人文·政治", "domain_class": "humanities", "status": "completed" },
+
+    { "id": "growth-mindset", "name_zh": "成長型心態", "name_en": "Growth Mindset", "domain": "心理", "domain_class": "psych", "status": "pool" },
+    { "id": "game-theory-pd", "name_zh": "囚徒困境", "name_en": "Prisoner's Dilemma", "domain": "經濟", "domain_class": "econ", "status": "pool" },
+    { "id": "weak-ties", "name_zh": "弱連結的力量", "name_en": "Strength of Weak Ties", "domain": "社會·人類學", "domain_class": "social", "status": "pool" }
+  ]
+}
