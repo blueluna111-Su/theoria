@@ -26,6 +26,8 @@
     <p class="legend">母池共 {{ total }} 則 · 已登場 {{ seen }} · 進行中 {{ active_count }} · 待複習 {{ due_count }}</p>
   </section>
 
+  {% if pool_notice %}<div class="pool-warn {{ pool_notice.level }}">{{ '⚠️' if pool_notice.level == 'crit' else '🔻' }} {{ pool_notice.text }}</div>{% endif %}
+
   {% for g in groups %}
   <div class="domain-group">
     <h2 class="domain-title"><span class="tag tag--{{ g.domain_class }}">{{ g.label }}</span><span class="count">{{ g.chips|length }} 則</span></h2>

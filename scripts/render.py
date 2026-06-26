@@ -43,6 +43,23 @@ def _md(iso: str) -> str:
     return f"{d.month}/{d.day}"
 
 
+def _pool_notice(state: dict) -> dict | None:
+    """Banner shown when the unused-theory stock is low (mainly a fallback if
+    auto-replenish failed, since replenish normally tops up before render)."""
+    data = json.loads(POOL.read_text(encoding="utf-8"))
+    used = set(state.get("used_ids", []))
+    unused = sum(1 for t in data["theories"] if t["id"] not in used)
+    low = state.get("pool_low_notice", state.get("pool_min_unused", 12))
+    if unused <= 3:
+        return {"level": "crit", "unused": unused,
+                "text": f"新理論即將用完（尚餘 {unused} 個未登場）。自動補充可能未成功，"
+                        "建議到 Actions 手動「強制補充理論池」，或擴充 data/pool.json。"}
+    if unused <= low:
+        return {"level": "low", "unused": unused,
+                "text": f"新理論庫存偏低：尚有 {unused} 個未登場，系統會在每日更新時自動補充。"}
+    return None
+
+
 def render_index(state: dict, reviews: list[dict], today: date, generated_at: str) -> str:
     active_ids = state["current"]["active"]
     active_day = state["current"]["day"]
@@ -66,6 +83,7 @@ def render_index(state: dict, reviews: list[dict], today: date, generated_at: st
         date_str=_date_str(today), active_day=active_day,
         hero_focus=DAY_FOCUS.get(active_day, ""), theories=theories,
         reviews=review_ctx, generated_at=generated_at, note=None,
+        pool_notice=_pool_notice(state),
     )
 
 
@@ -109,4 +127,5 @@ def render_archive(state: dict, today: date, generated_at: str) -> str:
     return tmpl.render(
         groups=groups, total=len(pool), seen=len(used), active_count=len(active),
         due_count=due_count, generated_at=generated_at, note=None,
+        pool_notice=_pool_notice(state),
     )

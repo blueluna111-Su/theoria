@@ -153,6 +153,11 @@ a:hover{ text-decoration:underline }
 .site-footer{ border-top:1px solid var(--line); margin-top:40px; padding:24px 0 50px; color:var(--ink-faint); font-size:13px }
 .note{ background:#fff8e8; border:1px solid #f0e2bd; border-radius:10px; padding:12px 16px; font-size:13.5px; color:#6b5d34; margin:18px 0 }
 
+/* ---------- 理論池庫存提示 ---------- */
+.pool-warn{ border-radius:10px; padding:11px 15px; margin:16px 0 0; font-size:14px; line-height:1.65 }
+.pool-warn.low{ background:#fff6e6; border:1px solid #f0d8a8; color:#7a5a14 }
+.pool-warn.crit{ background:#fdeaea; border:1px solid #e6b3b3; color:#9a2a2a }
+
 /* ---------- 手機 / 窄螢幕 ---------- */
 @media (max-width:480px){
   body{ font-size:16px; line-height:1.8 }

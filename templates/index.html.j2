@@ -39,6 +39,8 @@
     </div>
   </section>
 
+  {% if pool_notice %}<div class="pool-warn {{ pool_notice.level }}">{{ '⚠️' if pool_notice.level == 'crit' else '🔻' }} {{ pool_notice.text }}</div>{% endif %}
+
   <div class="section-eyebrow">今日主題</div>
 
   {% for t in theories %}
