@@ -692,7 +692,7 @@
       "author": "Amos Tversky, Daniel Kahneman",
       "year": 1973,
       "note": "人們傾向根據容易回憶的資訊來判斷事件發生的可能性，影響決策與風險評估。",
-      "tier": "fresh"
+      "tier": "core"
     },
     {
       "id": "fundamental-attribution-error",
@@ -703,7 +703,7 @@
       "author": "Lee Ross",
       "year": 1977,
       "note": "觀察他人行為時，傾向歸因於其個性而非情境因素，容易造成誤解與偏見。",
-      "tier": "fresh"
+      "tier": "core"
     },
     {
       "id": "thin-slicing",
@@ -736,18 +736,7 @@
       "author": "Robert Cialdini",
       "year": 1984,
       "note": "物品或機會越稀有，人們越會覺得它有價值，進而產生購買或行動的慾望。",
-      "tier": "fresh"
-    },
-    {
-      "id": "endowment-effect",
-      "name_zh": "稟賦效應",
-      "name_en": "Endowment Effect",
-      "domain": "心理學/經濟學",
-      "domain_class": "psych",
-      "author": "Richard Thaler",
-      "year": 1980,
-      "note": "人們對自己擁有的物品，會賦予比其客觀價值更高的評價，導致不願輕易放棄。",
-      "tier": "fresh"
+      "tier": "core"
     },
     {
       "id": "halo-effect",
@@ -758,7 +747,7 @@
       "author": "Edward Thorndike",
       "year": 1920,
       "note": "對某人或某事的正面印象會影響對其其他特徵的判斷，可能導致以偏概全。",
-      "tier": "fresh"
+      "tier": "core"
     },
     {
       "id": "expectancy-theory",

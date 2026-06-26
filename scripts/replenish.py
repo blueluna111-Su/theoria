@@ -28,15 +28,22 @@ SYSTEM = (
 def _prompt(n: int, existing: list[str]) -> str:
     listing = "、".join(existing)
     return (
-        f"理論池已收錄以下理論，請務必避開、不要重複（名稱或概念相近也不要）：\n{listing}\n\n"
-        f"請再提出 {n} 個『不在上面清單』的理論，輸出一個 JSON 物件：\n"
+        "理論池已收錄以下理論，請務必避開——不只是名稱，連『概念雷同、互為同義、"
+        f"或屬於其中一個子效應』也都不要重複：\n{listing}\n\n"
+        f"請提出 {n} 個『不在上面、概念也不重疊』的理論，輸出一個 JSON 物件：\n"
         '{ "theories": [ { "name_zh": "中文名", "name_en": "English name", '
         '"domain": "簡短中文領域", "domain_class": "econ|psych|social|health|humanities 其一", '
         '"author": "提出者字串，不確定就 null", "year": 年份整數或 null, '
         '"note": "一句話、突顯它怎麼應用", "tier": "fresh 或 core" } ] }\n\n'
-        "鐵則：(1) 必須是真實、可查證的理論，絕不杜撰名稱或作者；不確定作者或年份就填 null。"
-        "(2) 不可與既有清單重複或高度雷同。(3) 橫跨不同領域，偏好較少見但實用的（tier 多用 fresh）。"
-        "(4) 只輸出 JSON 物件，不要任何其他文字。"
+        "鐵則：\n"
+        "(1) 必須真實、可查證，絕不杜撰名稱或作者；不確定作者或年份就填 null。\n"
+        f"(2) 跨領域分散：這 {n} 個要盡量平均分布在 econ／psych／social／health／humanities 五類，"
+        "不要全擠在心理學；務必至少各含一個 health 與 humanities 的理論。\n"
+        "(3) 偏好『較少見、令人意外、跨學科』的理論（tier 多用 fresh）；"
+        "避開人人都知道的教科書款——例如確認偏誤、可得性捷思、月暈效應、基本歸因錯誤、"
+        "錨定、沉沒成本、從眾、馬斯洛、稟賦效應這類太常見的，不要選。\n"
+        "(4) 重視可應用性：note 要點出它怎麼用在生活或工作。\n"
+        "(5) 只輸出 JSON 物件，不要任何其他文字。"
     )
 
 
