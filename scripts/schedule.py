@@ -25,9 +25,12 @@ def save_state(state: dict) -> None:
     STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def pool_theories() -> list[dict]:
+    return json.loads(POOL.read_text(encoding="utf-8"))["theories"]
+
+
 def pool_ids() -> list[str]:
-    data = json.loads(POOL.read_text(encoding="utf-8"))
-    return [t["id"] for t in data["theories"]]
+    return [t["id"] for t in pool_theories()]
 
 
 def _d(iso: str) -> date:
@@ -35,19 +38,31 @@ def _d(iso: str) -> date:
 
 
 def _start_cycle(state: dict, today_iso: str) -> None:
-    ids = pool_ids()
+    """Pick the next cycle, guaranteeing at least one `fresh` theory when any remain.
+    Composition: 1 fresh + (n-1) core; fall back across tiers if one runs short."""
+    theories = pool_theories()
     used = set(state["used_ids"])
     n = state["theories_per_cycle"]
-    fresh = [i for i in ids if i not in used][:n]
-    if len(fresh) < n:  # pool exhausted -> top up from start (will repeat), log it
+    fresh_avail = [t["id"] for t in theories if t.get("tier") == "fresh" and t["id"] not in used]
+    core_avail = [t["id"] for t in theories if t.get("tier") != "fresh" and t["id"] not in used]
+
+    chosen: list[str] = []
+    if fresh_avail:                              # guarantee >=1 fresh per cycle
+        chosen.append(fresh_avail.pop(0))
+    for src in (core_avail, fresh_avail):        # fill the rest: core first, then leftover fresh
+        while len(chosen) < n and src:
+            chosen.append(src.pop(0))
+
+    if len(chosen) < n:                          # pool exhausted -> allow repeats from start
         state["_pool_exhausted"] = True
-        for i in ids:
-            if i not in fresh:
-                fresh.append(i)
-            if len(fresh) == n:
+        for i in (t["id"] for t in theories):
+            if i not in chosen:
+                chosen.append(i)
+            if len(chosen) == n:
                 break
-    state["current"] = {"active": fresh, "day": 1, "cycle_started": today_iso}
-    state["used_ids"] = list(dict.fromkeys(state["used_ids"] + fresh))
+
+    state["current"] = {"active": chosen, "day": 1, "cycle_started": today_iso}
+    state["used_ids"] = list(dict.fromkeys(state["used_ids"] + chosen))
 
 
 def _finalize(state: dict, cur: dict, today_iso: str) -> None:
