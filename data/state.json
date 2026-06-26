@@ -24,5 +24,7 @@
     "flow",
     "dunbars-number"
   ],
-  "last_run_date": "2026-06-26"
+  "last_run_date": "2026-06-26",
+  "pool_min_unused": 12,
+  "pool_replenish_batch": 9
 }
