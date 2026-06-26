@@ -3,10 +3,26 @@
   "timezone": "Asia/Taipei",
   "cycle_length": 3,
   "theories_per_cycle": 3,
-  "review_intervals_days": [7, 21, 60],
+  "review_intervals_days": [
+    7,
+    21,
+    60
+  ],
   "review_cards_per_day": 2,
-  "current": null,
+  "current": {
+    "active": [
+      "loss-aversion",
+      "flow",
+      "dunbars-number"
+    ],
+    "day": 1,
+    "cycle_started": "2026-06-26"
+  },
   "completed": [],
-  "used_ids": [],
-  "last_run_date": null
+  "used_ids": [
+    "loss-aversion",
+    "flow",
+    "dunbars-number"
+  ],
+  "last_run_date": "2026-06-26"
 }
