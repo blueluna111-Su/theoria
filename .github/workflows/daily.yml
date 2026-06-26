@@ -1,0 +1,44 @@
+name: 每日三理 daily build
+
+on:
+  schedule:
+    # 21:30 UTC = 05:30 台北（清晨、避開整點尖峰）。GitHub cron 為盡力而為，可能延遲。
+    - cron: "30 21 * * *"
+  workflow_dispatch:        # 允許手動觸發（第一次與測試用）
+
+permissions:
+  contents: write           # 讓 workflow 能 commit 回 main，觸發 Pages 重建
+
+concurrency:
+  group: daily-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Generate today's content + render
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: python scripts/run_daily.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "沒有變更，略過。"
+          else
+            git commit -m "每日內容：$(date -u +%Y-%m-%d)"
+            git push
+          fi

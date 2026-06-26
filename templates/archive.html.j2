@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>歷史 · 每日三理</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand"><h1>每日三理</h1><span class="en">Theoria</span></div>
+    <nav class="nav">
+      <a href="index.html">今日</a>
+      <a href="archive.html" class="active">歷史</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="date">理論庫</div>
+    <div class="lead">所有講過的理論，按領域收存。標 <span style="color:var(--accent);font-weight:600">● 待複習</span> 的是近期回想卡會抽到的；<span style="color:var(--accent);font-weight:600">進行中</span> 是這三天的主題。</div>
+    <p class="legend">母池共 {{ total }} 則 · 已登場 {{ seen }} · 進行中 {{ active_count }} · 待複習 {{ due_count }}</p>
+  </section>
+
+  {% for g in groups %}
+  <div class="domain-group">
+    <h2 class="domain-title"><span class="tag tag--{{ g.domain_class }}">{{ g.label }}</span><span class="count">{{ g.chips|length }} 則</span></h2>
+    <div class="chip-list">
+      {% for c in g.chips %}
+      <span class="chip{% if c.due %} due{% endif %}">{{ c.name_zh }}<span class="en">{{ c.name_en }}</span>{% if c.badge %}<span class="badge">{{ c.badge }}</span>{% endif %}</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
+  {% if note %}<div class="note">{{ note }}</div>{% endif %}
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">每日三理 · Theoria{% if generated_at %} — 更新於 {{ generated_at }}{% endif %}</div>
+</footer>
+
+</body>
+</html>

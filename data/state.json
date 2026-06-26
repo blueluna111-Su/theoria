@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "timezone": "Asia/Taipei",
+  "cycle_length": 3,
+  "theories_per_cycle": 3,
+  "review_intervals_days": [7, 21, 60],
+  "review_cards_per_day": 2,
+  "current": null,
+  "completed": [],
+  "used_ids": [],
+  "last_run_date": null
+}
