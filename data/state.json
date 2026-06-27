@@ -15,7 +15,7 @@
       "opportunity-cost",
       "cognitive-dissonance"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-06-27"
   },
   "completed": [
@@ -61,7 +61,7 @@
     "opportunity-cost",
     "cognitive-dissonance"
   ],
-  "last_run_date": "2026-06-27",
+  "last_run_date": "2026-06-28",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
