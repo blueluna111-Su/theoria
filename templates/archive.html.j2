@@ -22,7 +22,7 @@
 
   <section class="hero">
     <div class="date">理論庫</div>
-    <div class="lead">所有講過的理論，按領域收存。標 <span style="color:var(--accent);font-weight:600">● 待複習</span> 的是近期回想卡會抽到的；<span style="color:var(--accent);font-weight:600">進行中</span> 是這三天的主題。</div>
+    <div class="lead">所有講過的理論，按領域收存。標 <span style="color:var(--accent);font-weight:600">● 待複習</span> 的是近期回想卡會抽到的；<span style="color:var(--accent);font-weight:600">進行中</span> 是這三天的主題。<b>講過的（有底色高亮）可點進去回頭重讀</b>，待排的還沒登場。</div>
     <p class="legend">母池共 {{ total }} 則 · 已登場 {{ seen }} · 進行中 {{ active_count }} · 待複習 {{ due_count }}</p>
   </section>
 
@@ -33,7 +33,11 @@
     <h2 class="domain-title"><span class="tag tag--{{ g.domain_class }}">{{ g.label }}</span><span class="count">{{ g.chips|length }} 則</span></h2>
     <div class="chip-list">
       {% for c in g.chips %}
+      {% if c.href %}
+      <a class="chip readable{% if c.due %} due{% endif %}" href="{{ c.href }}">{{ c.name_zh }}<span class="en">{{ c.name_en }}</span>{% if c.badge %}<span class="badge">{{ c.badge }}</span>{% endif %}</a>
+      {% else %}
       <span class="chip{% if c.due %} due{% endif %}">{{ c.name_zh }}<span class="en">{{ c.name_en }}</span>{% if c.badge %}<span class="badge">{{ c.badge }}</span>{% endif %}</span>
+      {% endif %}
       {% endfor %}
     </div>
   </div>

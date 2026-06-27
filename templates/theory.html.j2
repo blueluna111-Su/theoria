@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ t.name_zh }} · 每日三理</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+{% import "_card.html.j2" as card %}
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand"><h1>每日三理</h1><span class="en">Theoria</span></div>
+    <nav class="nav">
+      <a href="../index.html">今日</a>
+      <a href="../archive.html" class="active">歷史</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <a class="back-link" href="../archive.html">← 回理論庫</a>
+    <div class="date">{{ status_label }}</div>
+    <div class="lead">回頭重讀這則理論的完整三天弧。{% if unlocked_day < 3 %}（這則正在進行中，目前到第 {{ unlocked_day }} 天，其餘分頁解鎖後可讀。）{% else %}三天都已解鎖，可自由切換。{% endif %}</div>
+  </section>
+
+  {{ card.card(t, unlocked_day) }}
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">每日三理 · Theoria{% if generated_at %} — 更新於 {{ generated_at }}{% endif %}</div>
+</footer>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>

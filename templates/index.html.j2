@@ -7,14 +7,7 @@
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-{# ---------- macros ---------- #}
-{% macro eg(text) %}{% if text %}<div class="eg"><span class="eg-label">例</span>{{ text }}</div>{% endif %}{% endmacro %}
-{% macro seg(s) %}
-  {% if s.lead or s.body %}<p>{% if s.lead %}<strong>{{ s.lead }}</strong>{% endif %}{{ s.body }}</p>{% endif %}
-  {% if s.bullets %}<ul>{% for b in s.bullets %}<li>{{ b.text }}{% if b.example %} <span class="eg" style="display:inline;border:none;padding:0;margin:0"><span class="eg-label">例</span>{{ b.example }}</span>{% endif %}</li>{% endfor %}</ul>{% endif %}
-  {% for ex in (s.examples or []) %}{{ eg(ex) }}{% endfor %}
-{% endmacro %}
-{% macro unlock(n) %}{% if n - active_day == 1 %}明天解鎖{% elif n - active_day == 2 %}後天解鎖{% else %}尚未解鎖{% endif %}{% endmacro %}
+{% import "_card.html.j2" as card %}
 
 <header class="site-header">
   <div class="wrap header-inner">
@@ -45,93 +38,7 @@
   <div class="section-eyebrow">今日主題</div>
 
   {% for t in theories %}
-  <article class="theory" data-tabs>
-    <div class="card-head">
-      <div>
-        <div class="theory-name">{{ t.name_zh }}<span class="en">{{ t.name_en }}</span></div>
-        <div class="theory-meta">{% if t.author %}{{ t.author }}{% endif %}{% if t.year %} · {{ t.year }}{% endif %}</div>
-      </div>
-      <span class="tag tag--{{ t.domain_class }}">{{ t.domain }}</span>
-    </div>
-
-    <div class="tabs">
-      <button class="tab-btn{% if active_day==1 %} active{% endif %}" data-tab="d1"><span class="tab-day">第 1 天</span><span class="tab-sub"> · 入門全貌</span></button>
-      {% if active_day >= 2 %}
-      <button class="tab-btn{% if active_day==2 %} active{% endif %}" data-tab="d2"><span class="tab-day">第 2 天</span><span class="tab-sub"> · 進階與爭論</span></button>
-      {% else %}
-      <button class="tab-btn locked" disabled title="第 2 天 · {{ unlock(2) | trim }}"><span class="tab-day">🔒 第 2 天</span><span class="tab-sub"> · {{ unlock(2) | trim }}</span></button>
-      {% endif %}
-      {% if active_day >= 3 %}
-      <button class="tab-btn{% if active_day==3 %} active{% endif %}" data-tab="d3"><span class="tab-day">第 3 天</span><span class="tab-sub"> · 實戰與內化</span></button>
-      {% else %}
-      <button class="tab-btn locked" disabled title="第 3 天 · {{ unlock(3) | trim }}"><span class="tab-day">🔒 第 3 天</span><span class="tab-sub"> · {{ unlock(3) | trim }}</span></button>
-      {% endif %}
-    </div>
-
-    {# ---- Day 1 ---- #}
-    <div class="tab-panel{% if active_day==1 %} active{% endif %}" data-panel="d1">
-      <div class="prose">{% for s in t.day1.segments %}{{ seg(s) }}{% endfor %}</div>
-      <div class="mnemonic">🔑 一句話記憶點：<b>{{ t.day1.mnemonic }}</b></div>
-    </div>
-
-    {# ---- Day 2（未解鎖前不渲染內容，避免從原始碼外洩）---- #}
-    {% if active_day >= 2 %}
-    <div class="tab-panel{% if active_day==2 %} active{% endif %}" data-panel="d2">
-      <div class="day-badge">第 2 天 · 進階與爭論</div>
-      <div class="prose">{% for s in t.day2.segments %}{{ seg(s) }}{% endfor %}</div>
-      <p class="peek">↑ 第 1 天是完整入門。第 3 天進「實戰與內化」收成日：把它變成拿得出手的工具。</p>
-      <div class="mnemonic">🔑 進階記憶點：<b>{{ t.day2.mnemonic }}</b></div>
-    </div>
-    {% endif %}
-
-    {# ---- Day 3（同上，未解鎖前不渲染）---- #}
-    {% if active_day >= 3 %}
-    <div class="tab-panel{% if active_day==3 %} active{% endif %}" data-panel="d3">
-      <span class="harvest-tag">🌾 收成日 · 把理解變成拿得出手的工具</span>
-      <div class="prose">
-        <p>{{ t.day3.intro }}</p>
-
-        <div class="subhead"><span class="ico">🗺️</span>一、跨領域應用地圖：它出現在你生活的哪些角落</div>
-        <div class="app-map">
-          {% for r in t.day3.app_map %}
-          <div class="app-row"><div class="app-domain">{{ r.domain }}</div><div class="app-body">{{ r.body }}{{ eg(r.example) }}</div></div>
-          {% endfor %}
-        </div>
-
-        <div class="subhead"><span class="ico">🛡️</span>二、{{ t.day3.method.heading }}</div>
-        {% for m in t.day3.method['items'] %}
-        <div class="scene"><b>{{ m.title }}。</b>{{ m.body }}{{ eg(m.example) }}</div>
-        {% endfor %}
-
-        <div class="subhead"><span class="ico">✊</span>三、組合拳：和其他理論一起搭著用</div>
-        {% for c in t.day3.combos %}
-        <p><strong>＋ {{ c['with'] }}：</strong>{{ c.body }}</p>
-        {{ eg(c.example) }}
-        {% endfor %}
-
-        <div class="subhead"><span class="ico">⚠️</span>四、反模式：別這樣用它</div>
-        <ul>
-          {% for a in t.day3.antipatterns %}
-          <li>{{ a.body }}{% if a.example %} <span class="eg" style="display:inline;border:none;padding:0;margin:0"><span class="eg-label">例</span>{{ a.example }}</span>{% endif %}</li>
-          {% endfor %}
-        </ul>
-
-        <div class="checklist">
-          <span class="ct">🌾 {{ t.day3.checklist.title }}</span>
-          <ul>{% for i in t.day3.checklist['items'] %}<li>{{ i }}</li>{% endfor %}</ul>
-        </div>
-
-        <div class="action-box">
-          <span class="label">本週實作 · 三級進階</span>
-          <b>觀察：</b>{{ t.day3.practice.observe }}<br>
-          <b>介入：</b>{{ t.day3.practice.intervene }}<br>
-          <b>建立習慣：</b>{{ t.day3.practice.habit }}
-        </div>
-      </div>
-      <div class="mnemonic">🔑 內化記憶點：<b>{{ t.day3.mnemonic }}</b></div>
-    </div>
-    {% endif %}
-  </article>
+  {{ card.card(t, active_day) }}
   {% endfor %}
 
   {% if reviews %}
@@ -143,7 +50,7 @@
     <div class="review-due">📅 排程：完成於 {{ r.completed_str }}，第 {{ r.nth }} 次複習到期</div>
     <button class="reveal-btn">顯示答案</button>
     <div class="review-a">
-      <div class="prose"><p>{{ r.answer }}</p>{{ eg(r.answer_example) }}</div>
+      <div class="prose"><p>{{ r.answer }}</p>{{ card.eg(r.answer_example) }}</div>
       <div class="mnemonic">🔑 <b>{{ r.mnemonic }}</b></div>
     </div>
   </div>
