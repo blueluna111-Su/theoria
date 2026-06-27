@@ -77,6 +77,16 @@ def main() -> int:
         render.render_archive(state, today, generated_at), encoding="utf-8")
     print("  + rendered index.html, archive.html")
 
+    # 每則「講過/進行中」的理論各產一頁可回頭重讀的詳情頁（theory/<id>.html）
+    theory_dir = REPO / "theory"
+    theory_dir.mkdir(exist_ok=True)
+    content_dir = REPO / "data" / "content"
+    readable = sorted(p.stem for p in content_dir.glob("*.json"))
+    for tid in readable:
+        (theory_dir / f"{tid}.html").write_text(
+            render.render_theory(state, tid, today, generated_at), encoding="utf-8")
+    print(f"  + rendered {len(readable)} 個理論詳情頁 → theory/")
+
     schedule.save_state(state)
     print("  + saved state.json")
     return 0

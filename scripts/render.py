@@ -34,6 +34,10 @@ def _load_content(theory_id: str) -> dict:
     return json.loads((CONTENT_DIR / f"{theory_id}.json").read_text(encoding="utf-8"))
 
 
+def _has_content(theory_id: str) -> bool:
+    return (CONTENT_DIR / f"{theory_id}.json").exists()
+
+
 def _date_str(d: date) -> str:
     return f"{d.year} 年 {d.month} 月 {d.day} 日 · 週{WEEKDAYS[d.weekday()]}"
 
@@ -118,8 +122,10 @@ def render_archive(state: dict, today: date, generated_at: str) -> str:
                 badge = "· 已講"
             else:
                 badge = "· 待排"
+            # 有產出內容的（講過或進行中）才可點進去回頭重讀
+            href = f"theory/{tid}.html" if _has_content(tid) else None
             chips.append({"name_zh": t["name_zh"], "name_en": t.get("name_en", ""),
-                          "badge": badge, "due": due})
+                          "badge": badge, "due": due, "href": href})
         if chips:
             groups.append({"domain_class": dc, "label": DOMAIN_LABEL.get(dc, dc), "chips": chips})
 
@@ -128,4 +134,26 @@ def render_archive(state: dict, today: date, generated_at: str) -> str:
         groups=groups, total=len(pool), seen=len(used), active_count=len(active),
         due_count=due_count, generated_at=generated_at, note=None,
         pool_notice=_pool_notice(state),
+    )
+
+
+def render_theory(state: dict, theory_id: str, today: date, generated_at: str) -> str:
+    """Render a standalone, re-readable detail page for one theory.
+
+    Completed theories are fully unlocked (all three days). The currently-active
+    theory mirrors today's unlock level so the archive can't leak gated days.
+    """
+    t = _load_content(theory_id)
+    cur = state.get("current") or {}
+    if theory_id in cur.get("active", []):
+        unlocked_day = cur.get("day", 1)
+        status_label = f"進行中 · 第 {unlocked_day} 天 / 3"
+    else:
+        unlocked_day = 3
+        status_label = "理論回顧 · 完整三天"
+
+    tmpl = _env().get_template("theory.html.j2")
+    return tmpl.render(
+        t=t, unlocked_day=unlocked_day, status_label=status_label,
+        generated_at=generated_at,
     )
