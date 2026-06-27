@@ -6,6 +6,7 @@ document.querySelectorAll('[data-tabs]').forEach(group => {
   const panels = group.querySelectorAll('.tab-panel');
   btns.forEach(btn => btn.addEventListener('click', () => {
     const target = btn.dataset.tab;
+    if (btn.disabled || !target) return;            // locked (future) day — ignore
     btns.forEach(b => b.classList.toggle('active', b === btn));
     panels.forEach(p => p.classList.toggle('active', p.dataset.panel === target));
   }));
