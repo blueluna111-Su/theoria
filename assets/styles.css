@@ -122,6 +122,8 @@ a:hover{ text-decoration:underline }
 .tab-btn{ font:inherit; font-size:13.5px; cursor:pointer; background:none; border:none; padding:8px 12px;
   color:var(--ink-faint); border-bottom:2px solid transparent; margin-bottom:-1px }
 .tab-btn.active{ color:var(--accent); border-bottom-color:var(--accent); font-weight:600 }
+.tab-btn.locked{ cursor:not-allowed; opacity:.45 }
+.tab-btn.locked:hover{ color:var(--ink-faint) }
 .tab-panel{ display:none }
 .tab-panel.active{ display:block }
 

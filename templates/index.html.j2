@@ -14,6 +14,7 @@
   {% if s.bullets %}<ul>{% for b in s.bullets %}<li>{{ b.text }}{% if b.example %} <span class="eg" style="display:inline;border:none;padding:0;margin:0"><span class="eg-label">例</span>{{ b.example }}</span>{% endif %}</li>{% endfor %}</ul>{% endif %}
   {% for ex in (s.examples or []) %}{{ eg(ex) }}{% endfor %}
 {% endmacro %}
+{% macro unlock(n) %}{% if n - active_day == 1 %}明天解鎖{% elif n - active_day == 2 %}後天解鎖{% else %}尚未解鎖{% endif %}{% endmacro %}
 
 <header class="site-header">
   <div class="wrap header-inner">
@@ -55,8 +56,16 @@
 
     <div class="tabs">
       <button class="tab-btn{% if active_day==1 %} active{% endif %}" data-tab="d1"><span class="tab-day">第 1 天</span><span class="tab-sub"> · 入門全貌</span></button>
+      {% if active_day >= 2 %}
       <button class="tab-btn{% if active_day==2 %} active{% endif %}" data-tab="d2"><span class="tab-day">第 2 天</span><span class="tab-sub"> · 進階與爭論</span></button>
+      {% else %}
+      <button class="tab-btn locked" disabled title="第 2 天 · {{ unlock(2) | trim }}"><span class="tab-day">🔒 第 2 天</span><span class="tab-sub"> · {{ unlock(2) | trim }}</span></button>
+      {% endif %}
+      {% if active_day >= 3 %}
       <button class="tab-btn{% if active_day==3 %} active{% endif %}" data-tab="d3"><span class="tab-day">第 3 天</span><span class="tab-sub"> · 實戰與內化</span></button>
+      {% else %}
+      <button class="tab-btn locked" disabled title="第 3 天 · {{ unlock(3) | trim }}"><span class="tab-day">🔒 第 3 天</span><span class="tab-sub"> · {{ unlock(3) | trim }}</span></button>
+      {% endif %}
     </div>
 
     {# ---- Day 1 ---- #}
@@ -65,15 +74,18 @@
       <div class="mnemonic">🔑 一句話記憶點：<b>{{ t.day1.mnemonic }}</b></div>
     </div>
 
-    {# ---- Day 2 ---- #}
+    {# ---- Day 2（未解鎖前不渲染內容，避免從原始碼外洩）---- #}
+    {% if active_day >= 2 %}
     <div class="tab-panel{% if active_day==2 %} active{% endif %}" data-panel="d2">
       <div class="day-badge">第 2 天 · 進階與爭論</div>
       <div class="prose">{% for s in t.day2.segments %}{{ seg(s) }}{% endfor %}</div>
       <p class="peek">↑ 第 1 天是完整入門。第 3 天進「實戰與內化」收成日：把它變成拿得出手的工具。</p>
       <div class="mnemonic">🔑 進階記憶點：<b>{{ t.day2.mnemonic }}</b></div>
     </div>
+    {% endif %}
 
-    {# ---- Day 3 ---- #}
+    {# ---- Day 3（同上，未解鎖前不渲染）---- #}
+    {% if active_day >= 3 %}
     <div class="tab-panel{% if active_day==3 %} active{% endif %}" data-panel="d3">
       <span class="harvest-tag">🌾 收成日 · 把理解變成拿得出手的工具</span>
       <div class="prose">
@@ -118,6 +130,7 @@
       </div>
       <div class="mnemonic">🔑 內化記憶點：<b>{{ t.day3.mnemonic }}</b></div>
     </div>
+    {% endif %}
   </article>
   {% endfor %}
 
