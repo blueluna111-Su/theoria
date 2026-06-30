@@ -15,7 +15,7 @@
       "placebo-effect",
       "sunk-cost"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-06-30"
   },
   "completed": [
@@ -97,7 +97,7 @@
     "placebo-effect",
     "sunk-cost"
   ],
-  "last_run_date": "2026-06-30",
+  "last_run_date": "2026-07-01",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
