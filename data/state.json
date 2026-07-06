@@ -15,7 +15,7 @@
       "pareto-principle",
       "maslow-hierarchy"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-07-06"
   },
   "completed": [
@@ -55,24 +55,24 @@
     {
       "id": "construal-level",
       "completed_date": "2026-06-30",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-07",
       "review_due": [
         "2026-07-07",
         "2026-07-21",
         "2026-08-29"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "opportunity-cost",
       "completed_date": "2026-06-30",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-07",
       "review_due": [
         "2026-07-07",
         "2026-07-21",
         "2026-08-29"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "cognitive-dissonance",
@@ -169,7 +169,7 @@
     "pareto-principle",
     "maslow-hierarchy"
   ],
-  "last_run_date": "2026-07-06",
+  "last_run_date": "2026-07-07",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
