@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "chestertons-fence",
-      "pareto-principle",
-      "maslow-hierarchy"
+      "implementation-intentions",
+      "weak-ties",
+      "prisoners-dilemma"
     ],
-    "day": 3,
-    "cycle_started": "2026-07-06"
+    "day": 1,
+    "cycle_started": "2026-07-09"
   },
   "completed": [
     {
@@ -150,6 +150,39 @@
         "2026-09-04"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "chestertons-fence",
+      "completed_date": "2026-07-09",
+      "last_seen": "2026-07-09",
+      "review_due": [
+        "2026-07-16",
+        "2026-07-30",
+        "2026-09-07"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "pareto-principle",
+      "completed_date": "2026-07-09",
+      "last_seen": "2026-07-09",
+      "review_due": [
+        "2026-07-16",
+        "2026-07-30",
+        "2026-09-07"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "maslow-hierarchy",
+      "completed_date": "2026-07-09",
+      "last_seen": "2026-07-09",
+      "review_due": [
+        "2026-07-16",
+        "2026-07-30",
+        "2026-09-07"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -167,9 +200,12 @@
     "overton-window",
     "chestertons-fence",
     "pareto-principle",
-    "maslow-hierarchy"
+    "maslow-hierarchy",
+    "implementation-intentions",
+    "weak-ties",
+    "prisoners-dilemma"
   ],
-  "last_run_date": "2026-07-08",
+  "last_run_date": "2026-07-09",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
