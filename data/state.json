@@ -15,7 +15,7 @@
       "weak-ties",
       "prisoners-dilemma"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-07-09"
   },
   "completed": [
@@ -110,13 +110,13 @@
     {
       "id": "sunk-cost",
       "completed_date": "2026-07-03",
-      "last_seen": "2026-07-03",
+      "last_seen": "2026-07-11",
       "review_due": [
         "2026-07-10",
         "2026-07-24",
         "2026-09-01"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "allostatic-load",
@@ -205,7 +205,7 @@
     "weak-ties",
     "prisoners-dilemma"
   ],
-  "last_run_date": "2026-07-10",
+  "last_run_date": "2026-07-11",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
