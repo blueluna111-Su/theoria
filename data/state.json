@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "schelling-point",
-      "confirmation-bias",
-      "circadian-rhythm"
+      "hormesis",
+      "tragedy-commons",
+      "social-proof"
     ],
-    "day": 3,
-    "cycle_started": "2026-07-12"
+    "day": 1,
+    "cycle_started": "2026-07-15"
   },
   "completed": [
     {
@@ -216,6 +216,39 @@
         "2026-09-10"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "schelling-point",
+      "completed_date": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "review_due": [
+        "2026-07-22",
+        "2026-08-05",
+        "2026-09-13"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "confirmation-bias",
+      "completed_date": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "review_due": [
+        "2026-07-22",
+        "2026-08-05",
+        "2026-09-13"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "circadian-rhythm",
+      "completed_date": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "review_due": [
+        "2026-07-22",
+        "2026-08-05",
+        "2026-09-13"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -239,9 +272,12 @@
     "prisoners-dilemma",
     "schelling-point",
     "confirmation-bias",
-    "circadian-rhythm"
+    "circadian-rhythm",
+    "hormesis",
+    "tragedy-commons",
+    "social-proof"
   ],
-  "last_run_date": "2026-07-14",
+  "last_run_date": "2026-07-15",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
