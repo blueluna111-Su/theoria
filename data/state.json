@@ -15,7 +15,7 @@
       "tragedy-commons",
       "social-proof"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-07-15"
   },
   "completed": [
@@ -176,13 +176,13 @@
     {
       "id": "maslow-hierarchy",
       "completed_date": "2026-07-09",
-      "last_seen": "2026-07-09",
+      "last_seen": "2026-07-17",
       "review_due": [
         "2026-07-16",
         "2026-07-30",
         "2026-09-07"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "implementation-intentions",
@@ -277,7 +277,7 @@
     "tragedy-commons",
     "social-proof"
   ],
-  "last_run_date": "2026-07-16",
+  "last_run_date": "2026-07-17",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
