@@ -15,7 +15,7 @@
       "first-principles",
       "comparative-advantage"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-07-18"
   },
   "completed": [
@@ -198,24 +198,24 @@
     {
       "id": "weak-ties",
       "completed_date": "2026-07-12",
-      "last_seen": "2026-07-12",
+      "last_seen": "2026-07-20",
       "review_due": [
         "2026-07-19",
         "2026-08-02",
         "2026-09-10"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "prisoners-dilemma",
       "completed_date": "2026-07-12",
-      "last_seen": "2026-07-12",
+      "last_seen": "2026-07-20",
       "review_due": [
         "2026-07-19",
         "2026-08-02",
         "2026-09-10"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "schelling-point",
@@ -313,7 +313,7 @@
     "first-principles",
     "comparative-advantage"
   ],
-  "last_run_date": "2026-07-19",
+  "last_run_date": "2026-07-20",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
