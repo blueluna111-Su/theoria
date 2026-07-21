@@ -15,7 +15,7 @@
       "dunning-kruger",
       "broken-windows"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-07-21"
   },
   "completed": [
@@ -77,13 +77,13 @@
     {
       "id": "cognitive-dissonance",
       "completed_date": "2026-06-30",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-22",
       "review_due": [
         "2026-07-07",
         "2026-07-21",
         "2026-08-29"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "goodharts-law",
@@ -220,13 +220,13 @@
     {
       "id": "schelling-point",
       "completed_date": "2026-07-15",
-      "last_seen": "2026-07-15",
+      "last_seen": "2026-07-22",
       "review_due": [
         "2026-07-22",
         "2026-08-05",
         "2026-09-13"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "confirmation-bias",
@@ -349,7 +349,7 @@
     "dunning-kruger",
     "broken-windows"
   ],
-  "last_run_date": "2026-07-21",
+  "last_run_date": "2026-07-22",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
