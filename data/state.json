@@ -15,7 +15,7 @@
       "dunning-kruger",
       "broken-windows"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-07-21"
   },
   "completed": [
@@ -231,24 +231,24 @@
     {
       "id": "confirmation-bias",
       "completed_date": "2026-07-15",
-      "last_seen": "2026-07-15",
+      "last_seen": "2026-07-23",
       "review_due": [
         "2026-07-22",
         "2026-08-05",
         "2026-09-13"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "circadian-rhythm",
       "completed_date": "2026-07-15",
-      "last_seen": "2026-07-15",
+      "last_seen": "2026-07-23",
       "review_due": [
         "2026-07-22",
         "2026-08-05",
         "2026-09-13"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "hormesis",
@@ -349,7 +349,7 @@
     "dunning-kruger",
     "broken-windows"
   ],
-  "last_run_date": "2026-07-22",
+  "last_run_date": "2026-07-23",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
