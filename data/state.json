@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "market-for-lemons",
-      "compounding",
-      "self-determination"
+      "gut-brain-axis",
+      "habit-loop",
+      "cobra-effect"
     ],
-    "day": 3,
-    "cycle_started": "2026-07-24"
+    "day": 1,
+    "cycle_started": "2026-07-27"
   },
   "completed": [
     {
@@ -121,24 +121,24 @@
     {
       "id": "allostatic-load",
       "completed_date": "2026-07-06",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-27",
       "review_due": [
         "2026-07-13",
         "2026-07-27",
         "2026-09-04"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "growth-mindset",
       "completed_date": "2026-07-06",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-27",
       "review_due": [
         "2026-07-13",
         "2026-07-27",
         "2026-09-04"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "overton-window",
@@ -348,6 +348,39 @@
         "2026-09-22"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "market-for-lemons",
+      "completed_date": "2026-07-27",
+      "last_seen": "2026-07-27",
+      "review_due": [
+        "2026-08-03",
+        "2026-08-17",
+        "2026-09-25"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "compounding",
+      "completed_date": "2026-07-27",
+      "last_seen": "2026-07-27",
+      "review_due": [
+        "2026-08-03",
+        "2026-08-17",
+        "2026-09-25"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "self-determination",
+      "completed_date": "2026-07-27",
+      "last_seen": "2026-07-27",
+      "review_due": [
+        "2026-08-03",
+        "2026-08-17",
+        "2026-09-25"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -383,9 +416,12 @@
     "broken-windows",
     "market-for-lemons",
     "compounding",
-    "self-determination"
+    "self-determination",
+    "gut-brain-axis",
+    "habit-loop",
+    "cobra-effect"
   ],
-  "last_run_date": "2026-07-26",
+  "last_run_date": "2026-07-27",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
