@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "gut-brain-axis",
-      "habit-loop",
-      "cobra-effect"
+      "inversion",
+      "zeigarnik-effect",
+      "parkinsons-law"
     ],
-    "day": 3,
-    "cycle_started": "2026-07-27"
+    "day": 1,
+    "cycle_started": "2026-07-30"
   },
   "completed": [
     {
@@ -154,24 +154,24 @@
     {
       "id": "chestertons-fence",
       "completed_date": "2026-07-09",
-      "last_seen": "2026-07-16",
+      "last_seen": "2026-07-30",
       "review_due": [
         "2026-07-16",
         "2026-07-30",
         "2026-09-07"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "pareto-principle",
       "completed_date": "2026-07-09",
-      "last_seen": "2026-07-16",
+      "last_seen": "2026-07-30",
       "review_due": [
         "2026-07-16",
         "2026-07-30",
         "2026-09-07"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "maslow-hierarchy",
@@ -381,6 +381,39 @@
         "2026-09-25"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "gut-brain-axis",
+      "completed_date": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "review_due": [
+        "2026-08-06",
+        "2026-08-20",
+        "2026-09-28"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "habit-loop",
+      "completed_date": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "review_due": [
+        "2026-08-06",
+        "2026-08-20",
+        "2026-09-28"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "cobra-effect",
+      "completed_date": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "review_due": [
+        "2026-08-06",
+        "2026-08-20",
+        "2026-09-28"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -419,9 +452,12 @@
     "self-determination",
     "gut-brain-axis",
     "habit-loop",
-    "cobra-effect"
+    "cobra-effect",
+    "inversion",
+    "zeigarnik-effect",
+    "parkinsons-law"
   ],
-  "last_run_date": "2026-07-29",
+  "last_run_date": "2026-07-30",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
