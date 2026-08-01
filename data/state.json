@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "inversion",
-      "zeigarnik-effect",
-      "parkinsons-law"
+      "peak-end-rule",
+      "diminishing-utility",
+      "learned-helplessness"
     ],
-    "day": 3,
-    "cycle_started": "2026-07-30"
+    "day": 1,
+    "cycle_started": "2026-08-02"
   },
   "completed": [
     {
@@ -187,24 +187,24 @@
     {
       "id": "implementation-intentions",
       "completed_date": "2026-07-12",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-08-02",
       "review_due": [
         "2026-07-19",
         "2026-08-02",
         "2026-09-10"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "weak-ties",
       "completed_date": "2026-07-12",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-08-02",
       "review_due": [
         "2026-07-19",
         "2026-08-02",
         "2026-09-10"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "prisoners-dilemma",
@@ -414,6 +414,39 @@
         "2026-09-28"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "inversion",
+      "completed_date": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "review_due": [
+        "2026-08-09",
+        "2026-08-23",
+        "2026-10-01"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "zeigarnik-effect",
+      "completed_date": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "review_due": [
+        "2026-08-09",
+        "2026-08-23",
+        "2026-10-01"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "parkinsons-law",
+      "completed_date": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "review_due": [
+        "2026-08-09",
+        "2026-08-23",
+        "2026-10-01"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -455,9 +488,12 @@
     "cobra-effect",
     "inversion",
     "zeigarnik-effect",
-    "parkinsons-law"
+    "parkinsons-law",
+    "peak-end-rule",
+    "diminishing-utility",
+    "learned-helplessness"
   ],
-  "last_run_date": "2026-08-01",
+  "last_run_date": "2026-08-02",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
