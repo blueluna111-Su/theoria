@@ -15,7 +15,7 @@
       "diminishing-utility",
       "learned-helplessness"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-08-02"
   },
   "completed": [
@@ -209,13 +209,13 @@
     {
       "id": "prisoners-dilemma",
       "completed_date": "2026-07-12",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-08-03",
       "review_due": [
         "2026-07-19",
         "2026-08-02",
         "2026-09-10"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "schelling-point",
@@ -352,13 +352,13 @@
     {
       "id": "market-for-lemons",
       "completed_date": "2026-07-27",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-08-03",
       "review_due": [
         "2026-08-03",
         "2026-08-17",
         "2026-09-25"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "compounding",
@@ -493,7 +493,7 @@
     "diminishing-utility",
     "learned-helplessness"
   ],
-  "last_run_date": "2026-08-02",
+  "last_run_date": "2026-08-03",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
