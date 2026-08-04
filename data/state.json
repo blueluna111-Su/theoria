@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "peak-end-rule",
-      "diminishing-utility",
-      "learned-helplessness"
+      "antifragility",
+      "bystander-effect",
+      "anchoring"
     ],
-    "day": 3,
-    "cycle_started": "2026-08-02"
+    "day": 1,
+    "cycle_started": "2026-08-05"
   },
   "completed": [
     {
@@ -220,24 +220,24 @@
     {
       "id": "schelling-point",
       "completed_date": "2026-07-15",
-      "last_seen": "2026-07-22",
+      "last_seen": "2026-08-05",
       "review_due": [
         "2026-07-22",
         "2026-08-05",
         "2026-09-13"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "confirmation-bias",
       "completed_date": "2026-07-15",
-      "last_seen": "2026-07-23",
+      "last_seen": "2026-08-05",
       "review_due": [
         "2026-07-22",
         "2026-08-05",
         "2026-09-13"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "circadian-rhythm",
@@ -447,6 +447,39 @@
         "2026-10-01"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "peak-end-rule",
+      "completed_date": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "review_due": [
+        "2026-08-12",
+        "2026-08-26",
+        "2026-10-04"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "diminishing-utility",
+      "completed_date": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "review_due": [
+        "2026-08-12",
+        "2026-08-26",
+        "2026-10-04"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "learned-helplessness",
+      "completed_date": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "review_due": [
+        "2026-08-12",
+        "2026-08-26",
+        "2026-10-04"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -491,9 +524,12 @@
     "parkinsons-law",
     "peak-end-rule",
     "diminishing-utility",
-    "learned-helplessness"
+    "learned-helplessness",
+    "antifragility",
+    "bystander-effect",
+    "anchoring"
   ],
-  "last_run_date": "2026-08-04",
+  "last_run_date": "2026-08-05",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
