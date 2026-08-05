@@ -15,7 +15,7 @@
       "bystander-effect",
       "anchoring"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-08-05"
   },
   "completed": [
@@ -242,13 +242,13 @@
     {
       "id": "circadian-rhythm",
       "completed_date": "2026-07-15",
-      "last_seen": "2026-07-23",
+      "last_seen": "2026-08-06",
       "review_due": [
         "2026-07-22",
         "2026-08-05",
         "2026-09-13"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "hormesis",
@@ -385,13 +385,13 @@
     {
       "id": "gut-brain-axis",
       "completed_date": "2026-07-30",
-      "last_seen": "2026-07-30",
+      "last_seen": "2026-08-06",
       "review_due": [
         "2026-08-06",
         "2026-08-20",
         "2026-09-28"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "habit-loop",
@@ -529,7 +529,7 @@
     "bystander-effect",
     "anchoring"
   ],
-  "last_run_date": "2026-08-05",
+  "last_run_date": "2026-08-06",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
