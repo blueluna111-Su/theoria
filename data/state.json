@@ -15,7 +15,7 @@
       "bystander-effect",
       "anchoring"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-08-05"
   },
   "completed": [
@@ -396,24 +396,24 @@
     {
       "id": "habit-loop",
       "completed_date": "2026-07-30",
-      "last_seen": "2026-07-30",
+      "last_seen": "2026-08-07",
       "review_due": [
         "2026-08-06",
         "2026-08-20",
         "2026-09-28"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "cobra-effect",
       "completed_date": "2026-07-30",
-      "last_seen": "2026-07-30",
+      "last_seen": "2026-08-07",
       "review_due": [
         "2026-08-06",
         "2026-08-20",
         "2026-09-28"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "inversion",
@@ -529,7 +529,7 @@
     "bystander-effect",
     "anchoring"
   ],
-  "last_run_date": "2026-08-06",
+  "last_run_date": "2026-08-07",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
