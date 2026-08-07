@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "antifragility",
-      "bystander-effect",
-      "anchoring"
+      "glymphatic-system",
+      "homeostasis",
+      "occams-razor"
     ],
-    "day": 3,
-    "cycle_started": "2026-08-05"
+    "day": 1,
+    "cycle_started": "2026-08-08"
   },
   "completed": [
     {
@@ -253,24 +253,24 @@
     {
       "id": "hormesis",
       "completed_date": "2026-07-18",
-      "last_seen": "2026-07-25",
+      "last_seen": "2026-08-08",
       "review_due": [
         "2026-07-25",
         "2026-08-08",
         "2026-09-16"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "tragedy-commons",
       "completed_date": "2026-07-18",
-      "last_seen": "2026-07-26",
+      "last_seen": "2026-08-08",
       "review_due": [
         "2026-07-25",
         "2026-08-08",
         "2026-09-16"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "social-proof",
@@ -480,6 +480,39 @@
         "2026-10-04"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "antifragility",
+      "completed_date": "2026-08-08",
+      "last_seen": "2026-08-08",
+      "review_due": [
+        "2026-08-15",
+        "2026-08-29",
+        "2026-10-07"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "bystander-effect",
+      "completed_date": "2026-08-08",
+      "last_seen": "2026-08-08",
+      "review_due": [
+        "2026-08-15",
+        "2026-08-29",
+        "2026-10-07"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "anchoring",
+      "completed_date": "2026-08-08",
+      "last_seen": "2026-08-08",
+      "review_due": [
+        "2026-08-15",
+        "2026-08-29",
+        "2026-10-07"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -527,9 +560,12 @@
     "learned-helplessness",
     "antifragility",
     "bystander-effect",
-    "anchoring"
+    "anchoring",
+    "glymphatic-system",
+    "homeostasis",
+    "occams-razor"
   ],
-  "last_run_date": "2026-08-07",
+  "last_run_date": "2026-08-08",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
