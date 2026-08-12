@@ -15,7 +15,7 @@
       "reciprocity",
       "peter-principle"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-08-11"
   },
   "completed": [
@@ -462,24 +462,24 @@
     {
       "id": "diminishing-utility",
       "completed_date": "2026-08-05",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-13",
       "review_due": [
         "2026-08-12",
         "2026-08-26",
         "2026-10-04"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "learned-helplessness",
       "completed_date": "2026-08-05",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-13",
       "review_due": [
         "2026-08-12",
         "2026-08-26",
         "2026-10-04"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "antifragility",
@@ -601,7 +601,7 @@
     "reciprocity",
     "peter-principle"
   ],
-  "last_run_date": "2026-08-12",
+  "last_run_date": "2026-08-13",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
