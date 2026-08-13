@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "diffusion-innovations",
-      "reciprocity",
-      "peter-principle"
+      "ikea-effect",
+      "signaling",
+      "availability-heuristic"
     ],
-    "day": 3,
-    "cycle_started": "2026-08-11"
+    "day": 1,
+    "cycle_started": "2026-08-14"
   },
   "completed": [
     {
@@ -319,24 +319,24 @@
     {
       "id": "fogg-behavior-model",
       "completed_date": "2026-07-24",
-      "last_seen": "2026-07-31",
+      "last_seen": "2026-08-14",
       "review_due": [
         "2026-07-31",
         "2026-08-14",
         "2026-09-22"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "dunning-kruger",
       "completed_date": "2026-07-24",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-14",
       "review_due": [
         "2026-07-31",
         "2026-08-14",
         "2026-09-22"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "broken-windows",
@@ -546,6 +546,39 @@
         "2026-10-10"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "diffusion-innovations",
+      "completed_date": "2026-08-14",
+      "last_seen": "2026-08-14",
+      "review_due": [
+        "2026-08-21",
+        "2026-09-04",
+        "2026-10-13"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "reciprocity",
+      "completed_date": "2026-08-14",
+      "last_seen": "2026-08-14",
+      "review_due": [
+        "2026-08-21",
+        "2026-09-04",
+        "2026-10-13"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "peter-principle",
+      "completed_date": "2026-08-14",
+      "last_seen": "2026-08-14",
+      "review_due": [
+        "2026-08-21",
+        "2026-09-04",
+        "2026-10-13"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -599,9 +632,12 @@
     "occams-razor",
     "diffusion-innovations",
     "reciprocity",
-    "peter-principle"
+    "peter-principle",
+    "ikea-effect",
+    "signaling",
+    "availability-heuristic"
   ],
-  "last_run_date": "2026-08-13",
+  "last_run_date": "2026-08-14",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
