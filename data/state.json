@@ -15,7 +15,7 @@
       "signaling",
       "availability-heuristic"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-08-14"
   },
   "completed": [
@@ -495,24 +495,24 @@
     {
       "id": "bystander-effect",
       "completed_date": "2026-08-08",
-      "last_seen": "2026-08-08",
+      "last_seen": "2026-08-16",
       "review_due": [
         "2026-08-15",
         "2026-08-29",
         "2026-10-07"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "anchoring",
       "completed_date": "2026-08-08",
-      "last_seen": "2026-08-08",
+      "last_seen": "2026-08-16",
       "review_due": [
         "2026-08-15",
         "2026-08-29",
         "2026-10-07"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "glymphatic-system",
@@ -637,7 +637,7 @@
     "signaling",
     "availability-heuristic"
   ],
-  "last_run_date": "2026-08-15",
+  "last_run_date": "2026-08-16",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
