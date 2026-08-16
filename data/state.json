@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "ikea-effect",
-      "signaling",
-      "availability-heuristic"
+      "baumol-cost-disease",
+      "fundamental-attribution-error",
+      "self-fulfilling-prophecy"
     ],
-    "day": 3,
-    "cycle_started": "2026-08-14"
+    "day": 1,
+    "cycle_started": "2026-08-17"
   },
   "completed": [
     {
@@ -352,24 +352,24 @@
     {
       "id": "market-for-lemons",
       "completed_date": "2026-07-27",
-      "last_seen": "2026-08-03",
+      "last_seen": "2026-08-17",
       "review_due": [
         "2026-08-03",
         "2026-08-17",
         "2026-09-25"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "compounding",
       "completed_date": "2026-07-27",
-      "last_seen": "2026-08-04",
+      "last_seen": "2026-08-17",
       "review_due": [
         "2026-08-03",
         "2026-08-17",
         "2026-09-25"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "self-determination",
@@ -579,6 +579,39 @@
         "2026-10-13"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "ikea-effect",
+      "completed_date": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "review_due": [
+        "2026-08-24",
+        "2026-09-07",
+        "2026-10-16"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "signaling",
+      "completed_date": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "review_due": [
+        "2026-08-24",
+        "2026-09-07",
+        "2026-10-16"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "availability-heuristic",
+      "completed_date": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "review_due": [
+        "2026-08-24",
+        "2026-09-07",
+        "2026-10-16"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -635,9 +668,12 @@
     "peter-principle",
     "ikea-effect",
     "signaling",
-    "availability-heuristic"
+    "availability-heuristic",
+    "baumol-cost-disease",
+    "fundamental-attribution-error",
+    "self-fulfilling-prophecy"
   ],
-  "last_run_date": "2026-08-16",
+  "last_run_date": "2026-08-17",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
