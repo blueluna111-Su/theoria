@@ -770,6 +770,105 @@
       "year": 1962,
       "note": "情緒的產生需要生理喚起和對此喚起的認知解釋，意味著情境解讀對情緒至關重要。",
       "tier": "fresh"
+    },
+    {
+      "id": "mere-exposure-effect",
+      "name_zh": "單純曝光效應",
+      "name_en": "Mere Exposure Effect",
+      "domain": "心理學",
+      "domain_class": "psych",
+      "author": "Robert Zajonc",
+      "year": 1968,
+      "note": "透過反覆接觸，即使沒有具體互動或資訊，也能增加對人事物的好感度。可用於行銷、人際關係建立。",
+      "tier": "fresh"
+    },
+    {
+      "id": "cognitive-load-theory",
+      "name_zh": "認知負荷理論",
+      "name_en": "Cognitive Load Theory",
+      "domain": "認知心理學",
+      "domain_class": "psych",
+      "author": "John Sweller",
+      "year": 1988,
+      "note": "人的工作記憶容量有限，設計學習材料或溝通內容時，應減少不必要的負擔，讓資訊更容易被處理。",
+      "tier": "core"
+    },
+    {
+      "id": "default-effect",
+      "name_zh": "預設值效應",
+      "name_en": "Default Effect",
+      "domain": "行為經濟學",
+      "domain_class": "psych",
+      "author": null,
+      "year": null,
+      "note": "人們傾向維持現狀或接受預設選項，即使存在更好的替代方案。可用於政策設計、產品選項設定以引導行為。",
+      "tier": "fresh"
+    },
+    {
+      "id": "moral-hazard",
+      "name_zh": "道德風險",
+      "name_en": "Moral Hazard",
+      "domain": "經濟學",
+      "domain_class": "econ",
+      "author": "Kenneth Arrow",
+      "year": 1963,
+      "note": "當一方免於承擔其行為的全部後果時，會傾向採取更多風險或改變行為。常見於保險、金融或代理關係中。",
+      "tier": "core"
+    },
+    {
+      "id": "network-effects",
+      "name_zh": "網路效應",
+      "name_en": "Network Effects",
+      "domain": "經濟學",
+      "domain_class": "econ",
+      "author": null,
+      "year": null,
+      "note": "產品或服務的價值隨著使用者的增加而提高。理解此效應有助於策略規劃，尤其在平台經濟中。",
+      "tier": "fresh"
+    },
+    {
+      "id": "groupthink",
+      "name_zh": "團體迷思",
+      "name_en": "Groupthink",
+      "domain": "社會心理學",
+      "domain_class": "social",
+      "author": "Irving Janis",
+      "year": 1972,
+      "note": "團體中為了追求和諧或一致，壓抑不同意見，導致決策品質下降甚至做出非理性選擇。",
+      "tier": "core"
+    },
+    {
+      "id": "spiral-of-silence",
+      "name_zh": "沉默螺旋",
+      "name_en": "Spiral of Silence",
+      "domain": "傳播學",
+      "domain_class": "social",
+      "author": "Elisabeth Noelle-Neumann",
+      "year": 1974,
+      "note": "當個人感覺自己的意見與主流不符時，會因害怕被孤立而選擇保持沉默，導致少數意見被進一步邊緣化。",
+      "tier": "fresh"
+    },
+    {
+      "id": "health-belief-model",
+      "name_zh": "健康信念模型",
+      "name_en": "Health Belief Model",
+      "domain": "公共衛生",
+      "domain_class": "health",
+      "author": "Godfrey Hochbaum, Stephen Kegeles, Howard Leventhal, Irwin Rosenstock",
+      "year": 1950,
+      "note": "解釋人們為何會或不會採取健康行為，基於對疾病威脅、行為益處、障礙和自我效能的感知。",
+      "tier": "core"
+    },
+    {
+      "id": "panopticism",
+      "name_zh": "全景敞視主義",
+      "name_en": "Panopticism",
+      "domain": "哲學／社會學",
+      "domain_class": "humanities",
+      "author": "Michel Foucault",
+      "year": 1975,
+      "note": "描述一種無形監控的社會控制形式，使被監控者因不確定何時被觀察而內化規訓，自我規範行為。",
+      "tier": "fresh"
     }
   ]
 }
