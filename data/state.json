@@ -15,7 +15,7 @@
       "scarcity-principle",
       "halo-effect"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-08-20"
   },
   "completed": [
@@ -407,13 +407,13 @@
     {
       "id": "cobra-effect",
       "completed_date": "2026-07-30",
-      "last_seen": "2026-08-07",
+      "last_seen": "2026-08-21",
       "review_due": [
         "2026-08-06",
         "2026-08-20",
         "2026-09-28"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "inversion",
@@ -550,13 +550,13 @@
     {
       "id": "diffusion-innovations",
       "completed_date": "2026-08-14",
-      "last_seen": "2026-08-14",
+      "last_seen": "2026-08-21",
       "review_due": [
         "2026-08-21",
         "2026-09-04",
         "2026-10-13"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "reciprocity",
@@ -709,7 +709,7 @@
     "scarcity-principle",
     "halo-effect"
   ],
-  "last_run_date": "2026-08-20",
+  "last_run_date": "2026-08-21",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
