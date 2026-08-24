@@ -15,7 +15,7 @@
       "cognitive-load-theory",
       "moral-hazard"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-08-23"
   },
   "completed": [
@@ -594,24 +594,24 @@
     {
       "id": "signaling",
       "completed_date": "2026-08-17",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-25",
       "review_due": [
         "2026-08-24",
         "2026-09-07",
         "2026-10-16"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "availability-heuristic",
       "completed_date": "2026-08-17",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-25",
       "review_due": [
         "2026-08-24",
         "2026-09-07",
         "2026-10-16"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "baumol-cost-disease",
@@ -745,7 +745,7 @@
     "cognitive-load-theory",
     "moral-hazard"
   ],
-  "last_run_date": "2026-08-24",
+  "last_run_date": "2026-08-25",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
