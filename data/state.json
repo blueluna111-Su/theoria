@@ -11,35 +11,35 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "jobs-to-be-done",
-      "cognitive-load-theory",
-      "moral-hazard"
+      "hedonic-adaptation",
+      "groupthink",
+      "health-belief-model"
     ],
-    "day": 3,
-    "cycle_started": "2026-08-23"
+    "day": 1,
+    "cycle_started": "2026-08-26"
   },
   "completed": [
     {
       "id": "loss-aversion",
       "completed_date": "2026-06-27",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-08-26",
       "review_due": [
         "2026-07-04",
         "2026-07-18",
         "2026-08-26"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "flow",
       "completed_date": "2026-06-27",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-08-26",
       "review_due": [
         "2026-07-04",
         "2026-07-18",
         "2026-08-26"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "dunbars-number",
@@ -678,6 +678,39 @@
         "2026-10-22"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "jobs-to-be-done",
+      "completed_date": "2026-08-26",
+      "last_seen": "2026-08-26",
+      "review_due": [
+        "2026-09-02",
+        "2026-09-16",
+        "2026-10-25"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "cognitive-load-theory",
+      "completed_date": "2026-08-26",
+      "last_seen": "2026-08-26",
+      "review_due": [
+        "2026-09-02",
+        "2026-09-16",
+        "2026-10-25"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "moral-hazard",
+      "completed_date": "2026-08-26",
+      "last_seen": "2026-08-26",
+      "review_due": [
+        "2026-09-02",
+        "2026-09-16",
+        "2026-10-25"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -743,9 +776,12 @@
     "halo-effect",
     "jobs-to-be-done",
     "cognitive-load-theory",
-    "moral-hazard"
+    "moral-hazard",
+    "hedonic-adaptation",
+    "groupthink",
+    "health-belief-model"
   ],
-  "last_run_date": "2026-08-25",
+  "last_run_date": "2026-08-26",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
