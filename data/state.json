@@ -15,7 +15,7 @@
       "groupthink",
       "health-belief-model"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-08-26"
   },
   "completed": [
@@ -44,13 +44,13 @@
     {
       "id": "dunbars-number",
       "completed_date": "2026-06-27",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-08-27",
       "review_due": [
         "2026-07-04",
         "2026-07-18",
         "2026-08-26"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "construal-level",
@@ -451,13 +451,13 @@
     {
       "id": "peak-end-rule",
       "completed_date": "2026-08-05",
-      "last_seen": "2026-08-12",
+      "last_seen": "2026-08-27",
       "review_due": [
         "2026-08-12",
         "2026-08-26",
         "2026-10-04"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "diminishing-utility",
@@ -781,7 +781,7 @@
     "groupthink",
     "health-belief-model"
   ],
-  "last_run_date": "2026-08-26",
+  "last_run_date": "2026-08-27",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
