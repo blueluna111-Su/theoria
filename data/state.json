@@ -15,7 +15,7 @@
       "spotlight-effect",
       "circle-of-competence"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-08-29"
   },
   "completed": [
@@ -55,13 +55,13 @@
     {
       "id": "construal-level",
       "completed_date": "2026-06-30",
-      "last_seen": "2026-07-21",
+      "last_seen": "2026-08-30",
       "review_due": [
         "2026-07-07",
         "2026-07-21",
         "2026-08-29"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "opportunity-cost",
@@ -638,13 +638,13 @@
     {
       "id": "self-fulfilling-prophecy",
       "completed_date": "2026-08-20",
-      "last_seen": "2026-08-20",
+      "last_seen": "2026-08-30",
       "review_due": [
         "2026-08-27",
         "2026-09-10",
         "2026-10-19"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "paradox-of-choice",
@@ -817,7 +817,7 @@
     "spotlight-effect",
     "circle-of-competence"
   ],
-  "last_run_date": "2026-08-29",
+  "last_run_date": "2026-08-30",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
