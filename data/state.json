@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "hedonic-adaptation",
-      "groupthink",
-      "health-belief-model"
+      "preference-falsification",
+      "spotlight-effect",
+      "circle-of-competence"
     ],
-    "day": 3,
-    "cycle_started": "2026-08-26"
+    "day": 1,
+    "cycle_started": "2026-08-29"
   },
   "completed": [
     {
@@ -616,24 +616,24 @@
     {
       "id": "baumol-cost-disease",
       "completed_date": "2026-08-20",
-      "last_seen": "2026-08-20",
+      "last_seen": "2026-08-29",
       "review_due": [
         "2026-08-27",
         "2026-09-10",
         "2026-10-19"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "fundamental-attribution-error",
       "completed_date": "2026-08-20",
-      "last_seen": "2026-08-20",
+      "last_seen": "2026-08-29",
       "review_due": [
         "2026-08-27",
         "2026-09-10",
         "2026-10-19"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "self-fulfilling-prophecy",
@@ -711,6 +711,39 @@
         "2026-10-25"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "hedonic-adaptation",
+      "completed_date": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "review_due": [
+        "2026-09-05",
+        "2026-09-19",
+        "2026-10-28"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "groupthink",
+      "completed_date": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "review_due": [
+        "2026-09-05",
+        "2026-09-19",
+        "2026-10-28"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "health-belief-model",
+      "completed_date": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "review_due": [
+        "2026-09-05",
+        "2026-09-19",
+        "2026-10-28"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -779,9 +812,12 @@
     "moral-hazard",
     "hedonic-adaptation",
     "groupthink",
-    "health-belief-model"
+    "health-belief-model",
+    "preference-falsification",
+    "spotlight-effect",
+    "circle-of-competence"
   ],
-  "last_run_date": "2026-08-28",
+  "last_run_date": "2026-08-29",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }

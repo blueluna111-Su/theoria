@@ -869,6 +869,105 @@
       "year": 1975,
       "note": "描述一種無形監控的社會控制形式，使被監控者因不確定何時被觀察而內化規訓，自我規範行為。",
       "tier": "fresh"
+    },
+    {
+      "id": "self-perception-theory",
+      "name_zh": "自我知覺理論",
+      "name_en": "Self-Perception Theory",
+      "domain": "心理學",
+      "domain_class": "psych",
+      "author": "Daryl Bem",
+      "year": 1967,
+      "note": "當人們的內在態度不明確時，會透過觀察自己的行為來推斷自己的態度與情緒。",
+      "tier": "fresh"
+    },
+    {
+      "id": "hot-cold-empathy-gap",
+      "name_zh": "冷熱移情落差",
+      "name_en": "Hot-Cold Empathy Gap",
+      "domain": "心理學",
+      "domain_class": "psych",
+      "author": "George Loewenstein",
+      "year": 1996,
+      "note": "人們難以在「冷靜」時預測「衝動」狀態的行為，反之亦然，導致決策失誤和判斷偏差。",
+      "tier": "fresh"
+    },
+    {
+      "id": "the-diderot-effect",
+      "name_zh": "狄德羅效應",
+      "name_en": "The Diderot Effect",
+      "domain": "心理學",
+      "domain_class": "psych",
+      "author": "Grant McCracken",
+      "year": 1988,
+      "note": "購買新物品後，常會引發一連串的消費，以維持風格或功能的一致性，形成消費循環。",
+      "tier": "fresh"
+    },
+    {
+      "id": "social-identity-theory",
+      "name_zh": "社會認同理論",
+      "name_en": "Social Identity Theory",
+      "domain": "社會心理學",
+      "domain_class": "social",
+      "author": "Henri Tajfel & John Turner",
+      "year": 1979,
+      "note": "人們從所屬群體中獲得自我認同與自尊，影響群體間的行為、合作與偏見。",
+      "tier": "fresh"
+    },
+    {
+      "id": "the-streisand-effect",
+      "name_zh": "史翠珊效應",
+      "name_en": "The Streisand Effect",
+      "domain": "社會學",
+      "domain_class": "social",
+      "author": null,
+      "year": 2005,
+      "note": "試圖壓制或隱藏資訊，反而會使其更廣泛傳播的現象，提醒公關與內容審查的潛在反效果。",
+      "tier": "fresh"
+    },
+    {
+      "id": "information-cascades",
+      "name_zh": "資訊瀑布",
+      "name_en": "Information Cascades",
+      "domain": "經濟學",
+      "domain_class": "econ",
+      "author": "Sushil Bikhchandani, David Hirshleifer, Ivo Welch",
+      "year": 1992,
+      "note": "人們依序觀察他人的行為後做出決策，即使與個人資訊相悖，也可能盲目跟隨，導致集體非理性。",
+      "tier": "fresh"
+    },
+    {
+      "id": "theory-of-constraints",
+      "name_zh": "限制理論",
+      "name_en": "Theory of Constraints",
+      "domain": "管理學",
+      "domain_class": "econ",
+      "author": "Eliyahu M. Goldratt",
+      "year": 1984,
+      "note": "專注於找出並管理系統中最關鍵的瓶頸（限制），以優化整體效能和產出。",
+      "tier": "fresh"
+    },
+    {
+      "id": "yerkes-dodson-law",
+      "name_zh": "耶基斯-多德森定律",
+      "name_en": "Yerkes-Dodson Law",
+      "domain": "心理學",
+      "domain_class": "health",
+      "author": "Robert M. Yerkes & John D. Dodson",
+      "year": 1908,
+      "note": "表現與動機或壓力水平呈現倒U型關係，適度的壓力有助於提升表現，過高或過低皆不利。",
+      "tier": "core"
+    },
+    {
+      "id": "moral-foundations-theory",
+      "name_zh": "道德基礎理論",
+      "name_en": "Moral Foundations Theory",
+      "domain": "社會心理學",
+      "domain_class": "humanities",
+      "author": "Jonathan Haidt",
+      "year": 2004,
+      "note": "探討人類道德判斷的五或六個普世基礎，有助於理解不同群體的價值觀衝突與政治分歧。",
+      "tier": "fresh"
     }
   ]
 }
