@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "preference-falsification",
-      "spotlight-effect",
-      "circle-of-competence"
+      "veil-of-ignorance",
+      "yerkes-dodson-law",
+      "map-territory"
     ],
-    "day": 3,
-    "cycle_started": "2026-08-29"
+    "day": 1,
+    "cycle_started": "2026-09-01"
   },
   "completed": [
     {
@@ -484,24 +484,24 @@
     {
       "id": "antifragility",
       "completed_date": "2026-08-08",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-01",
       "review_due": [
         "2026-08-15",
         "2026-08-29",
         "2026-10-07"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "bystander-effect",
       "completed_date": "2026-08-08",
-      "last_seen": "2026-08-16",
+      "last_seen": "2026-09-01",
       "review_due": [
         "2026-08-15",
         "2026-08-29",
         "2026-10-07"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "anchoring",
@@ -744,6 +744,39 @@
         "2026-10-28"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "preference-falsification",
+      "completed_date": "2026-09-01",
+      "last_seen": "2026-09-01",
+      "review_due": [
+        "2026-09-08",
+        "2026-09-22",
+        "2026-10-31"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "spotlight-effect",
+      "completed_date": "2026-09-01",
+      "last_seen": "2026-09-01",
+      "review_due": [
+        "2026-09-08",
+        "2026-09-22",
+        "2026-10-31"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "circle-of-competence",
+      "completed_date": "2026-09-01",
+      "last_seen": "2026-09-01",
+      "review_due": [
+        "2026-09-08",
+        "2026-09-22",
+        "2026-10-31"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -815,9 +848,12 @@
     "health-belief-model",
     "preference-falsification",
     "spotlight-effect",
-    "circle-of-competence"
+    "circle-of-competence",
+    "veil-of-ignorance",
+    "yerkes-dodson-law",
+    "map-territory"
   ],
-  "last_run_date": "2026-08-31",
+  "last_run_date": "2026-09-01",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
