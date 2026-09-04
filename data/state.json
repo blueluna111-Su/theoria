@@ -15,7 +15,7 @@
       "expectancy-theory",
       "two-factor-theory-of-emotion"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-09-04"
   },
   "completed": [
@@ -110,13 +110,13 @@
     {
       "id": "sunk-cost",
       "completed_date": "2026-07-03",
-      "last_seen": "2026-07-25",
+      "last_seen": "2026-09-05",
       "review_due": [
         "2026-07-10",
         "2026-07-24",
         "2026-09-01"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "allostatic-load",
@@ -517,13 +517,13 @@
     {
       "id": "glymphatic-system",
       "completed_date": "2026-08-11",
-      "last_seen": "2026-08-18",
+      "last_seen": "2026-09-05",
       "review_due": [
         "2026-08-18",
         "2026-09-01",
         "2026-10-10"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "homeostasis",
@@ -889,7 +889,7 @@
     "expectancy-theory",
     "two-factor-theory-of-emotion"
   ],
-  "last_run_date": "2026-09-04",
+  "last_run_date": "2026-09-05",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
