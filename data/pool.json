@@ -968,6 +968,105 @@
       "year": 2004,
       "note": "探討人類道德判斷的五或六個普世基礎，有助於理解不同群體的價值觀衝突與政治分歧。",
       "tier": "fresh"
+    },
+    {
+      "id": "stress-diathesis-model",
+      "name_zh": "壓力-素質模型",
+      "name_en": "Stress-Diathesis Model",
+      "domain": "心理健康",
+      "domain_class": "health",
+      "author": "Paul E. Meehl",
+      "year": 1962,
+      "note": "有助於理解個人對壓力的不同反應，並指導身心健康管理，強調預防和早期介入。",
+      "tier": "fresh"
+    },
+    {
+      "id": "hermeneutics",
+      "name_zh": "詮釋學",
+      "name_en": "Hermeneutics",
+      "domain": "哲學/文學/社會學",
+      "domain_class": "humanities",
+      "author": "Hans-Georg Gadamer",
+      "year": 1960,
+      "note": "提醒我們理解任何文本、情境或他人行為時，都應考慮其脈絡與多重意義，避免單一僵化解讀。",
+      "tier": "fresh"
+    },
+    {
+      "id": "self-efficacy",
+      "name_zh": "自我效能",
+      "name_en": "Self-Efficacy",
+      "domain": "心理學",
+      "domain_class": "psych",
+      "author": "Albert Bandura",
+      "year": 1977,
+      "note": "提升個人對完成任務的信心，鼓勵挑戰困難目標，並在面對挫折時堅持不懈。",
+      "tier": "core"
+    },
+    {
+      "id": "goal-setting-theory",
+      "name_zh": "目標設定理論",
+      "name_en": "Goal-Setting Theory",
+      "domain": "組織行為/心理學",
+      "domain_class": "psych",
+      "author": "Edwin A. Locke & Gary P. Latham",
+      "year": 1990,
+      "note": "應用於設定個人或團隊目標，透過具體、可衡量、可達成、相關、有時限（SMART）的目標來提高績效。",
+      "tier": "core"
+    },
+    {
+      "id": "theory-of-planned-behavior",
+      "name_zh": "計畫行為理論",
+      "name_en": "Theory of Planned Behavior",
+      "domain": "社會心理學/健康行為",
+      "domain_class": "psych",
+      "author": "Icek Ajzen",
+      "year": 1985,
+      "note": "用於分析和預測行為意圖，指導健康促進、行銷或政策制定，以有效影響人們的行為改變。",
+      "tier": "fresh"
+    },
+    {
+      "id": "social-comparison-theory",
+      "name_zh": "社會比較理論",
+      "name_en": "Social Comparison Theory",
+      "domain": "社會心理學",
+      "domain_class": "social",
+      "author": "Leon Festinger",
+      "year": 1954,
+      "note": "提醒我們注意社群媒體對自我評價的影響，並學會進行向上或向下比較以維護心理健康或激勵自我。",
+      "tier": "core"
+    },
+    {
+      "id": "information-asymmetry",
+      "name_zh": "資訊不對稱",
+      "name_en": "Information Asymmetry",
+      "domain": "經濟學",
+      "domain_class": "econ",
+      "author": "Kenneth Arrow",
+      "year": 1963,
+      "note": "提醒在商業談判、市場交易或人際互動中，意識到資訊落差可能導致的劣勢，並尋求透明化或訊號傳遞。",
+      "tier": "core"
+    },
+    {
+      "id": "principal-agent-problem",
+      "name_zh": "委託-代理問題",
+      "name_en": "Principal-Agent Problem",
+      "domain": "經濟學/組織管理",
+      "domain_class": "econ",
+      "author": "Stephen Ross",
+      "year": 1973,
+      "note": "有助於設計激勵機制、監督與契約，以協調委託人與代理人之間的利益衝突，確保目標一致。",
+      "tier": "core"
+    },
+    {
+      "id": "commitment-and-consistency-principle",
+      "name_zh": "承諾與一致性原則",
+      "name_en": "Commitment and Consistency Principle",
+      "domain": "社會心理學/說服",
+      "domain_class": "social",
+      "author": "Robert Cialdini",
+      "year": 1984,
+      "note": "可用於說服他人採取行動，透過小承諾引導大承諾，或在個人目標設定中利用公開承諾來增強執行力。",
+      "tier": "fresh"
     }
   ]
 }

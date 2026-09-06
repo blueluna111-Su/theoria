@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "thin-slicing",
-      "expectancy-theory",
-      "two-factor-theory-of-emotion"
+      "mere-exposure-effect",
+      "default-effect",
+      "network-effects"
     ],
-    "day": 3,
-    "cycle_started": "2026-09-04"
+    "day": 1,
+    "cycle_started": "2026-09-07"
   },
   "completed": [
     {
@@ -682,24 +682,24 @@
     {
       "id": "jobs-to-be-done",
       "completed_date": "2026-08-26",
-      "last_seen": "2026-08-26",
+      "last_seen": "2026-09-07",
       "review_due": [
         "2026-09-02",
         "2026-09-16",
         "2026-10-25"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "cognitive-load-theory",
       "completed_date": "2026-08-26",
-      "last_seen": "2026-08-26",
+      "last_seen": "2026-09-07",
       "review_due": [
         "2026-09-02",
         "2026-09-16",
         "2026-10-25"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "moral-hazard",
@@ -810,6 +810,39 @@
         "2026-11-03"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "thin-slicing",
+      "completed_date": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "review_due": [
+        "2026-09-14",
+        "2026-09-28",
+        "2026-11-06"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "expectancy-theory",
+      "completed_date": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "review_due": [
+        "2026-09-14",
+        "2026-09-28",
+        "2026-11-06"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "two-factor-theory-of-emotion",
+      "completed_date": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "review_due": [
+        "2026-09-14",
+        "2026-09-28",
+        "2026-11-06"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -887,9 +920,12 @@
     "map-territory",
     "thin-slicing",
     "expectancy-theory",
-    "two-factor-theory-of-emotion"
+    "two-factor-theory-of-emotion",
+    "mere-exposure-effect",
+    "default-effect",
+    "network-effects"
   ],
-  "last_run_date": "2026-09-06",
+  "last_run_date": "2026-09-07",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
