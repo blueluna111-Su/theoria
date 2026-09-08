@@ -15,7 +15,7 @@
       "default-effect",
       "network-effects"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-09-07"
   },
   "completed": [
@@ -132,24 +132,24 @@
     {
       "id": "growth-mindset",
       "completed_date": "2026-07-06",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-09-09",
       "review_due": [
         "2026-07-13",
         "2026-07-27",
         "2026-09-04"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "overton-window",
       "completed_date": "2026-07-06",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-09-09",
       "review_due": [
         "2026-07-13",
         "2026-07-27",
         "2026-09-04"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "chestertons-fence",
@@ -925,7 +925,7 @@
     "default-effect",
     "network-effects"
   ],
-  "last_run_date": "2026-09-08",
+  "last_run_date": "2026-09-09",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
