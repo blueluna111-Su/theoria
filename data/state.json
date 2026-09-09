@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "mere-exposure-effect",
-      "default-effect",
-      "network-effects"
+      "spiral-of-silence",
+      "self-efficacy",
+      "goal-setting-theory"
     ],
-    "day": 3,
-    "cycle_started": "2026-09-07"
+    "day": 1,
+    "cycle_started": "2026-09-10"
   },
   "completed": [
     {
@@ -550,24 +550,24 @@
     {
       "id": "diffusion-innovations",
       "completed_date": "2026-08-14",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-10",
       "review_due": [
         "2026-08-21",
         "2026-09-04",
         "2026-10-13"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "reciprocity",
       "completed_date": "2026-08-14",
-      "last_seen": "2026-08-22",
+      "last_seen": "2026-09-10",
       "review_due": [
         "2026-08-21",
         "2026-09-04",
         "2026-10-13"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "peter-principle",
@@ -843,6 +843,39 @@
         "2026-11-06"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "mere-exposure-effect",
+      "completed_date": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "review_due": [
+        "2026-09-17",
+        "2026-10-01",
+        "2026-11-09"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "default-effect",
+      "completed_date": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "review_due": [
+        "2026-09-17",
+        "2026-10-01",
+        "2026-11-09"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "network-effects",
+      "completed_date": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "review_due": [
+        "2026-09-17",
+        "2026-10-01",
+        "2026-11-09"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -923,9 +956,12 @@
     "two-factor-theory-of-emotion",
     "mere-exposure-effect",
     "default-effect",
-    "network-effects"
+    "network-effects",
+    "spiral-of-silence",
+    "self-efficacy",
+    "goal-setting-theory"
   ],
-  "last_run_date": "2026-09-09",
+  "last_run_date": "2026-09-10",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
