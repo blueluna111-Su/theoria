@@ -15,7 +15,7 @@
       "self-efficacy",
       "goal-setting-theory"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-09-10"
   },
   "completed": [
@@ -572,13 +572,13 @@
     {
       "id": "peter-principle",
       "completed_date": "2026-08-14",
-      "last_seen": "2026-08-22",
+      "last_seen": "2026-09-11",
       "review_due": [
         "2026-08-21",
         "2026-09-04",
         "2026-10-13"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "ikea-effect",
@@ -715,13 +715,13 @@
     {
       "id": "hedonic-adaptation",
       "completed_date": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "review_due": [
         "2026-09-05",
         "2026-09-19",
         "2026-10-28"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "groupthink",
@@ -961,7 +961,7 @@
     "self-efficacy",
     "goal-setting-theory"
   ],
-  "last_run_date": "2026-09-10",
+  "last_run_date": "2026-09-11",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
