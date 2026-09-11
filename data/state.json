@@ -15,7 +15,7 @@
       "self-efficacy",
       "goal-setting-theory"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-09-10"
   },
   "completed": [
@@ -726,24 +726,24 @@
     {
       "id": "groupthink",
       "completed_date": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-12",
       "review_due": [
         "2026-09-05",
         "2026-09-19",
         "2026-10-28"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "health-belief-model",
       "completed_date": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-12",
       "review_due": [
         "2026-09-05",
         "2026-09-19",
         "2026-10-28"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "preference-falsification",
@@ -961,7 +961,7 @@
     "self-efficacy",
     "goal-setting-theory"
   ],
-  "last_run_date": "2026-09-11",
+  "last_run_date": "2026-09-12",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
