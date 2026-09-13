@@ -15,7 +15,7 @@
       "social-comparison-theory",
       "information-asymmetry"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-09-13"
   },
   "completed": [
@@ -176,13 +176,13 @@
     {
       "id": "maslow-hierarchy",
       "completed_date": "2026-07-09",
-      "last_seen": "2026-07-31",
+      "last_seen": "2026-09-14",
       "review_due": [
         "2026-07-16",
         "2026-07-30",
         "2026-09-07"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "implementation-intentions",
@@ -583,13 +583,13 @@
     {
       "id": "ikea-effect",
       "completed_date": "2026-08-17",
-      "last_seen": "2026-08-24",
+      "last_seen": "2026-09-14",
       "review_due": [
         "2026-08-24",
         "2026-09-07",
         "2026-10-16"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "signaling",
@@ -997,7 +997,7 @@
     "social-comparison-theory",
     "information-asymmetry"
   ],
-  "last_run_date": "2026-09-13",
+  "last_run_date": "2026-09-14",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
