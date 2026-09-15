@@ -1067,6 +1067,105 @@
       "year": 1984,
       "note": "可用於說服他人採取行動，透過小承諾引導大承諾，或在個人目標設定中利用公開承諾來增強執行力。",
       "tier": "fresh"
+    },
+    {
+      "id": "stress-inoculation-training-sit",
+      "name_zh": "壓力疫苗接種",
+      "name_en": "Stress Inoculation Training (SIT)",
+      "domain": "心理健康",
+      "domain_class": "health",
+      "author": "Donald Meichenbaum",
+      "year": 1975,
+      "note": "透過逐步暴露於可控的壓力源，學習應對技巧，以增強心理韌性並預防未來壓力衝擊。",
+      "tier": "fresh"
+    },
+    {
+      "id": "narrative-fallacy",
+      "name_zh": "敘事謬誤",
+      "name_en": "Narrative Fallacy",
+      "domain": "認知心理學與哲學",
+      "domain_class": "humanities",
+      "author": "Nassim Nicholas Taleb",
+      "year": 2007,
+      "note": "提醒我們人類傾向於將隨機事件解釋為有條理的故事，應警惕過度簡化或錯誤歸因的風險。",
+      "tier": "fresh"
+    },
+    {
+      "id": "contact-hypothesis",
+      "name_zh": "接觸假說",
+      "name_en": "Contact Hypothesis",
+      "domain": "社會心理學",
+      "domain_class": "social",
+      "author": "Gordon Allport",
+      "year": 1954,
+      "note": "在特定條件下（如共同目標、平等地位），不同群體間的直接接觸能有效減少偏見與刻板印象。",
+      "tier": "fresh"
+    },
+    {
+      "id": "self-handicapping",
+      "name_zh": "自我設限",
+      "name_en": "Self-Handicapping",
+      "domain": "社會心理學",
+      "domain_class": "psych",
+      "author": "Steven Berglas, Edward E. Jones",
+      "year": 1978,
+      "note": "當預期可能失敗時，人們會創造障礙或藉口，以保護自我價值感，但可能阻礙潛力發揮。",
+      "tier": "fresh"
+    },
+    {
+      "id": "winner-s-curse",
+      "name_zh": "贏者的詛咒",
+      "name_en": "Winner's Curse",
+      "domain": "經濟學與賽局理論",
+      "domain_class": "econ",
+      "author": "Capen, Clapp, & Campbell",
+      "year": 1971,
+      "note": "在競標或競爭中，最高出價者往往高估標的價值，導致得標後實際收益低於預期甚至虧損。",
+      "tier": "fresh"
+    },
+    {
+      "id": "reversal-theory",
+      "name_zh": "反轉理論",
+      "name_en": "Reversal Theory",
+      "domain": "動機心理學",
+      "domain_class": "psych",
+      "author": "Michael J. Apter",
+      "year": 1982,
+      "note": "解釋人類動機和情感如何在對立的心理狀態（如嚴肅/玩樂、目的/手段）間動態切換，影響行為和體驗。",
+      "tier": "fresh"
+    },
+    {
+      "id": "coase-theorem",
+      "name_zh": "寇斯定理",
+      "name_en": "Coase Theorem",
+      "domain": "法律經濟學",
+      "domain_class": "econ",
+      "author": "Ronald Coase",
+      "year": 1960,
+      "note": "在交易成本低的情況下，無論財產權如何初始分配，私人協商都能達成有效率的資源配置。",
+      "tier": "fresh"
+    },
+    {
+      "id": "streetlight-effect",
+      "name_zh": "路燈效應",
+      "name_en": "Streetlight Effect",
+      "domain": "研究方法與認知偏誤",
+      "domain_class": "social",
+      "author": null,
+      "year": null,
+      "note": "比喻人們傾向於在最容易觀察或測量的地方尋找答案，而非問題實際存在之處，導致錯失真相。",
+      "tier": "fresh"
+    },
+    {
+      "id": "framing-effect",
+      "name_zh": "框架效應",
+      "name_en": "Framing Effect",
+      "domain": "認知心理學與決策科學",
+      "domain_class": "humanities",
+      "author": "Daniel Kahneman, Amos Tversky",
+      "year": 1981,
+      "note": "同一資訊以不同方式呈現（例如強調收益或損失）會顯著影響人們的判斷和決策，即使客觀事實不變。",
+      "tier": "core"
     }
   ]
 }

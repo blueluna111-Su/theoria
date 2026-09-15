@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "panopticism",
-      "social-comparison-theory",
-      "information-asymmetry"
+      "self-perception-theory",
+      "principal-agent-problem",
+      "hot-cold-empathy-gap"
     ],
-    "day": 3,
-    "cycle_started": "2026-09-13"
+    "day": 1,
+    "cycle_started": "2026-09-16"
   },
   "completed": [
     {
@@ -748,24 +748,24 @@
     {
       "id": "preference-falsification",
       "completed_date": "2026-09-01",
-      "last_seen": "2026-09-01",
+      "last_seen": "2026-09-16",
       "review_due": [
         "2026-09-08",
         "2026-09-22",
         "2026-10-31"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "spotlight-effect",
       "completed_date": "2026-09-01",
-      "last_seen": "2026-09-01",
+      "last_seen": "2026-09-16",
       "review_due": [
         "2026-09-08",
         "2026-09-22",
         "2026-10-31"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "circle-of-competence",
@@ -909,6 +909,39 @@
         "2026-11-12"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "panopticism",
+      "completed_date": "2026-09-16",
+      "last_seen": "2026-09-16",
+      "review_due": [
+        "2026-09-23",
+        "2026-10-07",
+        "2026-11-15"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "social-comparison-theory",
+      "completed_date": "2026-09-16",
+      "last_seen": "2026-09-16",
+      "review_due": [
+        "2026-09-23",
+        "2026-10-07",
+        "2026-11-15"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "information-asymmetry",
+      "completed_date": "2026-09-16",
+      "last_seen": "2026-09-16",
+      "review_due": [
+        "2026-09-23",
+        "2026-10-07",
+        "2026-11-15"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -995,9 +1028,12 @@
     "goal-setting-theory",
     "panopticism",
     "social-comparison-theory",
-    "information-asymmetry"
+    "information-asymmetry",
+    "self-perception-theory",
+    "principal-agent-problem",
+    "hot-cold-empathy-gap"
   ],
-  "last_run_date": "2026-09-15",
+  "last_run_date": "2026-09-16",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
