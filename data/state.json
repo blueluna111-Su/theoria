@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "the-diderot-effect",
-      "framing-effect",
-      "social-identity-theory"
+      "the-streisand-effect",
+      "information-cascades",
+      "theory-of-constraints"
     ],
-    "day": 3,
-    "cycle_started": "2026-09-19"
+    "day": 1,
+    "cycle_started": "2026-09-22"
   },
   "completed": [
     {
@@ -220,24 +220,24 @@
     {
       "id": "schelling-point",
       "completed_date": "2026-07-15",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-09-22",
       "review_due": [
         "2026-07-22",
         "2026-08-05",
         "2026-09-13"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "confirmation-bias",
       "completed_date": "2026-07-15",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-09-22",
       "review_due": [
         "2026-07-22",
         "2026-08-05",
         "2026-09-13"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "circadian-rhythm",
@@ -975,6 +975,39 @@
         "2026-11-18"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "the-diderot-effect",
+      "completed_date": "2026-09-22",
+      "last_seen": "2026-09-22",
+      "review_due": [
+        "2026-09-29",
+        "2026-10-13",
+        "2026-11-21"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "framing-effect",
+      "completed_date": "2026-09-22",
+      "last_seen": "2026-09-22",
+      "review_due": [
+        "2026-09-29",
+        "2026-10-13",
+        "2026-11-21"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "social-identity-theory",
+      "completed_date": "2026-09-22",
+      "last_seen": "2026-09-22",
+      "review_due": [
+        "2026-09-29",
+        "2026-10-13",
+        "2026-11-21"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1067,9 +1100,12 @@
     "hot-cold-empathy-gap",
     "the-diderot-effect",
     "framing-effect",
-    "social-identity-theory"
+    "social-identity-theory",
+    "the-streisand-effect",
+    "information-cascades",
+    "theory-of-constraints"
   ],
-  "last_run_date": "2026-09-21",
+  "last_run_date": "2026-09-22",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
