@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "the-streisand-effect",
-      "information-cascades",
-      "theory-of-constraints"
+      "moral-foundations-theory",
+      "stress-diathesis-model",
+      "hermeneutics"
     ],
-    "day": 3,
-    "cycle_started": "2026-09-22"
+    "day": 1,
+    "cycle_started": "2026-09-27"
   },
   "completed": [
     {
@@ -814,24 +814,24 @@
     {
       "id": "thin-slicing",
       "completed_date": "2026-09-07",
-      "last_seen": "2026-09-07",
+      "last_seen": "2026-09-27",
       "review_due": [
         "2026-09-14",
         "2026-09-28",
         "2026-11-06"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "expectancy-theory",
       "completed_date": "2026-09-07",
-      "last_seen": "2026-09-07",
+      "last_seen": "2026-09-27",
       "review_due": [
         "2026-09-14",
         "2026-09-28",
         "2026-11-06"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "two-factor-theory-of-emotion",
@@ -1008,6 +1008,39 @@
         "2026-11-21"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "the-streisand-effect",
+      "completed_date": "2026-09-27",
+      "last_seen": "2026-09-27",
+      "review_due": [
+        "2026-10-04",
+        "2026-10-18",
+        "2026-11-26"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "information-cascades",
+      "completed_date": "2026-09-27",
+      "last_seen": "2026-09-27",
+      "review_due": [
+        "2026-10-04",
+        "2026-10-18",
+        "2026-11-26"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "theory-of-constraints",
+      "completed_date": "2026-09-27",
+      "last_seen": "2026-09-27",
+      "review_due": [
+        "2026-10-04",
+        "2026-10-18",
+        "2026-11-26"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1103,9 +1136,12 @@
     "social-identity-theory",
     "the-streisand-effect",
     "information-cascades",
-    "theory-of-constraints"
+    "theory-of-constraints",
+    "moral-foundations-theory",
+    "stress-diathesis-model",
+    "hermeneutics"
   ],
-  "last_run_date": "2026-09-24",
+  "last_run_date": "2026-09-27",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }

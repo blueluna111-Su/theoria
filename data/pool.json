@@ -1166,6 +1166,105 @@
       "year": 1981,
       "note": "同一資訊以不同方式呈現（例如強調收益或損失）會顯著影響人們的判斷和決策，即使客觀事實不變。",
       "tier": "core"
+    },
+    {
+      "id": "interoception",
+      "name_zh": "內感受",
+      "name_en": "Interoception",
+      "domain": "健康／心理",
+      "domain_class": "health",
+      "author": "Charles Sherrington",
+      "year": 1906,
+      "note": "幫助理解身體訊息，提升情緒調節與自我覺察能力，例如辨識飢餓、口渴、心跳等內在狀態。",
+      "tier": "fresh"
+    },
+    {
+      "id": "categorical-imperative",
+      "name_zh": "定言令式",
+      "name_en": "Categorical Imperative",
+      "domain": "人文／哲學",
+      "domain_class": "humanities",
+      "author": "Immanuel Kant",
+      "year": 1785,
+      "note": "協助在決策時，判斷行為是否符合普遍道德原則，即你的行為能否被推廣為所有人都能遵循的法則。",
+      "tier": "fresh"
+    },
+    {
+      "id": "tragedy-of-the-anticommons",
+      "name_zh": "反公地悲劇",
+      "name_en": "Tragedy of the Anticommons",
+      "domain": "經濟／社會",
+      "domain_class": "econ",
+      "author": "Michael Heller",
+      "year": 1998,
+      "note": "揭示過度分散的所有權（例如過多專利持有者）如何阻礙資源有效利用，有助於政策設計與協商。",
+      "tier": "fresh"
+    },
+    {
+      "id": "feature-positive-effect",
+      "name_zh": "特徵正面效應",
+      "name_en": "Feature Positive Effect",
+      "domain": "心理／決策",
+      "domain_class": "psych",
+      "author": "Peter Wason",
+      "year": 1960,
+      "note": "解釋為何人們容易忽略「不存在」的事物或錯誤（如缺少的零件），有助於產品設計、檢查清單與風險評估。",
+      "tier": "fresh"
+    },
+    {
+      "id": "just-world-hypothesis",
+      "name_zh": "公平世界假說",
+      "name_en": "Just-World Hypothesis",
+      "domain": "社會心理",
+      "domain_class": "social",
+      "author": "Melvin Lerner",
+      "year": 1966,
+      "note": "幫助理解偏見、受害者歸罪及對社會不公的漠視，提醒我們挑戰「好人有好報，惡人有惡報」的固有信念。",
+      "tier": "fresh"
+    },
+    {
+      "id": "polyvagal-theory",
+      "name_zh": "多迷走神經理論",
+      "name_en": "Polyvagal Theory",
+      "domain": "健康／心理",
+      "domain_class": "health",
+      "author": "Stephen Porges",
+      "year": 1994,
+      "note": "提供理解壓力、創傷與社交連結的生理基礎，有助於情緒調節、應對策略與人際互動的改善。",
+      "tier": "fresh"
+    },
+    {
+      "id": "sapir-whorf-hypothesis",
+      "name_zh": "薩丕爾-沃爾夫假說",
+      "name_en": "Sapir-Whorf Hypothesis",
+      "domain": "人文／認知",
+      "domain_class": "humanities",
+      "author": "Edward Sapir, Benjamin Whorf",
+      "year": 1929,
+      "note": "提醒語言如何形塑我們的思維與世界觀，提升跨文化溝通與理解力，並意識到語言的影響力。",
+      "tier": "fresh"
+    },
+    {
+      "id": "hyperbolic-discounting",
+      "name_zh": "雙曲線折現",
+      "name_en": "Hyperbolic Discounting",
+      "domain": "經濟／行為",
+      "domain_class": "econ",
+      "author": "George Ainslie",
+      "year": 1975,
+      "note": "解釋為何人們偏好即時滿足而傾向拖延或衝動消費，有助於設計策略克服短期誘惑以達成長期目標。",
+      "tier": "fresh"
+    },
+    {
+      "id": "pygmalion-effect",
+      "name_zh": "畢馬龍效應",
+      "name_en": "Pygmalion Effect",
+      "domain": "社會心理",
+      "domain_class": "psych",
+      "author": "Robert Rosenthal, Lenore Jacobson",
+      "year": 1968,
+      "note": "揭示他人（如老師、主管）的期望如何影響個人表現，鼓勵建立正向的領導、教育與育兒環境。",
+      "tier": "fresh"
     }
   ]
 }
