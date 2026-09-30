@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "moral-foundations-theory",
-      "stress-diathesis-model",
-      "hermeneutics"
+      "theory-of-planned-behavior",
+      "commitment-and-consistency-principle",
+      "stress-inoculation-training-sit"
     ],
-    "day": 3,
-    "cycle_started": "2026-09-27"
+    "day": 1,
+    "cycle_started": "2026-09-30"
   },
   "completed": [
     {
@@ -682,24 +682,24 @@
     {
       "id": "jobs-to-be-done",
       "completed_date": "2026-08-26",
-      "last_seen": "2026-09-07",
+      "last_seen": "2026-09-30",
       "review_due": [
         "2026-09-02",
         "2026-09-16",
         "2026-10-25"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "cognitive-load-theory",
       "completed_date": "2026-08-26",
-      "last_seen": "2026-09-07",
+      "last_seen": "2026-09-30",
       "review_due": [
         "2026-09-02",
         "2026-09-16",
         "2026-10-25"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "moral-hazard",
@@ -1041,6 +1041,39 @@
         "2026-11-26"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "moral-foundations-theory",
+      "completed_date": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_due": [
+        "2026-10-07",
+        "2026-10-21",
+        "2026-11-29"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "stress-diathesis-model",
+      "completed_date": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_due": [
+        "2026-10-07",
+        "2026-10-21",
+        "2026-11-29"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "hermeneutics",
+      "completed_date": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_due": [
+        "2026-10-07",
+        "2026-10-21",
+        "2026-11-29"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1139,9 +1172,12 @@
     "theory-of-constraints",
     "moral-foundations-theory",
     "stress-diathesis-model",
-    "hermeneutics"
+    "hermeneutics",
+    "theory-of-planned-behavior",
+    "commitment-and-consistency-principle",
+    "stress-inoculation-training-sit"
   ],
-  "last_run_date": "2026-09-29",
+  "last_run_date": "2026-09-30",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
