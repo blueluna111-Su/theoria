@@ -15,7 +15,7 @@
       "commitment-and-consistency-principle",
       "stress-inoculation-training-sit"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-09-30"
   },
   "completed": [
@@ -858,24 +858,24 @@
     {
       "id": "default-effect",
       "completed_date": "2026-09-10",
-      "last_seen": "2026-09-10",
+      "last_seen": "2026-10-02",
       "review_due": [
         "2026-09-17",
         "2026-10-01",
         "2026-11-09"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "network-effects",
       "completed_date": "2026-09-10",
-      "last_seen": "2026-09-10",
+      "last_seen": "2026-10-02",
       "review_due": [
         "2026-09-17",
         "2026-10-01",
         "2026-11-09"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "spiral-of-silence",
@@ -1177,7 +1177,7 @@
     "commitment-and-consistency-principle",
     "stress-inoculation-training-sit"
   ],
-  "last_run_date": "2026-10-01",
+  "last_run_date": "2026-10-02",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
