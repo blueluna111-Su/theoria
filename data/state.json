@@ -15,7 +15,7 @@
       "contact-hypothesis",
       "self-handicapping"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-10-03"
   },
   "completed": [
@@ -308,13 +308,13 @@
     {
       "id": "comparative-advantage",
       "completed_date": "2026-07-21",
-      "last_seen": "2026-08-12",
+      "last_seen": "2026-10-04",
       "review_due": [
         "2026-07-28",
         "2026-08-11",
         "2026-09-19"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "fogg-behavior-model",
@@ -715,13 +715,13 @@
     {
       "id": "hedonic-adaptation",
       "completed_date": "2026-08-29",
-      "last_seen": "2026-09-11",
+      "last_seen": "2026-10-04",
       "review_due": [
         "2026-09-05",
         "2026-09-19",
         "2026-10-28"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "groupthink",
@@ -1213,7 +1213,7 @@
     "contact-hypothesis",
     "self-handicapping"
   ],
-  "last_run_date": "2026-10-03",
+  "last_run_date": "2026-10-04",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
