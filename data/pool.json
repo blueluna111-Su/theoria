@@ -1265,6 +1265,105 @@
       "year": 1968,
       "note": "揭示他人（如老師、主管）的期望如何影響個人表現，鼓勵建立正向的領導、教育與育兒環境。",
       "tier": "fresh"
+    },
+    {
+      "id": "default-mode-network-dmn",
+      "name_zh": "預設模式網路",
+      "name_en": "Default Mode Network (DMN)",
+      "domain": "腦科學／心理學",
+      "domain_class": "health",
+      "author": "Marcus E. Raichle",
+      "year": 2001,
+      "note": "了解大腦在休息時的活動模式，有助於理解發呆、神遊對創造力、問題解決及自我反思的重要性。",
+      "tier": "fresh"
+    },
+    {
+      "id": "locus-of-control",
+      "name_zh": "控制點理論",
+      "name_en": "Locus of Control",
+      "domain": "心理學",
+      "domain_class": "psych",
+      "author": "Julian B. Rotter",
+      "year": 1954,
+      "note": "區分個人是相信自己能掌控命運（內控）或受外在力量影響（外控），有助於培養個人主動性與韌性。",
+      "tier": "core"
+    },
+    {
+      "id": "theory-of-mind-tom",
+      "name_zh": "心智理論",
+      "name_en": "Theory of Mind (ToM)",
+      "domain": "社會心理學／發展心理學",
+      "domain_class": "social",
+      "author": "David Premack, Guy Woodruff",
+      "year": 1978,
+      "note": "理解他人擁有不同於自己的思想、意圖與感受的能力，是同理心、有效溝通和預測他人行為的基礎。",
+      "tier": "core"
+    },
+    {
+      "id": "moral-licensing",
+      "name_zh": "道德許可效應",
+      "name_en": "Moral Licensing",
+      "domain": "社會心理學",
+      "domain_class": "psych",
+      "author": "Benoît Monin, Dale T. Miller",
+      "year": 2001,
+      "note": "解釋人們在做出道德行為後，可能會允許自己稍後做出不道德行為的現象，提醒我們保持行為一致性的挑戰。",
+      "tier": "fresh"
+    },
+    {
+      "id": "embodied-cognition",
+      "name_zh": "具身認知",
+      "name_en": "Embodied Cognition",
+      "domain": "心理學／哲學",
+      "domain_class": "humanities",
+      "author": "George Lakoff, Mark Johnson",
+      "year": 1980,
+      "note": "認為思維不僅發生在大腦，更與身體感官、動作及環境互動緊密連結，可透過改變身體姿態影響心智狀態。",
+      "tier": "fresh"
+    },
+    {
+      "id": "regulatory-focus-theory",
+      "name_zh": "調節焦點理論",
+      "name_en": "Regulatory Focus Theory",
+      "domain": "心理學",
+      "domain_class": "psych",
+      "author": "E. Tory Higgins",
+      "year": 1997,
+      "note": "區分人們追求目標的兩種傾向：追求成長與理想（促進焦點）或避免損失與義務（預防焦點），有助於設計更有效的激勵策略。",
+      "tier": "fresh"
+    },
+    {
+      "id": "rent-seeking",
+      "name_zh": "尋租行為",
+      "name_en": "Rent-Seeking",
+      "domain": "經濟學／政治學",
+      "domain_class": "econ",
+      "author": "Anne O. Krueger",
+      "year": 1974,
+      "note": "指透過操縱社會或政治環境，而非創造財富，來獲取經濟利益的行為，有助於理解市場失靈與政策扭曲。",
+      "tier": "fresh"
+    },
+    {
+      "id": "stress-buffering-hypothesis",
+      "name_zh": "壓力緩衝假說",
+      "name_en": "Stress-Buffering Hypothesis",
+      "domain": "健康心理學／社會學",
+      "domain_class": "health",
+      "author": "Alfred D. Dean, Walter N. Bell",
+      "year": 1970,
+      "note": "社會支持能保護個體免受壓力對身心健康的負面影響，強調建立良好人際關係的重要性。",
+      "tier": "fresh"
+    },
+    {
+      "id": "cultural-relativism",
+      "name_zh": "文化相對論",
+      "name_en": "Cultural Relativism",
+      "domain": "人類學／哲學",
+      "domain_class": "humanities",
+      "author": "Franz Boas",
+      "year": 1900,
+      "note": "主張應以特定文化的內部標準來理解其習俗與信仰，避免以自身文化偏見進行評價，促進跨文化理解與尊重。",
+      "tier": "core"
     }
   ]
 }

@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "narrative-fallacy",
-      "contact-hypothesis",
-      "self-handicapping"
+      "winner-s-curse",
+      "reversal-theory",
+      "coase-theorem"
     ],
-    "day": 3,
-    "cycle_started": "2026-10-03"
+    "day": 1,
+    "cycle_started": "2026-10-06"
   },
   "completed": [
     {
@@ -880,24 +880,24 @@
     {
       "id": "spiral-of-silence",
       "completed_date": "2026-09-13",
-      "last_seen": "2026-09-13",
+      "last_seen": "2026-10-06",
       "review_due": [
         "2026-09-20",
         "2026-10-04",
         "2026-11-12"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "self-efficacy",
       "completed_date": "2026-09-13",
-      "last_seen": "2026-09-13",
+      "last_seen": "2026-10-06",
       "review_due": [
         "2026-09-20",
         "2026-10-04",
         "2026-11-12"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "goal-setting-theory",
@@ -1107,6 +1107,39 @@
         "2026-12-02"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "narrative-fallacy",
+      "completed_date": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "review_due": [
+        "2026-10-13",
+        "2026-10-27",
+        "2026-12-05"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "contact-hypothesis",
+      "completed_date": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "review_due": [
+        "2026-10-13",
+        "2026-10-27",
+        "2026-12-05"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "self-handicapping",
+      "completed_date": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "review_due": [
+        "2026-10-13",
+        "2026-10-27",
+        "2026-12-05"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1211,9 +1244,12 @@
     "stress-inoculation-training-sit",
     "narrative-fallacy",
     "contact-hypothesis",
-    "self-handicapping"
+    "self-handicapping",
+    "winner-s-curse",
+    "reversal-theory",
+    "coase-theorem"
   ],
-  "last_run_date": "2026-10-05",
+  "last_run_date": "2026-10-06",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
