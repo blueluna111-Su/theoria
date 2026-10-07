@@ -15,7 +15,7 @@
       "reversal-theory",
       "coase-theorem"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-10-06"
   },
   "completed": [
@@ -319,13 +319,13 @@
     {
       "id": "fogg-behavior-model",
       "completed_date": "2026-07-24",
-      "last_seen": "2026-08-14",
+      "last_seen": "2026-10-07",
       "review_due": [
         "2026-07-31",
         "2026-08-14",
         "2026-09-22"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "dunning-kruger",
@@ -902,13 +902,13 @@
     {
       "id": "goal-setting-theory",
       "completed_date": "2026-09-13",
-      "last_seen": "2026-09-13",
+      "last_seen": "2026-10-07",
       "review_due": [
         "2026-09-20",
         "2026-10-04",
         "2026-11-12"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "panopticism",
@@ -1249,7 +1249,7 @@
     "reversal-theory",
     "coase-theorem"
   ],
-  "last_run_date": "2026-10-06",
+  "last_run_date": "2026-10-07",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
