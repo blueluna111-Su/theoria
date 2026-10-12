@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "streetlight-effect",
-      "locus-of-control",
-      "theory-of-mind-tom"
+      "interoception",
+      "cultural-relativism",
+      "categorical-imperative"
     ],
-    "day": 3,
-    "cycle_started": "2026-10-09"
+    "day": 1,
+    "cycle_started": "2026-10-12"
   },
   "completed": [
     {
@@ -352,24 +352,24 @@
     {
       "id": "market-for-lemons",
       "completed_date": "2026-07-27",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-10-12",
       "review_due": [
         "2026-08-03",
         "2026-08-17",
         "2026-09-25"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "compounding",
       "completed_date": "2026-07-27",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-10-12",
       "review_due": [
         "2026-08-03",
         "2026-08-17",
         "2026-09-25"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "self-determination",
@@ -1173,6 +1173,39 @@
         "2026-12-08"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "streetlight-effect",
+      "completed_date": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "review_due": [
+        "2026-10-19",
+        "2026-11-02",
+        "2026-12-11"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "locus-of-control",
+      "completed_date": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "review_due": [
+        "2026-10-19",
+        "2026-11-02",
+        "2026-12-11"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "theory-of-mind-tom",
+      "completed_date": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "review_due": [
+        "2026-10-19",
+        "2026-11-02",
+        "2026-12-11"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1283,9 +1316,12 @@
     "coase-theorem",
     "streetlight-effect",
     "locus-of-control",
-    "theory-of-mind-tom"
+    "theory-of-mind-tom",
+    "interoception",
+    "cultural-relativism",
+    "categorical-imperative"
   ],
-  "last_run_date": "2026-10-11",
+  "last_run_date": "2026-10-12",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
