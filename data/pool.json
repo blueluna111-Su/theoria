@@ -1364,6 +1364,105 @@
       "year": 1900,
       "note": "主張應以特定文化的內部標準來理解其習俗與信仰，避免以自身文化偏見進行評價，促進跨文化理解與尊重。",
       "tier": "core"
+    },
+    {
+      "id": "biopsychosocial-model",
+      "name_zh": "生物心理社會模型",
+      "name_en": "Biopsychosocial Model",
+      "domain": "健康",
+      "domain_class": "health",
+      "author": "George L. Engel",
+      "year": 1977,
+      "note": "理解健康與疾病時，需同時考量生理、心理與社會層面的交互影響，而非單一因素。",
+      "tier": "core"
+    },
+    {
+      "id": "agnotology",
+      "name_zh": "無知學",
+      "name_en": "Agnotology",
+      "domain": "人文",
+      "domain_class": "humanities",
+      "author": "Robert N. Proctor",
+      "year": 1995,
+      "note": "研究文化上誘導的無知或懷疑，特別是知識的刻意生產與傳播，有助於辨識假資訊與偏見。",
+      "tier": "fresh"
+    },
+    {
+      "id": "speech-act-theory",
+      "name_zh": "言語行為理論",
+      "name_en": "Speech Act Theory",
+      "domain": "人文",
+      "domain_class": "humanities",
+      "author": "J. L. Austin",
+      "year": 1962,
+      "note": "語言不僅描述事物，更可執行動作（如承諾、命令、宣告），理解其應用能提升溝通與說服力。",
+      "tier": "fresh"
+    },
+    {
+      "id": "self-discrepancy-theory",
+      "name_zh": "自我差異理論",
+      "name_en": "Self-Discrepancy Theory",
+      "domain": "心理",
+      "domain_class": "psych",
+      "author": "E. Tory Higgins",
+      "year": 1987,
+      "note": "個人的實際自我與理想自我或應然自我之間的落差，會影響情緒與動機，可用於自我成長與情緒管理。",
+      "tier": "fresh"
+    },
+    {
+      "id": "social-exchange-theory",
+      "name_zh": "社會交換理論",
+      "name_en": "Social Exchange Theory",
+      "domain": "社會",
+      "domain_class": "social",
+      "author": "George C. Homans",
+      "year": 1958,
+      "note": "人際關係被視為一種成本與效益的交換，有助於理解關係的形成、維繫與破裂，並改善互動。",
+      "tier": "core"
+    },
+    {
+      "id": "terror-management-theory",
+      "name_zh": "恐懼管理理論",
+      "name_en": "Terror Management Theory",
+      "domain": "社會",
+      "domain_class": "social",
+      "author": "Jeff Greenberg, Sheldon Solomon, Tom Pyszczynski",
+      "year": 1986,
+      "note": "人類對死亡的意識會促使他們維護文化世界觀和追求自我價值，解釋文化衝突與消費行為。",
+      "tier": "fresh"
+    },
+    {
+      "id": "elaboration-likelihood-model-elm",
+      "name_zh": "訊息精緻化可能性模型",
+      "name_en": "Elaboration Likelihood Model (ELM)",
+      "domain": "心理",
+      "domain_class": "psych",
+      "author": "Richard E. Petty, John T. Cacioppo",
+      "year": 1980,
+      "note": "人們在接收說服訊息時，會依動機與能力選擇中央或周邊路徑處理，應用於行銷與溝通策略。",
+      "tier": "core"
+    },
+    {
+      "id": "transaction-cost-economics",
+      "name_zh": "交易成本經濟學",
+      "name_en": "Transaction Cost Economics",
+      "domain": "經濟",
+      "domain_class": "econ",
+      "author": "Oliver E. Williamson",
+      "year": 1975,
+      "note": "企業的存在與組織形式取決於市場交易與內部協調的成本，有助於決策外包與組織架構設計。",
+      "tier": "core"
+    },
+    {
+      "id": "public-goods-game",
+      "name_zh": "公共財賽局",
+      "name_en": "Public Goods Game",
+      "domain": "經濟",
+      "domain_class": "econ",
+      "author": null,
+      "year": null,
+      "note": "探討個體在集體利益面前的合作或搭便車行為，有助於設計激勵機制以促進公共資源的貢獻。",
+      "tier": "fresh"
     }
   ]
 }

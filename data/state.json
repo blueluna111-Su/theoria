@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "interoception",
-      "cultural-relativism",
-      "categorical-imperative"
+      "tragedy-of-the-anticommons",
+      "feature-positive-effect",
+      "just-world-hypothesis"
     ],
-    "day": 3,
-    "cycle_started": "2026-10-12"
+    "day": 1,
+    "cycle_started": "2026-10-16"
   },
   "completed": [
     {
@@ -946,24 +946,24 @@
     {
       "id": "self-perception-theory",
       "completed_date": "2026-09-19",
-      "last_seen": "2026-09-19",
+      "last_seen": "2026-10-16",
       "review_due": [
         "2026-09-26",
         "2026-10-10",
         "2026-11-18"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "principal-agent-problem",
       "completed_date": "2026-09-19",
-      "last_seen": "2026-09-19",
+      "last_seen": "2026-10-16",
       "review_due": [
         "2026-09-26",
         "2026-10-10",
         "2026-11-18"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "hot-cold-empathy-gap",
@@ -1206,6 +1206,39 @@
         "2026-12-11"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "interoception",
+      "completed_date": "2026-10-16",
+      "last_seen": "2026-10-16",
+      "review_due": [
+        "2026-10-23",
+        "2026-11-06",
+        "2026-12-15"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "cultural-relativism",
+      "completed_date": "2026-10-16",
+      "last_seen": "2026-10-16",
+      "review_due": [
+        "2026-10-23",
+        "2026-11-06",
+        "2026-12-15"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "categorical-imperative",
+      "completed_date": "2026-10-16",
+      "last_seen": "2026-10-16",
+      "review_due": [
+        "2026-10-23",
+        "2026-11-06",
+        "2026-12-15"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1319,9 +1352,12 @@
     "theory-of-mind-tom",
     "interoception",
     "cultural-relativism",
-    "categorical-imperative"
+    "categorical-imperative",
+    "tragedy-of-the-anticommons",
+    "feature-positive-effect",
+    "just-world-hypothesis"
   ],
-  "last_run_date": "2026-10-14",
+  "last_run_date": "2026-10-16",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
