@@ -15,7 +15,7 @@
       "feature-positive-effect",
       "just-world-hypothesis"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-10-16"
   },
   "completed": [
@@ -396,24 +396,24 @@
     {
       "id": "habit-loop",
       "completed_date": "2026-07-30",
-      "last_seen": "2026-08-20",
+      "last_seen": "2026-10-18",
       "review_due": [
         "2026-08-06",
         "2026-08-20",
         "2026-09-28"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "cobra-effect",
       "completed_date": "2026-07-30",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-10-18",
       "review_due": [
         "2026-08-06",
         "2026-08-20",
         "2026-09-28"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "inversion",
@@ -1357,7 +1357,7 @@
     "feature-positive-effect",
     "just-world-hypothesis"
   ],
-  "last_run_date": "2026-10-17",
+  "last_run_date": "2026-10-18",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
