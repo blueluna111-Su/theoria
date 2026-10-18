@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "tragedy-of-the-anticommons",
-      "feature-positive-effect",
-      "just-world-hypothesis"
+      "polyvagal-theory",
+      "biopsychosocial-model",
+      "social-exchange-theory"
     ],
-    "day": 3,
-    "cycle_started": "2026-10-16"
+    "day": 1,
+    "cycle_started": "2026-10-19"
   },
   "completed": [
     {
@@ -814,24 +814,24 @@
     {
       "id": "thin-slicing",
       "completed_date": "2026-09-07",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-10-19",
       "review_due": [
         "2026-09-14",
         "2026-09-28",
         "2026-11-06"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "expectancy-theory",
       "completed_date": "2026-09-07",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-10-19",
       "review_due": [
         "2026-09-14",
         "2026-09-28",
         "2026-11-06"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "two-factor-theory-of-emotion",
@@ -1239,6 +1239,39 @@
         "2026-12-15"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "tragedy-of-the-anticommons",
+      "completed_date": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "review_due": [
+        "2026-10-26",
+        "2026-11-09",
+        "2026-12-18"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "feature-positive-effect",
+      "completed_date": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "review_due": [
+        "2026-10-26",
+        "2026-11-09",
+        "2026-12-18"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "just-world-hypothesis",
+      "completed_date": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "review_due": [
+        "2026-10-26",
+        "2026-11-09",
+        "2026-12-18"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1355,9 +1388,12 @@
     "categorical-imperative",
     "tragedy-of-the-anticommons",
     "feature-positive-effect",
-    "just-world-hypothesis"
+    "just-world-hypothesis",
+    "polyvagal-theory",
+    "biopsychosocial-model",
+    "social-exchange-theory"
   ],
-  "last_run_date": "2026-10-18",
+  "last_run_date": "2026-10-19",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
