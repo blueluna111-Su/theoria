@@ -15,7 +15,7 @@
       "biopsychosocial-model",
       "social-exchange-theory"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-10-19"
   },
   "completed": [
@@ -990,24 +990,24 @@
     {
       "id": "framing-effect",
       "completed_date": "2026-09-22",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-10-21",
       "review_due": [
         "2026-09-29",
         "2026-10-13",
         "2026-11-21"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "social-identity-theory",
       "completed_date": "2026-09-22",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-10-21",
       "review_due": [
         "2026-09-29",
         "2026-10-13",
         "2026-11-21"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "the-streisand-effect",
@@ -1393,7 +1393,7 @@
     "biopsychosocial-model",
     "social-exchange-theory"
   ],
-  "last_run_date": "2026-10-20",
+  "last_run_date": "2026-10-21",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
