@@ -1463,6 +1463,105 @@
       "year": null,
       "note": "探討個體在集體利益面前的合作或搭便車行為，有助於設計激勵機制以促進公共資源的貢獻。",
       "tier": "fresh"
+    },
+    {
+      "id": "nudge-theory",
+      "name_zh": "輕推理論",
+      "name_en": "Nudge Theory",
+      "domain": "行為經濟學",
+      "domain_class": "econ",
+      "author": "Richard Thaler & Cass Sunstein",
+      "year": 2008,
+      "note": "透過微小且不強制的方式，引導人們做出特定選擇，例如將健康食物放在顯眼處，有助於設計行為改變策略。",
+      "tier": "fresh"
+    },
+    {
+      "id": "bounded-rationality",
+      "name_zh": "有限理性",
+      "name_en": "Bounded Rationality",
+      "domain": "決策科學",
+      "domain_class": "econ",
+      "author": "Herbert A. Simon",
+      "year": 1957,
+      "note": "承認人類決策能力受限於資訊、時間和認知能力，有助於理解為何我們常做次優選擇，並設計更實際的決策流程。",
+      "tier": "core"
+    },
+    {
+      "id": "social-learning-theory",
+      "name_zh": "社會學習理論",
+      "name_en": "Social Learning Theory",
+      "domain": "發展心理學",
+      "domain_class": "psych",
+      "author": "Albert Bandura",
+      "year": 1977,
+      "note": "強調人們透過觀察、模仿他人的行為來學習，可用於教育、培訓及行為改變策略，例如透過榜樣學習。",
+      "tier": "core"
+    },
+    {
+      "id": "affective-forecasting",
+      "name_zh": "情感預測",
+      "name_en": "Affective Forecasting",
+      "domain": "認知心理學",
+      "domain_class": "psych",
+      "author": "Daniel Gilbert",
+      "year": 2007,
+      "note": "指人們預測未來情緒反應的能力往往不準確，提醒我們在做重大決定時，應考慮實際經驗而非過度依賴預期感受。",
+      "tier": "fresh"
+    },
+    {
+      "id": "cultivation-theory",
+      "name_zh": "涵化理論",
+      "name_en": "Cultivation Theory",
+      "domain": "傳播學",
+      "domain_class": "social",
+      "author": "George Gerbner",
+      "year": 1976,
+      "note": "認為長期接觸特定媒體內容會逐漸影響個人對現實世界的看法與信仰，可用於批判性地審視媒體資訊與其影響。",
+      "tier": "fresh"
+    },
+    {
+      "id": "rhetorical-theory-aristotle",
+      "name_zh": "修辭學理論 (亞里斯多德)",
+      "name_en": "Rhetorical Theory (Aristotle)",
+      "domain": "古典修辭學",
+      "domain_class": "humanities",
+      "author": "Aristotle",
+      "year": -350,
+      "note": "透過理解說服的三要素（信譽、情感、邏輯），能有效提升溝通與說服力，廣泛應用於演講、寫作和談判。",
+      "tier": "core"
+    },
+    {
+      "id": "salutogenesis",
+      "name_zh": "健康生成論",
+      "name_en": "Salutogenesis",
+      "domain": "公共衛生",
+      "domain_class": "health",
+      "author": "Aaron Antonovsky",
+      "year": 1979,
+      "note": "探討人們如何維持健康、管理壓力並邁向幸福，而非僅關注疾病的成因，有助於建構韌性與意義感以促進健康。",
+      "tier": "fresh"
+    },
+    {
+      "id": "cognitive-reserve",
+      "name_zh": "認知儲備",
+      "name_en": "Cognitive Reserve",
+      "domain": "神經心理學",
+      "domain_class": "health",
+      "author": "Yaakov Stern",
+      "year": 2002,
+      "note": "指大腦透過教育、智力活動等方式建立的應對能力，有助於延緩或抵消老化及疾病對認知功能的影響，鼓勵終身學習。",
+      "tier": "fresh"
+    },
+    {
+      "id": "social-capital-theory",
+      "name_zh": "社會資本理論",
+      "name_en": "Social Capital Theory",
+      "domain": "社會學",
+      "domain_class": "social",
+      "author": "Pierre Bourdieu, James Coleman, Robert Putnam",
+      "year": 1980,
+      "note": "認為人際關係網絡是寶貴的資源，能帶來資訊、支持與機會，鼓勵人們積極建立與維護社會連結以獲取優勢。",
+      "tier": "core"
     }
   ]
 }

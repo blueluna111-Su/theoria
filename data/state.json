@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "sapir-whorf-hypothesis",
-      "elaboration-likelihood-model-elm",
-      "transaction-cost-economics"
+      "hyperbolic-discounting",
+      "pygmalion-effect",
+      "default-mode-network-dmn"
     ],
-    "day": 3,
-    "cycle_started": "2026-10-22"
+    "day": 1,
+    "cycle_started": "2026-10-25"
   },
   "completed": [
     {
@@ -451,24 +451,24 @@
     {
       "id": "peak-end-rule",
       "completed_date": "2026-08-05",
-      "last_seen": "2026-08-27",
+      "last_seen": "2026-10-25",
       "review_due": [
         "2026-08-12",
         "2026-08-26",
         "2026-10-04"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "diminishing-utility",
       "completed_date": "2026-08-05",
-      "last_seen": "2026-08-28",
+      "last_seen": "2026-10-25",
       "review_due": [
         "2026-08-12",
         "2026-08-26",
         "2026-10-04"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "learned-helplessness",
@@ -1305,6 +1305,39 @@
         "2026-12-21"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "sapir-whorf-hypothesis",
+      "completed_date": "2026-10-25",
+      "last_seen": "2026-10-25",
+      "review_due": [
+        "2026-11-01",
+        "2026-11-15",
+        "2026-12-24"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "elaboration-likelihood-model-elm",
+      "completed_date": "2026-10-25",
+      "last_seen": "2026-10-25",
+      "review_due": [
+        "2026-11-01",
+        "2026-11-15",
+        "2026-12-24"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "transaction-cost-economics",
+      "completed_date": "2026-10-25",
+      "last_seen": "2026-10-25",
+      "review_due": [
+        "2026-11-01",
+        "2026-11-15",
+        "2026-12-24"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1427,9 +1460,12 @@
     "social-exchange-theory",
     "sapir-whorf-hypothesis",
     "elaboration-likelihood-model-elm",
-    "transaction-cost-economics"
+    "transaction-cost-economics",
+    "hyperbolic-discounting",
+    "pygmalion-effect",
+    "default-mode-network-dmn"
   ],
-  "last_run_date": "2026-10-24",
+  "last_run_date": "2026-10-25",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
