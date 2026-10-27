@@ -15,7 +15,7 @@
       "pygmalion-effect",
       "default-mode-network-dmn"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-10-25"
   },
   "completed": [
@@ -891,24 +891,24 @@
     {
       "id": "self-efficacy",
       "completed_date": "2026-09-13",
-      "last_seen": "2026-10-06",
+      "last_seen": "2026-10-27",
       "review_due": [
         "2026-09-20",
         "2026-10-04",
         "2026-11-12"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "goal-setting-theory",
       "completed_date": "2026-09-13",
-      "last_seen": "2026-10-07",
+      "last_seen": "2026-10-27",
       "review_due": [
         "2026-09-20",
         "2026-10-04",
         "2026-11-12"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "panopticism",
@@ -1465,7 +1465,7 @@
     "pygmalion-effect",
     "default-mode-network-dmn"
   ],
-  "last_run_date": "2026-10-26",
+  "last_run_date": "2026-10-27",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
