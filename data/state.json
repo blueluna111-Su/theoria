@@ -15,7 +15,7 @@
       "bounded-rationality",
       "social-learning-theory"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-10-28"
   },
   "completed": [
@@ -484,13 +484,13 @@
     {
       "id": "antifragility",
       "completed_date": "2026-08-08",
-      "last_seen": "2026-09-01",
+      "last_seen": "2026-10-29",
       "review_due": [
         "2026-08-15",
         "2026-08-29",
         "2026-10-07"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "bystander-effect",
@@ -1034,13 +1034,13 @@
     {
       "id": "theory-of-constraints",
       "completed_date": "2026-09-27",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-10-29",
       "review_due": [
         "2026-10-04",
         "2026-10-18",
         "2026-11-26"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "moral-foundations-theory",
@@ -1501,7 +1501,7 @@
     "bounded-rationality",
     "social-learning-theory"
   ],
-  "last_run_date": "2026-10-28",
+  "last_run_date": "2026-10-29",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
