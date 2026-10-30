@@ -47,3 +47,10 @@ jobs:
             git commit -m "每日內容：$(date -u +%Y-%m-%d)"
             git push
           fi
+
+      - name: Push notification (ntfy)
+        # 推播失敗不影響當日建置
+        continue-on-error: true
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python scripts/notify.py
