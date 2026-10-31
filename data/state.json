@@ -11,12 +11,12 @@
   "review_cards_per_day": 2,
   "current": {
     "active": [
-      "moral-licensing",
-      "bounded-rationality",
-      "social-learning-theory"
+      "embodied-cognition",
+      "rhetorical-theory-aristotle",
+      "social-capital-theory"
     ],
-    "day": 3,
-    "cycle_started": "2026-10-28"
+    "day": 1,
+    "cycle_started": "2026-10-31"
   },
   "completed": [
     {
@@ -913,24 +913,24 @@
     {
       "id": "panopticism",
       "completed_date": "2026-09-16",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-31",
       "review_due": [
         "2026-09-23",
         "2026-10-07",
         "2026-11-15"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "social-comparison-theory",
       "completed_date": "2026-09-16",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-10-31",
       "review_due": [
         "2026-09-23",
         "2026-10-07",
         "2026-11-15"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "information-asymmetry",
@@ -1371,6 +1371,39 @@
         "2026-12-27"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "moral-licensing",
+      "completed_date": "2026-10-31",
+      "last_seen": "2026-10-31",
+      "review_due": [
+        "2026-11-07",
+        "2026-11-21",
+        "2026-12-30"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "bounded-rationality",
+      "completed_date": "2026-10-31",
+      "last_seen": "2026-10-31",
+      "review_due": [
+        "2026-11-07",
+        "2026-11-21",
+        "2026-12-30"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "social-learning-theory",
+      "completed_date": "2026-10-31",
+      "last_seen": "2026-10-31",
+      "review_due": [
+        "2026-11-07",
+        "2026-11-21",
+        "2026-12-30"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1499,9 +1532,12 @@
     "default-mode-network-dmn",
     "moral-licensing",
     "bounded-rationality",
-    "social-learning-theory"
+    "social-learning-theory",
+    "embodied-cognition",
+    "rhetorical-theory-aristotle",
+    "social-capital-theory"
   ],
-  "last_run_date": "2026-10-30",
+  "last_run_date": "2026-10-31",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
