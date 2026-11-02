@@ -15,7 +15,7 @@
       "rhetorical-theory-aristotle",
       "social-capital-theory"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-10-31"
   },
   "completed": [
@@ -1056,24 +1056,24 @@
     {
       "id": "stress-diathesis-model",
       "completed_date": "2026-09-30",
-      "last_seen": "2026-09-30",
+      "last_seen": "2026-11-02",
       "review_due": [
         "2026-10-07",
         "2026-10-21",
         "2026-11-29"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "hermeneutics",
       "completed_date": "2026-09-30",
-      "last_seen": "2026-09-30",
+      "last_seen": "2026-11-02",
       "review_due": [
         "2026-10-07",
         "2026-10-21",
         "2026-11-29"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "theory-of-planned-behavior",
@@ -1537,7 +1537,7 @@
     "rhetorical-theory-aristotle",
     "social-capital-theory"
   ],
-  "last_run_date": "2026-11-01",
+  "last_run_date": "2026-11-02",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9
 }
