@@ -1562,6 +1562,105 @@
       "year": 1980,
       "note": "認為人際關係網絡是寶貴的資源，能帶來資訊、支持與機會，鼓勵人們積極建立與維護社會連結以獲取優勢。",
       "tier": "core"
+    },
+    {
+      "id": "neuroplasticity",
+      "name_zh": "神經可塑性",
+      "name_en": "Neuroplasticity",
+      "domain": "健康與心理",
+      "domain_class": "health",
+      "author": "Donald Hebb",
+      "year": 1949,
+      "note": "強調大腦透過學習和經驗不斷重塑自身的能力，鼓勵終身學習與技能發展。",
+      "tier": "fresh"
+    },
+    {
+      "id": "epigenetics",
+      "name_zh": "表觀遺傳學",
+      "name_en": "Epigenetics",
+      "domain": "健康與生物",
+      "domain_class": "health",
+      "author": "Conrad Waddington",
+      "year": 1942,
+      "note": "揭示環境與生活方式如何影響基因表現而不改變DNA序列本身，提醒我們生活選擇對健康的深遠影響。",
+      "tier": "fresh"
+    },
+    {
+      "id": "the-matthew-effect",
+      "name_zh": "馬太效應",
+      "name_en": "The Matthew Effect",
+      "domain": "社會與經濟",
+      "domain_class": "social",
+      "author": "Robert K. Merton",
+      "year": 1968,
+      "note": "指出擁有優勢者會持續累積更多優勢，提醒我們關注資源分配不均與累積性優勢的現象。",
+      "tier": "fresh"
+    },
+    {
+      "id": "psychological-reactance-theory",
+      "name_zh": "心理抗拒理論",
+      "name_en": "Psychological Reactance Theory",
+      "domain": "心理學",
+      "domain_class": "psych",
+      "author": "Jack Brehm",
+      "year": 1966,
+      "note": "解釋當個人自由受到威脅或限制時，會產生反作用力以恢復自由，應用於說服、談判及親子溝通。",
+      "tier": "fresh"
+    },
+    {
+      "id": "attribution-theory",
+      "name_zh": "歸因理論",
+      "name_en": "Attribution Theory",
+      "domain": "心理學",
+      "domain_class": "psych",
+      "author": "Fritz Heider",
+      "year": 1958,
+      "note": "探討人們如何解釋自己與他人的行為原因（內部或外部因素），有助於理解人際互動與衝突解決。",
+      "tier": "fresh"
+    },
+    {
+      "id": "the-medium-is-the-message",
+      "name_zh": "媒介即訊息",
+      "name_en": "The Medium Is The Message",
+      "domain": "人文與傳播",
+      "domain_class": "humanities",
+      "author": "Marshall McLuhan",
+      "year": 1964,
+      "note": "強調訊息載體本身對內容和社會造成的深遠影響，而非僅是內容本身，應用於媒體識讀與科技發展分析。",
+      "tier": "fresh"
+    },
+    {
+      "id": "semiotics",
+      "name_zh": "符號學",
+      "name_en": "Semiotics",
+      "domain": "人文學",
+      "domain_class": "humanities",
+      "author": "Ferdinand de Saussure",
+      "year": 1916,
+      "note": "研究符號與意義的創造及傳達，有助於理解文化、廣告、語言和非語言溝通背後的深層含義。",
+      "tier": "fresh"
+    },
+    {
+      "id": "the-lindy-effect",
+      "name_zh": "林迪效應",
+      "name_en": "The Lindy Effect",
+      "domain": "經濟與社會",
+      "domain_class": "econ",
+      "author": "Albert Goldman",
+      "year": 1964,
+      "note": "認為非消耗品的預期壽命與其現存壽命成正比，可用於評估技術、文化產品或企業的長期存續潛力。",
+      "tier": "fresh"
+    },
+    {
+      "id": "system-justification-theory",
+      "name_zh": "系統正當化理論",
+      "name_en": "System Justification Theory",
+      "domain": "社會心理學",
+      "domain_class": "social",
+      "author": "John T. Jost",
+      "year": 1994,
+      "note": "探討人們傾向於合理化和維護現有社會系統的動機，即使這些系統可能對他們不利，有助於理解社會變革的阻力。",
+      "tier": "fresh"
     }
   ]
 }
