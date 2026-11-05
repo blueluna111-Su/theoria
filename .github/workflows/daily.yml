@@ -34,6 +34,7 @@ jobs:
       - name: Generate today's content + render
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # 新鮮發現：查 GitHub 新專案用（提高 API 額度）
         run: python scripts/run_daily.py ${{ (github.event_name == 'workflow_dispatch' && inputs.replenish) && '--replenish-now' || '' }}
 
       - name: Commit & push if changed

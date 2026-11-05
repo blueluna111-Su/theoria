@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>發現 · 每日三理</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+{% import "_extras.html.j2" as ex %}
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand"><h1>每日三理</h1><span class="en">Theoria</span></div>
+    <nav class="nav">
+      <a href="index.html">今日</a>
+      <a href="archive.html">歷史</a>
+      <a href="discover.html" class="active">發現</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="date">發現與知識</div>
+    <div class="lead">每天一則跨界實用知識，加上從 GitHub 與 Hacker News 挑出的新鮮專案，依日期由新到舊。</div>
+    <p class="legend">累積 {{ n_knowledge }} 則知識 · {{ n_finds }} 個發現</p>
+  </section>
+
+  {% for d in days %}
+  <details class="day-group"{% if loop.first %} open{% endif %}>
+    <summary>
+      <span class="day-date">{{ d.date_str }}</span>
+      <span class="day-sum">{% if d.knowledge %}{{ d.knowledge.title }}{% endif %}{% if d.finds %}{% if d.knowledge %} ／ {% endif %}{{ d.finds | map(attribute='name') | join('、') }}{% endif %}</span>
+    </summary>
+    {% if d.knowledge %}{{ ex.knowledge(d.knowledge) }}{% endif %}
+    {% for f in (d.finds or []) %}{{ ex.find(f) }}{% endfor %}
+  </details>
+  {% else %}
+  <div class="note">還沒有內容，明天的更新後就會出現。</div>
+  {% endfor %}
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">每日三理 · Theoria — 知識由 AI 生成、停在概念層級；發現的專案來自 GitHub 與 Hacker News 的實際資料，介紹依其公開說明撰寫。{% if generated_at %}　更新於 {{ generated_at }}。{% endif %}</div>
+</footer>
+
+</body>
+</html>

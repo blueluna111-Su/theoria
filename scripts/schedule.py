@@ -47,7 +47,15 @@ def _start_cycle(state: dict, today_iso: str) -> None:
     core_avail = [t["id"] for t in theories if t.get("tier") != "fresh" and t["id"] not in used]
 
     chosen: list[str] = []
-    if fresh_avail:                              # guarantee >=1 fresh per cycle
+    if n == 1:                                   # 一次一個：fresh / core 輪流
+        tier_of = {t["id"]: t.get("tier") for t in theories}
+        prev = (state.get("current") or {}).get("active") or [None]
+        order = (core_avail, fresh_avail) if tier_of.get(prev[0]) == "fresh" else (fresh_avail, core_avail)
+        for src in order:
+            if src:
+                chosen.append(src.pop(0))
+                break
+    elif fresh_avail:                            # guarantee >=1 fresh per cycle
         chosen.append(fresh_avail.pop(0))
     for src in (core_avail, fresh_avail):        # fill the rest: core first, then leftover fresh
         while len(chosen) < n and src:
@@ -83,6 +91,14 @@ def run_schedule(state: dict, today_iso: str, *, force: bool = False) -> dict:
     if state.get("last_run_date") == today_iso and not force:
         return state  # already advanced today
 
+    # 預約的設定變更：到了生效日才套用（在開新一輪之前，讓新一輪就用新設定）
+    pend = state.get("pending_settings")
+    if pend and today_iso >= pend["from"]:
+        for k, v in pend.items():
+            if k != "from":
+                state[k] = v
+        del state["pending_settings"]
+
     cur = state.get("current")
     if not cur or not cur.get("active"):
         _start_cycle(state, today_iso)
@@ -98,6 +114,9 @@ def run_schedule(state: dict, today_iso: str, *, force: bool = False) -> dict:
 
 def pick_reviews(state: dict, today_iso: str) -> list[dict]:
     """Return up to N due review cards, marking each as reviewed (mutates state)."""
+    cached = state.get("today_reviews") or {}
+    if cached.get("date") == today_iso:
+        return cached["cards"]  # 同日重跑：沿用早上抽的卡，不再重複標記
     today = _d(today_iso)
     candidates = []
     for c in state["completed"]:
@@ -117,4 +136,5 @@ def pick_reviews(state: dict, today_iso: str) -> list[dict]:
             "nth": c["reviews_done"],
             "distance_days": max(distance, 0),
         })
+    state["today_reviews"] = {"date": today_iso, "cards": picked}
     return picked

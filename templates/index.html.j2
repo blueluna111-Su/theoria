@@ -8,6 +8,7 @@
 </head>
 <body>
 {% import "_card.html.j2" as card %}
+{% import "_extras.html.j2" as ex %}
 
 <header class="site-header">
   <div class="wrap header-inner">
@@ -15,6 +16,7 @@
     <nav class="nav">
       <a href="index.html" class="active">今日</a>
       <a href="archive.html">歷史</a>
+      <a href="discover.html">發現</a>
     </nav>
   </div>
 </header>
@@ -23,7 +25,7 @@
 
   <section class="hero">
     <div class="date">{{ date_str }}</div>
-    <div class="lead">每天三個可應用的學術理論。第 1 天就是一篇完整、夠深的文章；第 2、3 天再往更深推。每個分段都把話講透、並配上具體例子。外加一張回想卡，複習更早學過的。</div>
+    <div class="lead">{% if theories|length == 1 %}每天一個可應用的學術理論，同一個講三天、由淺入深；外加回想卡、一則跨界實用知識、一個新鮮發現。{% else %}每天{{ theories|length }}個可應用的學術理論。第 1 天就是一篇完整、夠深的文章；第 2、3 天再往更深推。每個分段都把話講透、並配上具體例子。外加回想卡，複習更早學過的。{% endif %}</div>
     <div class="cycle">
       <span>本輪進度</span>
       <span class="cycle-dots">
@@ -55,6 +57,17 @@
     </div>
   </div>
   {% endfor %}
+  {% endif %}
+
+  {% if extras and extras.knowledge %}
+  <div class="section-eyebrow">今日一識 · 跨界實用知識</div>
+  {{ ex.knowledge(extras.knowledge) }}
+  {% endif %}
+
+  {% if extras and extras.finds %}
+  <div class="section-eyebrow">新鮮發現 · GitHub / Hacker News</div>
+  {% for f in extras.finds %}{{ ex.find(f) }}{% endfor %}
+  <p class="legend"><a href="discover.html">看過去的發現與知識 →</a></p>
   {% endif %}
 
   {% if note %}<div class="note">{{ note }}</div>{% endif %}

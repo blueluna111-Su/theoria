@@ -1575,5 +1575,11 @@
   ],
   "last_run_date": "2026-11-05",
   "pool_min_unused": 12,
-  "pool_replenish_batch": 9
+  "pool_replenish_batch": 9,
+  "pending_settings": {
+    "from": "2026-11-07",
+    "theories_per_cycle": 1,
+    "review_cards_per_day": 1
+  },
+  "extras_start": "2026-11-07"
 }

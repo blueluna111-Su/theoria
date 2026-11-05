@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import sys
 from datetime import date, datetime
@@ -15,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
+import extras  # noqa: E402
 import render  # noqa: E402
 import schedule  # noqa: E402
 from generate import ensure_content  # noqa: E402
@@ -36,6 +38,7 @@ def main() -> int:
     ap.add_argument("--force", action="store_true", help="advance even if already run today")
     ap.add_argument("--no-generate", action="store_true", help="skip Gemini; render existing only")
     ap.add_argument("--replenish-now", action="store_true", help="force a pool top-up regardless of stock")
+    ap.add_argument("--refresh-extras", action="store_true", help="regenerate today's 今日一識/新鮮發現")
     args = ap.parse_args()
 
     today = date.fromisoformat(args.date) if args.date else taipei_today()
@@ -71,11 +74,27 @@ def main() -> int:
         except Exception as e:  # noqa: BLE001 — 補充失敗不應讓每日生成失敗
             print(f"  ! 理論池補充略過（{e}）")
 
+    # 加值區塊：今日一識 + 新鮮發現（失敗只略過，不影響主內容）
+    extras_path = extras.EXTRAS_DIR / f"{today_iso}.json"
+    today_extras = None
+    if today_iso < state.get("extras_start", ""):
+        pass  # 還沒到加值區塊的啟用日
+    elif args.no_generate:
+        if extras_path.exists():
+            today_extras = json.loads(extras_path.read_text(encoding="utf-8"))
+    else:
+        try:
+            today_extras = extras.ensure_extras(today, force=args.refresh_extras)
+        except Exception as e:  # noqa: BLE001
+            print(f"  ! 加值區塊略過（{e}）")
+
     (REPO / "index.html").write_text(
-        render.render_index(state, reviews, today, generated_at), encoding="utf-8")
+        render.render_index(state, reviews, today, generated_at, today_extras), encoding="utf-8")
     (REPO / "archive.html").write_text(
         render.render_archive(state, today, generated_at), encoding="utf-8")
-    print("  + rendered index.html, archive.html")
+    (REPO / "discover.html").write_text(
+        render.render_discover(extras.load_all(), generated_at), encoding="utf-8")
+    print("  + rendered index.html, archive.html, discover.html")
 
     # 每則「講過/進行中」的理論各產一頁可回頭重讀的詳情頁（theory/<id>.html）
     theory_dir = REPO / "theory"

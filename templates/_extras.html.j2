@@ -1,0 +1,33 @@
+{# 加值區塊：今日一識 + 新鮮發現。index.html.j2（今日）與 discover.html.j2（發現）共用。 #}
+
+{% macro knowledge(k) %}
+  <article class="know-card">
+    <div class="know-top"><span class="know-cat">{{ k.category }}</span></div>
+    <h3 class="know-title">{{ k.title }}</h3>
+    {% if k.hook %}<p class="know-hook">{{ k.hook }}</p>{% endif %}
+    <div class="prose">
+      {% for para in (k.body or []) %}<p>{{ para }}</p>{% endfor %}
+      {% for ex in (k.examples or []) %}<div class="eg"><span class="eg-label">例</span>{{ ex }}</div>{% endfor %}
+    </div>
+    {% if k.takeaway %}<div class="action-box"><span class="label">下次這樣用</span>{{ k.takeaway }}</div>{% endif %}
+    {% if k.caveat %}<p class="know-caveat">⚠ {{ k.caveat }}</p>{% endif %}
+  </article>
+{% endmacro %}
+
+{% macro find(f) %}
+  <article class="find-card">
+    <div class="find-top">
+      <span class="find-kind{% if f.is_ai %} ai{% endif %}">{{ f.kind }}</span>
+      <span class="find-src">{{ f.source }}{% if f.score %} · {% if f.source == 'GitHub' %}★ {{ f.score }}{% else %}▲ {{ f.score }}{% endif %}{% endif %}</span>
+    </div>
+    <h3 class="find-name"><a href="{{ f.url }}" target="_blank" rel="noopener">{{ f.name }} ↗</a></h3>
+    {% if f.repo and f.repo != f.name %}<div class="find-repo">{{ f.repo }}</div>{% endif %}
+    <p class="find-one">{{ f.one_liner }}</p>
+    <div class="find-body">
+      {% if f.why %}<p><b>為什麼有趣</b>{{ f.why }}</p>{% endif %}
+      {% if f.use %}<p><b>可以怎麼用</b>{{ f.use }}</p>{% endif %}
+      {% if f.caveat %}<p class="find-caveat"><b>留意</b>{{ f.caveat }}</p>{% endif %}
+    </div>
+    {% if f.discuss_url and f.discuss_url != f.url %}<a class="find-discuss" href="{{ f.discuss_url }}" target="_blank" rel="noopener">看 HN 討論 →</a>{% endif %}
+  </article>
+{% endmacro %}

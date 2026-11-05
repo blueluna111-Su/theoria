@@ -1,4 +1,4 @@
-"""每日推播：把今天的三個理論透過 ntfy 推到手機，點通知即開當天頁面。
+"""每日推播：把今天的理論、知識與發現透過 ntfy 推到手機，點通知即開當天頁面。
 
 需要環境變數 NTFY_TOPIC（存成 GitHub secret；沒設就安靜略過）。
 """
@@ -31,10 +31,19 @@ def main() -> int:
             names.append(tid)
 
     day = cur["day"]
+    lines = ["、".join(names)]
+    extras_path = ROOT / "data/extras" / f"{state.get('last_run_date', '')}.json"
+    if extras_path.exists():
+        ex = json.loads(extras_path.read_text(encoding="utf-8"))
+        if ex.get("knowledge"):
+            lines.append(f"💡 今日一識：{ex['knowledge']['title']}")
+        if ex.get("finds"):
+            lines.append("🔭 發現：" + "、".join(f["name"] for f in ex["finds"]))
     payload = {
         "topic": topic,
         "title": f"每日三理 · 第 {day} 天｜{DAY_LABELS.get(day, '')}",
-        "message": "、".join(names),
+        "message": "
+".join(lines),
         "click": SITE_URL,
         "tags": ["books"],
     }

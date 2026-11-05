@@ -1,6 +1,6 @@
 # 每日三理 · Theoria
 
-每天三個**可應用**的學術理論（人文／社會／經濟／心理／健康…），**同一組講三天、由淺入深**，再加一張**回想卡**複習更早學過的。獨立於 Horizon 的新專案，靜態站架在 GitHub Pages。
+每天一個**可應用**的學術理論（人文／社會／經濟／心理／健康…），**同一個講三天、由淺入深**（每輪個數見 `theories_per_cycle`，目前 1），再加一張**回想卡**複習更早學過的。獨立於 Horizon 的新專案，靜態站架在 GitHub Pages。
 
 **Live：** https://blueluna111-su.github.io/theoria/
 
@@ -12,7 +12,12 @@
    - 第 3 天「實戰與內化」＝**收成日**，最厚最廣，固定六塊：① 跨領域應用地圖 ② 核心方法 ③ 組合拳 ④ 反模式 ⑤ 收成清單 SOP ⑥ 本週實作（觀察→介入→建立習慣）。
    - **每一分段都配 1～3 個具體例子**；文風要詳細完整、把話講透，不寫電報體。
    - 準確性停在概念層級，不杜撰具體研究數字。繁體中文（台灣）。
-2. **間隔複習（memory）**：每天的回想卡用主動回想（先問後答）叫回**更早**做完的理論，間隔遞增（預設 +7／+21／+60 天，每天 2 張）。
+2. **間隔複習（memory）**：每天的回想卡用主動回想（先問後答）叫回**更早**做完的理論，間隔遞增（預設 +7／+21／+60 天，每天 1 張）。
+
+3. **加值區塊（每天各一份，跟三天弧無關）**：
+   - **今日一識**：一則跨界、實用、「知道了某天用得上」的知識。類別每天輪替（醫學常識、法律權益、理財、資安、生活科學、溝通、歷史典故、自然、工具效率、飲食營養），會避開最近寫過的題目。
+   - **新鮮發現**：實際抓 GitHub（近 10 天新建、星數高）與 Hacker News「Show HN」（近 3 天），由 Gemini 挑 1 個新鮮又實用的（單數日偏好非 AI、雙數日偏好 AI），寫中文介紹。連結一律來自抓到的資料，模型不會自編網址；看過的不會再出現。
+   - 過去的內容都收在 `discover.html`（導覽列「發現」）。
 
 ## 自動產出引擎（每天自己跑）
 
@@ -23,6 +28,7 @@ data/content/<id>.json  每個理論的三天弧結構化內容（生成後快�
 scripts/gemini.py       Gemini REST 客戶端（只依賴 requests）
 scripts/generate.py     一個理論 → Gemini → 結構化 JSON（規格全寫在 SYSTEM/STRUCTURE）
 scripts/schedule.py     推進 day1→2→3、完成排入複習、挑當日到期卡
+scripts/extras.py       今日一識 + 新鮮發現 → data/extras/<date>.json
 scripts/render.py       state + content →（Jinja 樣板）→ index.html / archive.html
 scripts/run_daily.py    每日總指揮：排程 → 補生成 → 渲染 → 存檔
 templates/*.j2          今日頁／歷史頁樣板
@@ -45,7 +51,7 @@ GOOGLE_API_KEY=xxx python scripts/run_daily.py
 GOOGLE_API_KEY=xxx python scripts/generate.py loss-aversion --force   # 只重生某一篇
 ```
 
-旗標：`--date YYYY-MM-DD` 指定日期、`--force` 同日重跑、`--no-generate` 只渲染不呼叫 AI。
+旗標：`--date YYYY-MM-DD` 指定日期、`--force` 同日重跑、`--no-generate` 只渲染不呼叫 AI、`--refresh-extras` 重生當日一識/發現。
 
 ## 上線需要的唯一手動步驟：設定 Gemini 金鑰
 
@@ -60,8 +66,10 @@ gh workflow run "每日三理 daily build" -R blueluna111-Su/theoria   # 手動�
 
 ## 調整點
 
-- 母池增補：直接編 `data/pool.json`（三個一組、跨領域排列，讓每輪有變化）。
+- 母池增補：直接編 `data/pool.json`（跨領域排列，讓每輪有變化）。
 - 複習節奏：`data/state.json` 的 `review_intervals_days`、`review_cards_per_day`。
-- 一輪幾個主題：`theories_per_cycle`（目前 3）。
+- 一輪幾個主題：`theories_per_cycle`（目前 1；=1 時 fresh／core 兩層輪流）。
 - 生成文風／結構：`scripts/generate.py` 的 `SYSTEM` 與 `STRUCTURE`。
+- 今日一識類別：`scripts/extras.py` 的 `KNOWLEDGE_CATEGORIES`。
+- 發現的來源與挑選標準：`scripts/extras.py` 的 `fetch_*` 與 `FINDS_SYSTEM`。
 - 語言：目前純繁中；雙語可再加。

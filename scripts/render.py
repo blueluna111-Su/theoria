@@ -64,7 +64,8 @@ def _pool_notice(state: dict) -> dict | None:
     return None
 
 
-def render_index(state: dict, reviews: list[dict], today: date, generated_at: str) -> str:
+def render_index(state: dict, reviews: list[dict], today: date, generated_at: str,
+                 extras: dict | None = None) -> str:
     active_ids = state["current"]["active"]
     active_day = state["current"]["day"]
     theories = [_load_content(i) for i in active_ids]
@@ -87,8 +88,22 @@ def render_index(state: dict, reviews: list[dict], today: date, generated_at: st
         date_str=_date_str(today), active_day=active_day,
         hero_focus=DAY_FOCUS.get(active_day, ""), theories=theories,
         reviews=review_ctx, generated_at=generated_at, note=None,
-        pool_notice=_pool_notice(state),
+        pool_notice=_pool_notice(state), extras=extras,
     )
+
+
+def render_discover(all_extras: list[dict], generated_at: str) -> str:
+    """發現頁：歷來的『今日一識』與『新鮮發現』，新到舊。"""
+    days = []
+    for e in all_extras:
+        if not (e.get("knowledge") or e.get("finds")):
+            continue
+        d = date.fromisoformat(e["date"])
+        days.append({**e, "date_str": _date_str(d)})
+    tmpl = _env().get_template("discover.html.j2")
+    return tmpl.render(days=days, generated_at=generated_at,
+                       n_knowledge=sum(1 for e in days if e.get("knowledge")),
+                       n_finds=sum(len(e.get("finds") or []) for e in days))
 
 
 def render_archive(state: dict, today: date, generated_at: str) -> str:
