@@ -22,6 +22,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parent.parent
 EXTRAS_DIR = ROOT / "data" / "extras"
+FINDS_PER_DAY = 2  # 每天介紹幾個新鮮發現
 UA = {"User-Agent": "theoria-daily (github.com/blueluna111-Su/theoria)"}
 
 # 『今日一識』輪替的知識類別：刻意挑「知道了，某天真的用得上」的領域。
@@ -68,7 +69,7 @@ FINDS_SYSTEM = """你是「每日三理」的『新鮮發現』編輯：從當�
 FINDS_STRUCTURE = """以下是今天的候選清單（JSON 陣列，每個有 cid）：
 {candidates}
 
-請挑出今天最值得介紹的 1 個。{lean}
+請挑出今天最值得介紹的 {n} 個。{lean}
 輸出：
 {{
   "finds": [
@@ -199,9 +200,11 @@ def gen_finds(cands: list[dict], today: date) -> list[dict]:
     brief = [{"cid": c["cid"], "source": c["source"], "title": c["title"], "desc": c["desc"],
               "score": c["score"], **c.get("meta", {})} for c in cands]
     # 單數日偏好非 AI、雙數日偏好 AI，讓長期下來兩種都有
-    lean = ("今天若有夠好的非 AI 項目，優先選它。" if today.toordinal() % 2
+    lean = ("最好一個是 AI 應用、一個是非 AI 項目；兩個不要是同一類，候選不夠好時以品質優先。"
+            if FINDS_PER_DAY == 2 else
+            "今天若有夠好的非 AI 項目，優先選它。" if today.toordinal() % 2
             else "今天若有夠好的 AI 應用，優先選它。")
-    prompt = FINDS_STRUCTURE.format(candidates=json.dumps(brief, ensure_ascii=False), lean=lean)
+    prompt = FINDS_STRUCTURE.format(candidates=json.dumps(brief, ensure_ascii=False), lean=lean, n=FINDS_PER_DAY)
     res = generate_json(FINDS_SYSTEM, prompt, temperature=0.6, max_output_tokens=4096)
     by_cid = {c["cid"]: c for c in cands}
     finds = []
@@ -213,7 +216,7 @@ def gen_finds(cands: list[dict], today: date) -> list[dict]:
         finds.append({**f, "source": c["source"], "url": c["url"],
                       "discuss_url": c.get("discuss_url"), "score": c["score"],
                       "repo": c["title"] if c["source"] == "GitHub" else None})
-    return finds[:1]
+    return finds[:FINDS_PER_DAY]
 
 
 def mock_extras(today: date) -> dict:
@@ -229,7 +232,7 @@ def mock_extras(today: date) -> dict:
                    "is_ai": i == 1, "one_liner": "一句話說它是什麼（示意）。",
                    "why": "為什麼有趣（示意）。", "use": "你可以怎麼用（示意）。", "caveat": None,
                    "source": "GitHub", "url": "https://github.com/", "discuss_url": None,
-                   "score": 100 * i, "repo": f"example/demo-{i}"} for i in (1,)],
+                   "score": 100 * i, "repo": f"example/demo-{i}"} for i in range(1, FINDS_PER_DAY + 1)],
     }
 
 
