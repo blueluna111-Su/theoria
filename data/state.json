@@ -15,7 +15,7 @@
       "rent-seeking",
       "stress-buffering-hypothesis"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-11-04"
   },
   "completed": [
@@ -957,24 +957,24 @@
     {
       "id": "principal-agent-problem",
       "completed_date": "2026-09-19",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-11-06",
       "review_due": [
         "2026-09-26",
         "2026-10-10",
         "2026-11-18"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "hot-cold-empathy-gap",
       "completed_date": "2026-09-19",
-      "last_seen": "2026-10-17",
+      "last_seen": "2026-11-06",
       "review_due": [
         "2026-09-26",
         "2026-10-10",
         "2026-11-18"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "the-diderot-effect",
@@ -1573,7 +1573,7 @@
     "rent-seeking",
     "stress-buffering-hypothesis"
   ],
-  "last_run_date": "2026-11-05",
+  "last_run_date": "2026-11-06",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9,
   "pending_settings": {
@@ -1581,5 +1581,22 @@
     "theories_per_cycle": 1,
     "review_cards_per_day": 1
   },
-  "extras_start": "2026-11-07"
+  "extras_start": "2026-11-07",
+  "today_reviews": {
+    "date": "2026-11-06",
+    "cards": [
+      {
+        "id": "principal-agent-problem",
+        "completed_date": "2026-09-19",
+        "nth": 2,
+        "distance_days": 21
+      },
+      {
+        "id": "hot-cold-empathy-gap",
+        "completed_date": "2026-09-19",
+        "nth": 2,
+        "distance_days": 20
+      }
+    ]
+  }
 }
