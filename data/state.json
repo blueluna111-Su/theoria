@@ -2,21 +2,19 @@
   "version": 1,
   "timezone": "Asia/Taipei",
   "cycle_length": 3,
-  "theories_per_cycle": 3,
+  "theories_per_cycle": 1,
   "review_intervals_days": [
     7,
     21,
     60
   ],
-  "review_cards_per_day": 2,
+  "review_cards_per_day": 1,
   "current": {
     "active": [
-      "regulatory-focus-theory",
-      "rent-seeking",
-      "stress-buffering-hypothesis"
+      "agnotology"
     ],
-    "day": 3,
-    "cycle_started": "2026-11-04"
+    "day": 1,
+    "cycle_started": "2026-11-07"
   },
   "completed": [
     {
@@ -1078,13 +1076,13 @@
     {
       "id": "theory-of-planned-behavior",
       "completed_date": "2026-10-03",
-      "last_seen": "2026-10-03",
+      "last_seen": "2026-11-07",
       "review_due": [
         "2026-10-10",
         "2026-10-24",
         "2026-12-02"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "commitment-and-consistency-principle",
@@ -1437,6 +1435,39 @@
         "2027-01-03"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "regulatory-focus-theory",
+      "completed_date": "2026-11-07",
+      "last_seen": "2026-11-07",
+      "review_due": [
+        "2026-11-14",
+        "2026-11-28",
+        "2027-01-06"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "rent-seeking",
+      "completed_date": "2026-11-07",
+      "last_seen": "2026-11-07",
+      "review_due": [
+        "2026-11-14",
+        "2026-11-28",
+        "2027-01-06"
+      ],
+      "reviews_done": 0
+    },
+    {
+      "id": "stress-buffering-hypothesis",
+      "completed_date": "2026-11-07",
+      "last_seen": "2026-11-07",
+      "review_due": [
+        "2026-11-14",
+        "2026-11-28",
+        "2027-01-06"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1571,31 +1602,21 @@
     "social-capital-theory",
     "regulatory-focus-theory",
     "rent-seeking",
-    "stress-buffering-hypothesis"
+    "stress-buffering-hypothesis",
+    "agnotology"
   ],
-  "last_run_date": "2026-11-06",
+  "last_run_date": "2026-11-07",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9,
-  "pending_settings": {
-    "from": "2026-11-07",
-    "theories_per_cycle": 1,
-    "review_cards_per_day": 1
-  },
   "extras_start": "2026-11-07",
   "today_reviews": {
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "cards": [
       {
-        "id": "principal-agent-problem",
-        "completed_date": "2026-09-19",
-        "nth": 2,
-        "distance_days": 21
-      },
-      {
-        "id": "hot-cold-empathy-gap",
-        "completed_date": "2026-09-19",
-        "nth": 2,
-        "distance_days": 20
+        "id": "theory-of-planned-behavior",
+        "completed_date": "2026-10-03",
+        "nth": 1,
+        "distance_days": 35
       }
     ]
   }
