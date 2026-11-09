@@ -13,7 +13,7 @@
     "active": [
       "agnotology"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-11-07"
   },
   "completed": [
@@ -1098,13 +1098,13 @@
     {
       "id": "stress-inoculation-training-sit",
       "completed_date": "2026-10-03",
-      "last_seen": "2026-10-03",
+      "last_seen": "2026-11-09",
       "review_due": [
         "2026-10-10",
         "2026-10-24",
         "2026-12-02"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "narrative-fallacy",
@@ -1605,18 +1605,18 @@
     "stress-buffering-hypothesis",
     "agnotology"
   ],
-  "last_run_date": "2026-11-08",
+  "last_run_date": "2026-11-09",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9,
   "extras_start": "2026-11-07",
   "today_reviews": {
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "cards": [
       {
-        "id": "commitment-and-consistency-principle",
+        "id": "stress-inoculation-training-sit",
         "completed_date": "2026-10-03",
         "nth": 1,
-        "distance_days": 36
+        "distance_days": 37
       }
     ]
   }
