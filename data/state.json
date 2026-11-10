@@ -11,10 +11,10 @@
   "review_cards_per_day": 1,
   "current": {
     "active": [
-      "agnotology"
+      "speech-act-theory"
     ],
-    "day": 3,
-    "cycle_started": "2026-11-07"
+    "day": 1,
+    "cycle_started": "2026-11-10"
   },
   "completed": [
     {
@@ -548,13 +548,13 @@
     {
       "id": "diffusion-innovations",
       "completed_date": "2026-08-14",
-      "last_seen": "2026-09-10",
+      "last_seen": "2026-11-10",
       "review_due": [
         "2026-08-21",
         "2026-09-04",
         "2026-10-13"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "reciprocity",
@@ -1468,6 +1468,17 @@
         "2027-01-06"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "agnotology",
+      "completed_date": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "review_due": [
+        "2026-11-17",
+        "2026-12-01",
+        "2027-01-09"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1603,20 +1614,21 @@
     "regulatory-focus-theory",
     "rent-seeking",
     "stress-buffering-hypothesis",
-    "agnotology"
+    "agnotology",
+    "speech-act-theory"
   ],
-  "last_run_date": "2026-11-09",
+  "last_run_date": "2026-11-10",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9,
   "extras_start": "2026-11-07",
   "today_reviews": {
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "cards": [
       {
-        "id": "stress-inoculation-training-sit",
-        "completed_date": "2026-10-03",
-        "nth": 1,
-        "distance_days": 37
+        "id": "diffusion-innovations",
+        "completed_date": "2026-08-14",
+        "nth": 3,
+        "distance_days": 61
       }
     ]
   }
