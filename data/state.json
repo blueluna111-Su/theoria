@@ -11,10 +11,10 @@
   "review_cards_per_day": 1,
   "current": {
     "active": [
-      "speech-act-theory"
+      "self-discrepancy-theory"
     ],
-    "day": 3,
-    "cycle_started": "2026-11-10"
+    "day": 1,
+    "cycle_started": "2026-11-13"
   },
   "completed": [
     {
@@ -977,13 +977,13 @@
     {
       "id": "the-diderot-effect",
       "completed_date": "2026-09-22",
-      "last_seen": "2026-10-20",
+      "last_seen": "2026-11-13",
       "review_due": [
         "2026-09-29",
         "2026-10-13",
         "2026-11-21"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "framing-effect",
@@ -1479,6 +1479,17 @@
         "2027-01-09"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "speech-act-theory",
+      "completed_date": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "review_due": [
+        "2026-11-20",
+        "2026-12-04",
+        "2027-01-12"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1615,20 +1626,21 @@
     "rent-seeking",
     "stress-buffering-hypothesis",
     "agnotology",
-    "speech-act-theory"
+    "speech-act-theory",
+    "self-discrepancy-theory"
   ],
-  "last_run_date": "2026-11-12",
+  "last_run_date": "2026-11-13",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9,
   "extras_start": "2026-11-07",
   "today_reviews": {
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "cards": [
       {
-        "id": "peter-principle",
-        "completed_date": "2026-08-14",
-        "nth": 3,
-        "distance_days": 62
+        "id": "the-diderot-effect",
+        "completed_date": "2026-09-22",
+        "nth": 2,
+        "distance_days": 24
       }
     ]
   }
