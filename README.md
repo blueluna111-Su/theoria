@@ -1,6 +1,6 @@
 # 每日三理 · Theoria
 
-每天一個**可應用**的學術理論（人文／社會／經濟／心理／健康…），**同一個講三天、由淺入深**（每輪個數見 `theories_per_cycle`，目前 1），再加一張**回想卡**複習更早學過的。獨立於 Horizon 的新專案，靜態站架在 GitHub Pages。
+每天一個**可應用**的學術理論（12 類：經濟／心理／社會／健康／人文／學習／溝通／職場／設計／機率統計／自然科學／公民法政，只收跟日常有關、一般人用得上的），**同一個講三天、由淺入深**（每輪個數見 `theories_per_cycle`，目前 1），再加一張**回想卡**複習更早學過的。獨立於 Horizon 的新專案，靜態站架在 GitHub Pages。
 
 **Live：** https://blueluna111-su.github.io/theoria/
 
@@ -66,7 +66,8 @@ gh workflow run "每日三理 daily build" -R blueluna111-Su/theoria   # 手動�
 
 ## 調整點
 
-- 母池增補：直接編 `data/pool.json`（跨領域排列，讓每輪有變化）。
+- 母池增補：直接編 `data/pool.json`；排程器會優先挑「最久沒輪到的學科」，不必手動排順序。
+- 學科類別：`scripts/domains.py`（加新類別時，`assets/styles.css` 要補對應的 `.tag--<key>` 顏色）。自動補池（`replenish.py`）會優先補收錄較少的類別，並過濾掉太專業、離日常太遠的理論。
 - 複習節奏：`data/state.json` 的 `review_intervals_days`、`review_cards_per_day`。
 - 一輪幾個主題：`theories_per_cycle`（目前 1；=1 時 fresh／core 兩層輪流）。
 - 生成文風／結構：`scripts/generate.py` 的 `SYSTEM` 與 `STRUCTURE`。

@@ -14,12 +14,7 @@ TEMPLATES = ROOT / "templates"
 
 WEEKDAYS = ["一", "二", "三", "四", "五", "六", "日"]
 DAY_FOCUS = {1: "今天是完整入門", 2: "今天進到「進階與爭論」", 3: "今天進到「實戰與內化」收成日"}
-DOMAIN_SHORT = {"econ": "經濟", "psych": "心理", "social": "社會", "health": "健康", "humanities": "人文"}
-DOMAIN_LABEL = {
-    "econ": "經濟 · 行為經濟", "psych": "心理", "social": "社會 · 人類學",
-    "health": "健康", "humanities": "人文 · 哲學",
-}
-DOMAIN_ORDER = ["econ", "psych", "social", "health", "humanities"]
+from domains import DOMAIN_LABEL, DOMAIN_ORDER, DOMAIN_SHORT  # noqa: E402
 
 
 def _env() -> Environment:

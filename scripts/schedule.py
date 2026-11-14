@@ -37,6 +37,17 @@ def _d(iso: str) -> date:
     return date.fromisoformat(iso)
 
 
+def _diversify(avail: list[str], theories: list[dict], used_order: list[str]) -> list[str]:
+    """Reorder candidates so the next pick comes from the domain class that was covered
+    least recently (never-seen classes first). Pool order breaks ties, so curation still counts."""
+    dc_of = {t["id"]: t.get("domain_class") for t in theories}
+    last_seen: dict[str, int] = {}
+    for i, tid in enumerate(used_order):
+        last_seen[dc_of.get(tid)] = i
+    pos = {tid: i for i, tid in enumerate(avail)}
+    return sorted(avail, key=lambda tid: (last_seen.get(dc_of.get(tid), -1), pos[tid]))
+
+
 def _start_cycle(state: dict, today_iso: str) -> None:
     """Pick the next cycle, guaranteeing at least one `fresh` theory when any remain.
     Composition: 1 fresh + (n-1) core; fall back across tiers if one runs short."""
@@ -45,21 +56,27 @@ def _start_cycle(state: dict, today_iso: str) -> None:
     n = state["theories_per_cycle"]
     fresh_avail = [t["id"] for t in theories if t.get("tier") == "fresh" and t["id"] not in used]
     core_avail = [t["id"] for t in theories if t.get("tier") != "fresh" and t["id"] not in used]
-
     chosen: list[str] = []
+
+    def take(src: list[str]) -> str:
+        """Pop the candidate from the least-recently-covered domain (學科輪替), counting
+        both earlier cycles and picks already made in this cycle."""
+        best = _diversify(src, theories, state["used_ids"] + chosen)[0]
+        src.remove(best)
+        return best
     if n == 1:                                   # 一次一個：fresh / core 輪流
         tier_of = {t["id"]: t.get("tier") for t in theories}
         prev = (state.get("current") or {}).get("active") or [None]
         order = (core_avail, fresh_avail) if tier_of.get(prev[0]) == "fresh" else (fresh_avail, core_avail)
         for src in order:
             if src:
-                chosen.append(src.pop(0))
+                chosen.append(take(src))
                 break
     elif fresh_avail:                            # guarantee >=1 fresh per cycle
-        chosen.append(fresh_avail.pop(0))
+        chosen.append(take(fresh_avail))
     for src in (core_avail, fresh_avail):        # fill the rest: core first, then leftover fresh
         while len(chosen) < n and src:
-            chosen.append(src.pop(0))
+            chosen.append(take(src))
 
     if len(chosen) < n:                          # pool exhausted -> allow repeats from start
         state["_pool_exhausted"] = True

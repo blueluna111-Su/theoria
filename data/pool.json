@@ -1,5 +1,5 @@
 {
-  "_comment": "母池：精選『可應用』學術理論。每筆有 tier=core(經典) 或 fresh(較新鮮少見)。排程器每輪保證至少抽一個 fresh。可自由增補。",
+  "_comment": "母池：精選『可應用』學術理論，跨 12 個學科類別（見 scripts/domains.py），只收跟日常有關、一般人用得上的。每筆有 tier=core(經典) 或 fresh(較新鮮少見)。排程器 fresh/core 輪流，並優先挑最久沒輪到的學科。可自由增補。",
   "theories": [
     {
       "id": "loss-aversion",
@@ -1661,6 +1661,347 @@
       "year": 1994,
       "note": "探討人們傾向於合理化和維護現有社會系統的動機，即使這些系統可能對他們不利，有助於理解社會變革的阻力。",
       "tier": "fresh"
+    },
+    {
+      "id": "spacing-effect",
+      "name_zh": "間隔效應",
+      "name_en": "Spacing Effect",
+      "domain": "學習科學",
+      "domain_class": "learning",
+      "author": "Hermann Ebbinghaus",
+      "year": 1885,
+      "note": "分散複習比一次塞完記得久；排讀書、背單字、準備簡報",
+      "tier": "core"
+    },
+    {
+      "id": "retrieval-practice",
+      "name_zh": "提取練習效應",
+      "name_en": "Testing Effect (Retrieval Practice)",
+      "domain": "學習科學",
+      "domain_class": "learning",
+      "author": "Roediger & Karpicke",
+      "year": 2006,
+      "note": "自己考自己比重讀更有效；閉卷回想、做題代替畫重點",
+      "tier": "core"
+    },
+    {
+      "id": "desirable-difficulties",
+      "name_zh": "必要難度",
+      "name_en": "Desirable Difficulties",
+      "domain": "學習科學",
+      "domain_class": "learning",
+      "author": "Robert Bjork",
+      "year": 1994,
+      "note": "學起來吃力一點反而記得牢；穿插練習、變換情境",
+      "tier": "fresh"
+    },
+    {
+      "id": "zone-of-proximal-development",
+      "name_zh": "近側發展區",
+      "name_en": "Zone of Proximal Development",
+      "domain": "教育心理",
+      "domain_class": "learning",
+      "author": "Lev Vygotsky",
+      "year": null,
+      "note": "有人搭把手才做得到的那一區最長進；教小孩、帶新人",
+      "tier": "core"
+    },
+    {
+      "id": "gricean-maxims",
+      "name_zh": "合作原則（格萊斯準則）",
+      "name_en": "Grice's Cooperative Principle",
+      "domain": "語用學",
+      "domain_class": "comm",
+      "author": "Paul Grice",
+      "year": 1975,
+      "note": "量、質、關聯、方式四準則；聽懂弦外之音、把話說清楚",
+      "tier": "fresh"
+    },
+    {
+      "id": "politeness-theory",
+      "name_zh": "禮貌理論（面子理論）",
+      "name_en": "Politeness Theory",
+      "domain": "語言·溝通",
+      "domain_class": "comm",
+      "author": "Brown & Levinson",
+      "year": 1987,
+      "note": "每個人都有要被認可與不被打擾的面子；拒絕、批評、請託的說法",
+      "tier": "fresh"
+    },
+    {
+      "id": "curse-of-knowledge",
+      "name_zh": "知識的詛咒",
+      "name_en": "Curse of Knowledge",
+      "domain": "溝通·認知",
+      "domain_class": "comm",
+      "author": "Camerer, Loewenstein & Weber",
+      "year": 1989,
+      "note": "懂了就想不起不懂的感覺；寫說明、教人、做簡報要補台階",
+      "tier": "core"
+    },
+    {
+      "id": "nonviolent-communication",
+      "name_zh": "非暴力溝通",
+      "name_en": "Nonviolent Communication",
+      "domain": "溝通",
+      "domain_class": "comm",
+      "author": "Marshall Rosenberg",
+      "year": null,
+      "note": "觀察、感受、需要、請求四步；吵架降溫、表達不滿不傷人",
+      "tier": "core"
+    },
+    {
+      "id": "psychological-safety",
+      "name_zh": "心理安全感",
+      "name_en": "Psychological Safety",
+      "domain": "組織行為",
+      "domain_class": "work",
+      "author": "Amy Edmondson",
+      "year": 1999,
+      "note": "敢提問、敢認錯的團隊學得快；開會、帶團隊、回饋文化",
+      "tier": "core"
+    },
+    {
+      "id": "brooks-law",
+      "name_zh": "布魯克斯定律",
+      "name_en": "Brooks's Law",
+      "domain": "專案管理",
+      "domain_class": "work",
+      "author": "Fred Brooks",
+      "year": 1975,
+      "note": "落後的專案加人只會更慢；溝通成本、交接、分工",
+      "tier": "fresh"
+    },
+    {
+      "id": "conways-law",
+      "name_zh": "康威定律",
+      "name_en": "Conway's Law",
+      "domain": "組織·系統",
+      "domain_class": "work",
+      "author": "Melvin Conway",
+      "year": 1968,
+      "note": "產出的結構會長得像組織的溝通結構；部門協作、產品分工",
+      "tier": "fresh"
+    },
+    {
+      "id": "tuckman-stages",
+      "name_zh": "團隊發展階段",
+      "name_en": "Tuckman's Stages of Group Development",
+      "domain": "組織行為",
+      "domain_class": "work",
+      "author": "Bruce Tuckman",
+      "year": 1965,
+      "note": "形成、風暴、規範、表現；新團隊磨合期的衝突是正常的",
+      "tier": "core"
+    },
+    {
+      "id": "planning-fallacy",
+      "name_zh": "規劃謬誤",
+      "name_en": "Planning Fallacy",
+      "domain": "決策·專案",
+      "domain_class": "work",
+      "author": "Kahneman & Tversky",
+      "year": 1979,
+      "note": "總低估自己要花的時間；用過往實績與外部視角估工期",
+      "tier": "core"
+    },
+    {
+      "id": "affordance",
+      "name_zh": "預設用途（可供性）",
+      "name_en": "Affordance",
+      "domain": "設計·人因",
+      "domain_class": "design",
+      "author": "James J. Gibson（Don Norman 引入設計）",
+      "year": 1977,
+      "note": "物品長相暗示怎麼用；看懂爛設計、整理家裡動線",
+      "tier": "core"
+    },
+    {
+      "id": "hicks-law",
+      "name_zh": "希克定律",
+      "name_en": "Hick's Law",
+      "domain": "人因工程",
+      "domain_class": "design",
+      "author": "Hick & Hyman",
+      "year": 1952,
+      "note": "選項越多決定越慢；菜單、簡報、選擇設計要減法",
+      "tier": "fresh"
+    },
+    {
+      "id": "fitts-law",
+      "name_zh": "費茲定律",
+      "name_en": "Fitts's Law",
+      "domain": "人因工程",
+      "domain_class": "design",
+      "author": "Paul Fitts",
+      "year": 1954,
+      "note": "目標越大越近越好點；常用的東西放手邊、按鈕做大",
+      "tier": "fresh"
+    },
+    {
+      "id": "poka-yoke",
+      "name_zh": "防呆設計",
+      "name_en": "Poka-Yoke",
+      "domain": "品質·設計",
+      "domain_class": "design",
+      "author": "新鄉重夫 Shigeo Shingo",
+      "year": null,
+      "note": "讓錯誤根本做不出來；出門檢查、家務流程、工作SOP",
+      "tier": "fresh"
+    },
+    {
+      "id": "swiss-cheese-model",
+      "name_zh": "瑞士乳酪模型",
+      "name_en": "Swiss Cheese Model",
+      "domain": "安全·人因",
+      "domain_class": "design",
+      "author": "James Reason",
+      "year": 1990,
+      "note": "意外是多層防線的洞剛好對齊；別只怪最後一個人",
+      "tier": "fresh"
+    },
+    {
+      "id": "regression-to-the-mean",
+      "name_zh": "均值回歸",
+      "name_en": "Regression to the Mean",
+      "domain": "統計思維",
+      "domain_class": "stats",
+      "author": "Francis Galton",
+      "year": 1886,
+      "note": "極端表現之後常回到平均；別誤以為獎懲或偏方有效",
+      "tier": "core"
+    },
+    {
+      "id": "base-rate-neglect",
+      "name_zh": "基本率謬誤",
+      "name_en": "Base Rate Neglect",
+      "domain": "機率·決策",
+      "domain_class": "stats",
+      "author": "Kahneman & Tversky 等",
+      "year": null,
+      "note": "忽略事情本來多常見；看健檢陽性、新聞、統計時先問基數",
+      "tier": "core"
+    },
+    {
+      "id": "survivorship-bias",
+      "name_zh": "倖存者偏差",
+      "name_en": "Survivorship Bias",
+      "domain": "統計思維",
+      "domain_class": "stats",
+      "author": "Abraham Wald（二戰案例）",
+      "year": null,
+      "note": "只看到活下來的就下結論；成功學、投資績效、老店迷思",
+      "tier": "core"
+    },
+    {
+      "id": "simpsons-paradox",
+      "name_zh": "辛普森悖論",
+      "name_en": "Simpson's Paradox",
+      "domain": "統計思維",
+      "domain_class": "stats",
+      "author": "Edward H. Simpson",
+      "year": 1951,
+      "note": "分組看和合併看結論相反；讀報告、比較數字要分層",
+      "tier": "fresh"
+    },
+    {
+      "id": "bayesian-updating",
+      "name_zh": "貝氏更新",
+      "name_en": "Bayesian Updating",
+      "domain": "機率·推理",
+      "domain_class": "stats",
+      "author": "Thomas Bayes",
+      "year": 1763,
+      "note": "依新證據按比例調整信念；不全信也不全否、逐步修正判斷",
+      "tier": "core"
+    },
+    {
+      "id": "entropy",
+      "name_zh": "熵增（熱力學第二定律）",
+      "name_en": "Entropy (Second Law of Thermodynamics)",
+      "domain": "物理·生活科學",
+      "domain_class": "nature",
+      "author": "Rudolf Clausius",
+      "year": 1865,
+      "note": "不投入能量，秩序只會變亂；整理、維護、習慣都要持續成本",
+      "tier": "core"
+    },
+    {
+      "id": "liebigs-law-of-the-minimum",
+      "name_zh": "最小因子定律",
+      "name_en": "Liebig's Law of the Minimum",
+      "domain": "生態·農學",
+      "domain_class": "nature",
+      "author": "Sprengel & Liebig",
+      "year": null,
+      "note": "成長受最缺的那一項限制；找出身體、學習、團隊的短板",
+      "tier": "fresh"
+    },
+    {
+      "id": "red-queen-hypothesis",
+      "name_zh": "紅皇后假說",
+      "name_en": "Red Queen Hypothesis",
+      "domain": "演化生物",
+      "domain_class": "nature",
+      "author": "Leigh Van Valen",
+      "year": 1973,
+      "note": "大家都在進步，不跑就是退；職涯技能、產業競爭",
+      "tier": "fresh"
+    },
+    {
+      "id": "evolutionary-mismatch",
+      "name_zh": "演化錯配",
+      "name_en": "Evolutionary Mismatch",
+      "domain": "演化·健康",
+      "domain_class": "nature",
+      "author": "演化醫學（Nesse & Williams 等）",
+      "year": null,
+      "note": "為遠古環境演化的身體遇上現代生活；糖、久坐、滑手機",
+      "tier": "fresh"
+    },
+    {
+      "id": "rational-ignorance",
+      "name_zh": "理性無知",
+      "name_en": "Rational Ignorance",
+      "domain": "政治經濟",
+      "domain_class": "civic",
+      "author": "Anthony Downs",
+      "year": 1957,
+      "note": "了解議題成本高於影響時人選擇不知道；投票、條款、公共議題",
+      "tier": "fresh"
+    },
+    {
+      "id": "logic-of-collective-action",
+      "name_zh": "集體行動的邏輯",
+      "name_en": "The Logic of Collective Action",
+      "domain": "政治經濟",
+      "domain_class": "civic",
+      "author": "Mancur Olson",
+      "year": 1965,
+      "note": "小而集中的利益團體常勝過分散大眾；看懂政策、社區與社團",
+      "tier": "fresh"
+    },
+    {
+      "id": "median-voter-theorem",
+      "name_zh": "中位選民定理",
+      "name_en": "Median Voter Theorem",
+      "domain": "政治學",
+      "domain_class": "civic",
+      "author": "Duncan Black；Anthony Downs",
+      "year": 1948,
+      "note": "兩強競爭會往中間靠攏；理解選舉與政策走向",
+      "tier": "core"
+    },
+    {
+      "id": "harm-principle",
+      "name_zh": "傷害原則",
+      "name_en": "Harm Principle",
+      "domain": "法政哲學",
+      "domain_class": "civic",
+      "author": "John Stuart Mill",
+      "year": 1859,
+      "note": "只有防止傷害他人才能限制個人自由；討論管制與個人選擇",
+      "tier": "core"
     }
   ]
 }

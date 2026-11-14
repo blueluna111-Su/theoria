@@ -15,6 +15,13 @@
   --social:#1f7a6b;   --social-bg:#dcefea;
   --health:#a64158;   --health-bg:#f7e1e6;
   --humanities:#9b5a2b; --humanities-bg:#f3e4d6;
+  --learning:#2f64a3; --learning-bg:#e0e9f6;
+  --comm:#1b7896;     --comm-bg:#dbeef4;
+  --work:#4f5d6e;     --work-bg:#e4e8ed;
+  --design:#c0611a;   --design-bg:#fbe8d8;
+  --stats:#6b7a1f;    --stats-bg:#eef0d6;
+  --nature:#3f7d32;   --nature-bg:#e1f0dc;
+  --civic:#7a4b6e;    --civic-bg:#f0e2ec;
 }
 *{box-sizing:border-box}
 html{ -webkit-text-size-adjust:100% }
@@ -67,6 +74,13 @@ a:hover{ text-decoration:underline }
 .tag--social{ color:var(--social); background:var(--social-bg) }
 .tag--health{ color:var(--health); background:var(--health-bg) }
 .tag--humanities{ color:var(--humanities); background:var(--humanities-bg) }
+.tag--learning{ color:var(--learning); background:var(--learning-bg) }
+.tag--comm{ color:var(--comm); background:var(--comm-bg) }
+.tag--work{ color:var(--work); background:var(--work-bg) }
+.tag--design{ color:var(--design); background:var(--design-bg) }
+.tag--stats{ color:var(--stats); background:var(--stats-bg) }
+.tag--nature{ color:var(--nature); background:var(--nature-bg) }
+.tag--civic{ color:var(--civic); background:var(--civic-bg) }
 
 /* arc breadcrumb */
 .arc{ display:flex; gap:6px; margin:16px 0 4px; flex-wrap:wrap }
