@@ -1454,17 +1454,6 @@
       "tier": "core"
     },
     {
-      "id": "public-goods-game",
-      "name_zh": "公共財賽局",
-      "name_en": "Public Goods Game",
-      "domain": "經濟",
-      "domain_class": "econ",
-      "author": null,
-      "year": null,
-      "note": "探討個體在集體利益面前的合作或搭便車行為，有助於設計激勵機制以促進公共資源的貢獻。",
-      "tier": "fresh"
-    },
-    {
       "id": "nudge-theory",
       "name_zh": "輕推理論",
       "name_en": "Nudge Theory",
@@ -1663,28 +1652,6 @@
       "tier": "fresh"
     },
     {
-      "id": "spacing-effect",
-      "name_zh": "間隔效應",
-      "name_en": "Spacing Effect",
-      "domain": "學習科學",
-      "domain_class": "learning",
-      "author": "Hermann Ebbinghaus",
-      "year": 1885,
-      "note": "分散複習比一次塞完記得久；排讀書、背單字、準備簡報",
-      "tier": "core"
-    },
-    {
-      "id": "retrieval-practice",
-      "name_zh": "提取練習效應",
-      "name_en": "Testing Effect (Retrieval Practice)",
-      "domain": "學習科學",
-      "domain_class": "learning",
-      "author": "Roediger & Karpicke",
-      "year": 2006,
-      "note": "自己考自己比重讀更有效；閉卷回想、做題代替畫重點",
-      "tier": "core"
-    },
-    {
       "id": "desirable-difficulties",
       "name_zh": "必要難度",
       "name_en": "Desirable Difficulties",
@@ -1693,28 +1660,6 @@
       "author": "Robert Bjork",
       "year": 1994,
       "note": "學起來吃力一點反而記得牢；穿插練習、變換情境",
-      "tier": "fresh"
-    },
-    {
-      "id": "zone-of-proximal-development",
-      "name_zh": "近側發展區",
-      "name_en": "Zone of Proximal Development",
-      "domain": "教育心理",
-      "domain_class": "learning",
-      "author": "Lev Vygotsky",
-      "year": null,
-      "note": "有人搭把手才做得到的那一區最長進；教小孩、帶新人",
-      "tier": "core"
-    },
-    {
-      "id": "gricean-maxims",
-      "name_zh": "合作原則（格萊斯準則）",
-      "name_en": "Grice's Cooperative Principle",
-      "domain": "語用學",
-      "domain_class": "comm",
-      "author": "Paul Grice",
-      "year": 1975,
-      "note": "量、質、關聯、方式四準則；聽懂弦外之音、把話說清楚",
       "tier": "fresh"
     },
     {
@@ -1817,17 +1762,6 @@
       "tier": "core"
     },
     {
-      "id": "hicks-law",
-      "name_zh": "希克定律",
-      "name_en": "Hick's Law",
-      "domain": "人因工程",
-      "domain_class": "design",
-      "author": "Hick & Hyman",
-      "year": 1952,
-      "note": "選項越多決定越慢；菜單、簡報、選擇設計要減法",
-      "tier": "fresh"
-    },
-    {
       "id": "fitts-law",
       "name_zh": "費茲定律",
       "name_en": "Fitts's Law",
@@ -1872,17 +1806,6 @@
       "tier": "core"
     },
     {
-      "id": "liebigs-law-of-the-minimum",
-      "name_zh": "最小因子定律",
-      "name_en": "Liebig's Law of the Minimum",
-      "domain": "生態·農學",
-      "domain_class": "nature",
-      "author": "Sprengel & Liebig",
-      "year": null,
-      "note": "成長受最缺的那一項限制；找出身體、學習、團隊的短板",
-      "tier": "fresh"
-    },
-    {
       "id": "red-queen-hypothesis",
       "name_zh": "紅皇后假說",
       "name_en": "Red Queen Hypothesis",
@@ -1902,17 +1825,6 @@
       "author": "演化醫學（Nesse & Williams 等）",
       "year": null,
       "note": "為遠古環境演化的身體遇上現代生活；糖、久坐、滑手機",
-      "tier": "fresh"
-    },
-    {
-      "id": "rational-ignorance",
-      "name_zh": "理性無知",
-      "name_en": "Rational Ignorance",
-      "domain": "政治經濟",
-      "domain_class": "civic",
-      "author": "Anthony Downs",
-      "year": 1957,
-      "note": "了解議題成本高於影響時人選擇不知道；投票、條款、公共議題",
       "tier": "fresh"
     },
     {
@@ -2067,6 +1979,83 @@
       "author": "Andrew Gelman & Eric Loken",
       "year": 2013,
       "note": "分析選擇太多時『顯著結果』很容易是偶然；讀健康新聞、看自己的記帳數據",
+      "tier": "fresh"
+    },
+    {
+      "id": "deliberate-practice",
+      "name_zh": "刻意練習",
+      "name_en": "Deliberate Practice",
+      "domain": "學習科學",
+      "domain_class": "learning",
+      "author": "K. Anders Ericsson",
+      "year": 1993,
+      "note": "有明確目標、即時回饋、專攻弱點的練習才會進步；練琴、寫作、簡報、運動",
+      "tier": "core"
+    },
+    {
+      "id": "dual-coding-theory",
+      "name_zh": "雙重編碼理論",
+      "name_en": "Dual Coding Theory",
+      "domain": "學習科學",
+      "domain_class": "learning",
+      "author": "Allan Paivio",
+      "year": 1971,
+      "note": "文字配上圖像會記得更牢；做筆記畫圖、簡報圖文搭配、教小孩",
+      "tier": "fresh"
+    },
+    {
+      "id": "transfer-of-learning",
+      "name_zh": "學習遷移",
+      "name_en": "Transfer of Learning",
+      "domain": "教育心理",
+      "domain_class": "learning",
+      "author": "Thorndike & Woodworth",
+      "year": 1901,
+      "note": "學會的東西換個情境常用不出來；怎麼讓課本、課程真的帶到工作與生活",
+      "tier": "fresh"
+    },
+    {
+      "id": "communication-accommodation-theory",
+      "name_zh": "溝通調適理論",
+      "name_en": "Communication Accommodation Theory",
+      "domain": "溝通·社會語言",
+      "domain_class": "comm",
+      "author": "Howard Giles",
+      "year": 1973,
+      "note": "說話方式向對方靠攏拉近距離、刻意拉開則製造疏離；跟長輩、客戶、跨世代溝通",
+      "tier": "fresh"
+    },
+    {
+      "id": "johari-window",
+      "name_zh": "周哈里窗",
+      "name_en": "Johari Window",
+      "domain": "人際溝通",
+      "domain_class": "comm",
+      "author": "Joseph Luft & Harrington Ingham",
+      "year": 1955,
+      "note": "公開、盲點、隱藏、未知四區；透過自我揭露與討回饋擴大互信",
+      "tier": "core"
+    },
+    {
+      "id": "procedural-justice",
+      "name_zh": "程序正義",
+      "name_en": "Procedural Justice",
+      "domain": "法律心理·公民",
+      "domain_class": "civic",
+      "author": "Thibaut & Walker",
+      "year": 1975,
+      "note": "過程公平、有被聽見，人就比較能接受不利結果；家庭決定、職場考核、公共政策",
+      "tier": "core"
+    },
+    {
+      "id": "precautionary-principle",
+      "name_zh": "預防原則",
+      "name_en": "Precautionary Principle",
+      "domain": "公共政策",
+      "domain_class": "civic",
+      "author": "源自德國環境政策（Vorsorgeprinzip）",
+      "year": null,
+      "note": "後果嚴重又不確定時寧可先防；食安、新科技管制，也要看懂它被濫用的時候",
       "tier": "fresh"
     }
   ]
