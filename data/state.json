@@ -13,7 +13,7 @@
     "active": [
       "self-discrepancy-theory"
     ],
-    "day": 1,
+    "day": 2,
     "cycle_started": "2026-11-13"
   },
   "completed": [
@@ -988,13 +988,13 @@
     {
       "id": "framing-effect",
       "completed_date": "2026-09-22",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-11-14",
       "review_due": [
         "2026-09-29",
         "2026-10-13",
         "2026-11-21"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "social-identity-theory",
@@ -1629,15 +1629,15 @@
     "speech-act-theory",
     "self-discrepancy-theory"
   ],
-  "last_run_date": "2026-11-13",
+  "last_run_date": "2026-11-14",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9,
   "extras_start": "2026-11-07",
   "today_reviews": {
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "cards": [
       {
-        "id": "the-diderot-effect",
+        "id": "framing-effect",
         "completed_date": "2026-09-22",
         "nth": 2,
         "distance_days": 24
