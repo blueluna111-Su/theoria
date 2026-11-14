@@ -78,6 +78,28 @@ STRUCTURE = """請輸出以下結構的 JSON（值都用繁體中文；examples 
 }"""
 
 
+# 機率統計類：讀者已有基礎、要的是「進階理解＋能自己在日常算」，所以加一份專屬規格。
+STATS_ADDENDUM = """
+【本篇屬於「機率 · 統計思維」，請在上述結構之上額外遵守】
+A. 程度：讀者已學過基礎（均值回歸、基本率、倖存者偏差、辛普森悖論、相關≠因果），
+   不要花篇幅重講入門，直接從中階切入；但每個術語第一次出現仍要用白話解釋，不堆公式。
+B. 算給你看：day1 與 day2 的每一段，至少一個 examples 要是「帶具體數字、一步步算出結論」的算例
+   （例如用 1000 人的自然頻率表、簡單的期望值、機率樹）。數字一律標明是『假設數字』示範用，
+   不可冒充真實研究數據。算式只用加減乘除與比例，心算或手機計算機就能跟著算。
+C. 直覺工具：day2 至少一段專講「不用公式的心算捷徑或直覺檢查法」，讓讀者在現場就能估。
+D. 練習題（主動回想，會以『先想再看解答』呈現）：
+   - 在 day2 物件中加入 "drills"：2 題，偏觀念與小算例。
+   - 在 day3 物件中加入 "drills"：3 題，取材自真實生活情境（理財、健康新聞、工作數據、購物、人際判斷），
+     難度遞增，至少一題需要讀者自己動手算。
+   每題格式：{ "question": "題目（情境完整、數字給足）", "hint": "一句提示（可為 null）",
+              "answer": "完整解答：列出計算步驟與結論，再用一句話點出這題的日常啟示" }
+E. day3 的 method 要寫成「一步步的操作流程」（第一步先問什麼、第二步怎麼估、第三步怎麼決定），
+   practice 三級任務要包含『拿自己生活中的真實數字算一次』。
+"""
+
+DOMAIN_ADDENDUM = {"stats": STATS_ADDENDUM}
+
+
 def build_prompt(meta: dict) -> str:
     hint = f"（重點方向：{meta['note']}）" if meta.get("note") else ""
     author = meta.get("author") or "（請勿杜撰，不確定就不寫作者）"
@@ -88,6 +110,7 @@ def build_prompt(meta: dict) -> str:
         f"提出者：{author}　年份：{year}\n"
         f"{hint}\n\n"
         f"{STRUCTURE}"
+        f"{DOMAIN_ADDENDUM.get(meta.get('domain_class'), '')}"
     )
 
 
@@ -108,12 +131,17 @@ def mock_content(meta: dict) -> dict:
         "body": f"這裡會是把「{n}」的這個重點完整講透的詳細說明，由 AI 依規格生成。目前是 mock 佔位文字，用來驗證版型與流程是否正確。",
         "examples": [f"「{n}」的生活化例子 A。", f"「{n}」的生活化例子 B。"],
     }
+    drill = lambda i: {"question": f"「{n}」練習題 {i}（示意）：情境與數字。",
+                       "hint": "一句提示（示意）" if i % 2 else None,
+                       "answer": f"練習題 {i} 的解答步驟與日常啟示（示意）。"}
+    extra2 = {"drills": [drill(1), drill(2)]} if meta.get("domain_class") == "stats" else {}
+    extra3 = {"drills": [drill(1), drill(2), drill(3)]} if meta.get("domain_class") == "stats" else {}
     return _wrap(meta, {
         "day1": {"segments": [seg(1), seg(2), seg(3)], "mnemonic": f"{n}：一句話記憶點（示意）。"},
         "day2": {"segments": [seg(1), {**seg(2), "bullets": [
             {"text": f"{n} 的子概念一", "example": "子概念一的例子"},
             {"text": f"{n} 的子概念二", "example": "子概念二的例子"}]}, seg(3)],
-            "mnemonic": f"{n}：進階記憶點（示意）。"},
+            "mnemonic": f"{n}：進階記憶點（示意）。", **extra2},
         "day3": {
             "intro": f"把「{n}」變成拿得出手的工具（示意）。",
             "app_map": [{"domain": d, "body": f"在{d}怎麼用{n}", "example": f"{d}的例子"}
@@ -127,7 +155,7 @@ def mock_content(meta: dict) -> dict:
                           "items": [f"自問句 {i}（示意）" for i in range(1, 6)]},
             "practice": {"observe": "觀察級任務（示意）", "intervene": "介入級任務（示意）",
                          "habit": "建立習慣級任務（示意）"},
-            "mnemonic": f"{n}：內化記憶點（示意）。",
+            "mnemonic": f"{n}：內化記憶點（示意）。", **extra3,
         },
         "review": {"question": f"還記得「{n}」嗎？它的核心是什麼？",
                    "answer": f"「{n}」的完整答案（示意）。", "answer_example": "答案的例子（示意）。",

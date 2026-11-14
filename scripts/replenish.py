@@ -33,11 +33,14 @@ def _domain_menu() -> str:
     return "\n".join(f"  - {k}：{h}" for k, h in DOMAIN_HINT.items())
 
 
-def _underrepresented(pool: list[dict], k: int = 6) -> list[str]:
-    """Domain classes with the fewest theories in the pool (ask Gemini to favour them)."""
+def _underrepresented(pool: list[dict], k: int = 6, used: set[str] | None = None) -> list[str]:
+    """Domain classes with the thinnest stock of not-yet-used theories, scaled by their
+    rotation weight (a class that comes round twice as often needs twice the stock)."""
     from collections import Counter
-    cnt = Counter(t.get("domain_class") for t in pool)
-    return sorted(DOMAIN_HINT, key=lambda d: cnt.get(d, 0))[:k]
+    from domains import DOMAIN_WEIGHT
+    used = used or set()
+    cnt = Counter(t.get("domain_class") for t in pool if t["id"] not in used)
+    return sorted(DOMAIN_HINT, key=lambda d: cnt.get(d, 0) / DOMAIN_WEIGHT.get(d, 1))[:k]
 
 
 def _prompt(n: int, existing: list[str], favour: list[str] | None = None) -> str:
@@ -133,7 +136,7 @@ def maybe_replenish(state: dict, *, force: bool = False) -> list[dict]:
     if not force and len(unused) >= min_unused:
         return []
     existing = [f'{t["name_zh"]}({t.get("name_en", "")})' for t in data["theories"]]
-    return add_to_pool(generate_candidates(batch, existing, favour=_underrepresented(data["theories"])))
+    return add_to_pool(generate_candidates(batch, existing, favour=_underrepresented(data["theories"], used=used)))
 
 
 if __name__ == "__main__":

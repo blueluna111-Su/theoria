@@ -67,10 +67,10 @@ gh workflow run "每日三理 daily build" -R blueluna111-Su/theoria   # 手動�
 ## 調整點
 
 - 母池增補：直接編 `data/pool.json`；排程器會優先挑「最久沒輪到的學科」，不必手動排順序。
-- 學科類別：`scripts/domains.py`（加新類別時，`assets/styles.css` 要補對應的 `.tag--<key>` 顏色）。自動補池（`replenish.py`）會優先補收錄較少的類別，並過濾掉太專業、離日常太遠的理論。
+- 學科類別：`scripts/domains.py`（`DOMAIN_WEIGHT` 調整各類出現頻率，目前「機率 · 統計」=2，每輪學科輪替出現兩次）（加新類別時，`assets/styles.css` 要補對應的 `.tag--<key>` 顏色）。自動補池（`replenish.py`）會優先補收錄較少的類別，並過濾掉太專業、離日常太遠的理論。
 - 複習節奏：`data/state.json` 的 `review_intervals_days`、`review_cards_per_day`。
 - 一輪幾個主題：`theories_per_cycle`（目前 1；=1 時 fresh／core 兩層輪流）。
-- 生成文風／結構：`scripts/generate.py` 的 `SYSTEM` 與 `STRUCTURE`。
+- 生成文風／結構：`scripts/generate.py` 的 `SYSTEM` 與 `STRUCTURE`；特定類別的加碼規格在 `DOMAIN_ADDENDUM`（機率統計類：中階起跳、每段帶數字算例、心算捷徑、第 2／3 天附「先想再看解答」的練習題）。
 - 今日一識類別：`scripts/extras.py` 的 `KNOWLEDGE_CATEGORIES`。
 - 發現的來源與挑選標準：`scripts/extras.py` 的 `fetch_*` 與 `FINDS_SYSTEM`。
 - 語言：目前純繁中；雙語可再加。

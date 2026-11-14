@@ -10,6 +10,20 @@
   {% for ex in (s.examples or []) %}{{ eg(ex) }}{% endfor %}
 {% endmacro %}
 
+{# 練習題（目前用於機率統計類）：先想、再點開看解答 #}
+{% macro drills(list, title) %}{% if list %}
+  <div class="drills">
+    <span class="ct">✏️ {{ title }}</span>
+    {% for d in list %}
+    <div class="drill">
+      <div class="drill-q"><b>Q{{ loop.index }}.</b> {{ d.question }}</div>
+      {% if d.hint %}<details class="drill-hint"><summary>提示</summary><div>{{ d.hint }}</div></details>{% endif %}
+      <details class="drill-a"><summary>想好了，看解答</summary><div>{{ d.answer }}</div></details>
+    </div>
+    {% endfor %}
+  </div>
+{% endif %}{% endmacro %}
+
 {% macro unlock(n, active_day) %}{% if n - active_day == 1 %}明天解鎖{% elif n - active_day == 2 %}後天解鎖{% else %}尚未解鎖{% endif %}{% endmacro %}
 
 {% macro card(t, active_day) %}
@@ -47,6 +61,7 @@
     <div class="tab-panel{% if active_day==2 %} active{% endif %}" data-panel="d2">
       <div class="day-badge">第 2 天 · 進階與爭論</div>
       <div class="prose">{% for s in t.day2.segments %}{{ seg(s) }}{% endfor %}</div>
+      {{ drills(t.day2.drills, "動手練習：先自己想，再看解答") }}
       <p class="peek">↑ 第 1 天是完整入門。第 3 天進「實戰與內化」收成日：把它變成拿得出手的工具。</p>
       <div class="mnemonic">🔑 進階記憶點：<b>{{ t.day2.mnemonic }}</b></div>
     </div>
@@ -96,6 +111,7 @@
           <b>建立習慣：</b>{{ t.day3.practice.habit }}
         </div>
       </div>
+      {{ drills(t.day3.drills, "實戰練習題：生活情境，難度遞增") }}
       <div class="mnemonic">🔑 內化記憶點：<b>{{ t.day3.mnemonic }}</b></div>
     </div>
     {% endif %}

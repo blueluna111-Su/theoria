@@ -1861,61 +1861,6 @@
       "tier": "fresh"
     },
     {
-      "id": "regression-to-the-mean",
-      "name_zh": "均值回歸",
-      "name_en": "Regression to the Mean",
-      "domain": "統計思維",
-      "domain_class": "stats",
-      "author": "Francis Galton",
-      "year": 1886,
-      "note": "極端表現之後常回到平均；別誤以為獎懲或偏方有效",
-      "tier": "core"
-    },
-    {
-      "id": "base-rate-neglect",
-      "name_zh": "基本率謬誤",
-      "name_en": "Base Rate Neglect",
-      "domain": "機率·決策",
-      "domain_class": "stats",
-      "author": "Kahneman & Tversky 等",
-      "year": null,
-      "note": "忽略事情本來多常見；看健檢陽性、新聞、統計時先問基數",
-      "tier": "core"
-    },
-    {
-      "id": "survivorship-bias",
-      "name_zh": "倖存者偏差",
-      "name_en": "Survivorship Bias",
-      "domain": "統計思維",
-      "domain_class": "stats",
-      "author": "Abraham Wald（二戰案例）",
-      "year": null,
-      "note": "只看到活下來的就下結論；成功學、投資績效、老店迷思",
-      "tier": "core"
-    },
-    {
-      "id": "simpsons-paradox",
-      "name_zh": "辛普森悖論",
-      "name_en": "Simpson's Paradox",
-      "domain": "統計思維",
-      "domain_class": "stats",
-      "author": "Edward H. Simpson",
-      "year": 1951,
-      "note": "分組看和合併看結論相反；讀報告、比較數字要分層",
-      "tier": "fresh"
-    },
-    {
-      "id": "bayesian-updating",
-      "name_zh": "貝氏更新",
-      "name_en": "Bayesian Updating",
-      "domain": "機率·推理",
-      "domain_class": "stats",
-      "author": "Thomas Bayes",
-      "year": 1763,
-      "note": "依新證據按比例調整信念；不全信也不全否、逐步修正判斷",
-      "tier": "core"
-    },
-    {
       "id": "entropy",
       "name_zh": "熵增（熱力學第二定律）",
       "name_en": "Entropy (Second Law of Thermodynamics)",
@@ -2002,6 +1947,127 @@
       "year": 1859,
       "note": "只有防止傷害他人才能限制個人自由；討論管制與個人選擇",
       "tier": "core"
+    },
+    {
+      "id": "law-of-small-numbers",
+      "name_zh": "小數法則",
+      "name_en": "Law of Small Numbers",
+      "domain": "機率·判斷",
+      "domain_class": "stats",
+      "author": "Tversky & Kahneman",
+      "year": 1971,
+      "note": "小樣本波動大卻被當定論；看評價星數、短期績效、幾次經驗就下結論前先想樣本量",
+      "tier": "core"
+    },
+    {
+      "id": "likelihood-ratio",
+      "name_zh": "概似比（證據強度）",
+      "name_en": "Likelihood Ratio",
+      "domain": "貝氏推理",
+      "domain_class": "stats",
+      "author": "貝氏統計（概念）",
+      "year": null,
+      "note": "問『這證據在兩種假設下各有多可能』來衡量證據多有力；傳聞、健檢、面試訊號",
+      "tier": "fresh"
+    },
+    {
+      "id": "berksons-paradox",
+      "name_zh": "伯克森悖論（對撞偏誤）",
+      "name_en": "Berkson's Paradox",
+      "domain": "因果推論",
+      "domain_class": "stats",
+      "author": "Joseph Berkson",
+      "year": 1946,
+      "note": "篩選過的樣本會製造假相關；「好吃的店服務都差」「帥的都不專情」從何而來",
+      "tier": "fresh"
+    },
+    {
+      "id": "prosecutors-fallacy",
+      "name_zh": "檢察官謬誤",
+      "name_en": "Prosecutor's Fallacy",
+      "domain": "條件機率",
+      "domain_class": "stats",
+      "author": "Thompson & Schumann",
+      "year": 1987,
+      "note": "把 P(證據|無辜) 當成 P(無辜|證據)；讀新聞、檢驗報告、巧合事件時別把條件反過來",
+      "tier": "fresh"
+    },
+    {
+      "id": "fat-tails",
+      "name_zh": "肥尾分布",
+      "name_en": "Fat-Tailed Distributions",
+      "domain": "機率·風險",
+      "domain_class": "stats",
+      "author": "Benoit Mandelbrot",
+      "year": 1963,
+      "note": "極端事件比鐘形曲線預期的常見得多；保險、投資、專案延誤要為尾巴留餘裕",
+      "tier": "core"
+    },
+    {
+      "id": "ergodicity",
+      "name_zh": "遍歷性（時間平均≠群體平均）",
+      "name_en": "Ergodicity",
+      "domain": "機率·決策",
+      "domain_class": "stats",
+      "author": "Ole Peters",
+      "year": 2019,
+      "note": "大家平均賺不代表你一路玩下去會賺；避開會讓你出局的賭注",
+      "tier": "fresh"
+    },
+    {
+      "id": "kelly-criterion",
+      "name_zh": "凱利準則",
+      "name_en": "Kelly Criterion",
+      "domain": "機率·資金管理",
+      "domain_class": "stats",
+      "author": "John L. Kelly Jr.",
+      "year": 1956,
+      "note": "依勝率與賠率決定投入比例；投資部位、時間精力分配都別一次押滿",
+      "tier": "fresh"
+    },
+    {
+      "id": "optimal-stopping",
+      "name_zh": "最佳停止（37% 法則）",
+      "name_en": "Optimal Stopping",
+      "domain": "決策數學",
+      "domain_class": "stats",
+      "author": "秘書問題（數學界經典）",
+      "year": null,
+      "note": "先觀察一段建立基準、之後遇到更好就出手；租屋、找工作、挑選類決策",
+      "tier": "fresh"
+    },
+    {
+      "id": "value-of-information",
+      "name_zh": "資訊價值",
+      "name_en": "Value of Information",
+      "domain": "決策分析",
+      "domain_class": "stats",
+      "author": "Ronald A. Howard",
+      "year": 1966,
+      "note": "多查一點資料值不值得，看它有沒有機會改變你的決定；避免無止境研究",
+      "tier": "fresh"
+    },
+    {
+      "id": "overfitting",
+      "name_zh": "過度擬合",
+      "name_en": "Overfitting",
+      "domain": "統計建模",
+      "domain_class": "stats",
+      "author": "統計學／機器學習（概念）",
+      "year": null,
+      "note": "把過去貼得太緊反而預測不準；經驗法則、投資回測、從少數案例歸納人生道理",
+      "tier": "core"
+    },
+    {
+      "id": "garden-of-forking-paths",
+      "name_zh": "分岔小徑花園（研究者自由度）",
+      "name_en": "Garden of Forking Paths",
+      "domain": "研究方法·統計",
+      "domain_class": "stats",
+      "author": "Andrew Gelman & Eric Loken",
+      "year": 2013,
+      "note": "分析選擇太多時『顯著結果』很容易是偶然；讀健康新聞、看自己的記帳數據",
+      "tier": "fresh"
     }
   ]
 }

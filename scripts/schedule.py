@@ -38,14 +38,23 @@ def _d(iso: str) -> date:
 
 
 def _diversify(avail: list[str], theories: list[dict], used_order: list[str]) -> list[str]:
-    """Reorder candidates so the next pick comes from the domain class that was covered
-    least recently (never-seen classes first). Pool order breaks ties, so curation still counts."""
+    """Reorder candidates for 學科輪替. Looking at the last W picks (W = one full rotation,
+    i.e. the sum of all domain weights), prefer the class with the fewest appearances
+    relative to its weight (domains.DOMAIN_WEIGHT); ties go to the class covered least
+    recently, then to pool order (so curation still counts). A class with weight 2 thus
+    comes round twice per rotation, spread apart rather than back to back."""
+    from domains import DOMAIN_ORDER, DOMAIN_WEIGHT
     dc_of = {t["id"]: t.get("domain_class") for t in theories}
-    last_seen: dict[str, int] = {}
-    for i, tid in enumerate(used_order):
-        last_seen[dc_of.get(tid)] = i
+    window = sum(DOMAIN_WEIGHT.get(d, 1) for d in DOMAIN_ORDER)
+    recent = [dc_of.get(tid) for tid in used_order[-window:]]
+    last_seen = {dc_of.get(tid): i for i, tid in enumerate(used_order)}
     pos = {tid: i for i, tid in enumerate(avail)}
-    return sorted(avail, key=lambda tid: (last_seen.get(dc_of.get(tid), -1), pos[tid]))
+
+    def key(tid: str):
+        dc = dc_of.get(tid)
+        return (recent.count(dc) / DOMAIN_WEIGHT.get(dc, 1), last_seen.get(dc, -1), pos[tid])
+
+    return sorted(avail, key=key)
 
 
 def _start_cycle(state: dict, today_iso: str) -> None:
