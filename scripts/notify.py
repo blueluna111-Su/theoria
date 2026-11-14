@@ -42,8 +42,7 @@ def main() -> int:
     payload = {
         "topic": topic,
         "title": f"每日三理 · 第 {day} 天｜{DAY_LABELS.get(day, '')}",
-        "message": "
-".join(lines),
+        "message": "\n".join(lines),
         "click": SITE_URL,
         "tags": ["books"],
     }

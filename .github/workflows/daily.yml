@@ -31,6 +31,10 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
 
+      - name: Syntax check scripts
+        # 推播步驟設了 continue-on-error，腳本壞掉會被靜默吞掉；先在這裡擋下來
+        run: python -m py_compile scripts/*.py
+
       - name: Generate today's content + render
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
