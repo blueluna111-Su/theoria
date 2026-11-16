@@ -11,10 +11,10 @@
   "review_cards_per_day": 1,
   "current": {
     "active": [
-      "self-discrepancy-theory"
+      "curse-of-knowledge"
     ],
-    "day": 3,
-    "cycle_started": "2026-11-13"
+    "day": 1,
+    "cycle_started": "2026-11-16"
   },
   "completed": [
     {
@@ -1109,13 +1109,13 @@
     {
       "id": "narrative-fallacy",
       "completed_date": "2026-10-06",
-      "last_seen": "2026-10-06",
+      "last_seen": "2026-11-16",
       "review_due": [
         "2026-10-13",
         "2026-10-27",
         "2026-12-05"
       ],
-      "reviews_done": 0
+      "reviews_done": 1
     },
     {
       "id": "contact-hypothesis",
@@ -1490,6 +1490,17 @@
         "2027-01-12"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "self-discrepancy-theory",
+      "completed_date": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "review_due": [
+        "2026-11-23",
+        "2026-12-07",
+        "2027-01-15"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1627,20 +1638,21 @@
     "stress-buffering-hypothesis",
     "agnotology",
     "speech-act-theory",
-    "self-discrepancy-theory"
+    "self-discrepancy-theory",
+    "curse-of-knowledge"
   ],
-  "last_run_date": "2026-11-15",
+  "last_run_date": "2026-11-16",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9,
   "extras_start": "2026-11-07",
   "today_reviews": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "cards": [
       {
-        "id": "social-identity-theory",
-        "completed_date": "2026-09-22",
-        "nth": 2,
-        "distance_days": 25
+        "id": "narrative-fallacy",
+        "completed_date": "2026-10-06",
+        "nth": 1,
+        "distance_days": 41
       }
     ]
   }
