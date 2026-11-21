@@ -13,7 +13,7 @@
     "active": [
       "desirable-difficulties"
     ],
-    "day": 2,
+    "day": 3,
     "cycle_started": "2026-11-19"
   },
   "completed": [
@@ -603,13 +603,13 @@
     {
       "id": "availability-heuristic",
       "completed_date": "2026-08-17",
-      "last_seen": "2026-09-15",
+      "last_seen": "2026-11-21",
       "review_due": [
         "2026-08-24",
         "2026-09-07",
         "2026-10-16"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "baumol-cost-disease",
@@ -1653,18 +1653,18 @@
     "curse-of-knowledge",
     "desirable-difficulties"
   ],
-  "last_run_date": "2026-11-20",
+  "last_run_date": "2026-11-21",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9,
   "extras_start": "2026-11-07",
   "today_reviews": {
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "cards": [
       {
-        "id": "signaling",
+        "id": "availability-heuristic",
         "completed_date": "2026-08-17",
         "nth": 3,
-        "distance_days": 66
+        "distance_days": 67
       }
     ]
   }
