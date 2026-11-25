@@ -11,10 +11,10 @@
   "review_cards_per_day": 1,
   "current": {
     "active": [
-      "psychological-safety"
+      "fitts-law"
     ],
-    "day": 3,
-    "cycle_started": "2026-11-22"
+    "day": 1,
+    "cycle_started": "2026-11-25"
   },
   "completed": [
     {
@@ -1010,13 +1010,13 @@
     {
       "id": "the-streisand-effect",
       "completed_date": "2026-09-27",
-      "last_seen": "2026-10-28",
+      "last_seen": "2026-11-25",
       "review_due": [
         "2026-10-04",
         "2026-10-18",
         "2026-11-26"
       ],
-      "reviews_done": 1
+      "reviews_done": 2
     },
     {
       "id": "information-cascades",
@@ -1523,6 +1523,17 @@
         "2027-01-21"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "psychological-safety",
+      "completed_date": "2026-11-25",
+      "last_seen": "2026-11-25",
+      "review_due": [
+        "2026-12-02",
+        "2026-12-16",
+        "2027-01-24"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1663,20 +1674,21 @@
     "self-discrepancy-theory",
     "curse-of-knowledge",
     "desirable-difficulties",
-    "psychological-safety"
+    "psychological-safety",
+    "fitts-law"
   ],
-  "last_run_date": "2026-11-24",
+  "last_run_date": "2026-11-25",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9,
   "extras_start": "2026-11-07",
   "today_reviews": {
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "cards": [
       {
-        "id": "coase-theorem",
-        "completed_date": "2026-10-09",
-        "nth": 1,
-        "distance_days": 46
+        "id": "the-streisand-effect",
+        "completed_date": "2026-09-27",
+        "nth": 2,
+        "distance_days": 28
       }
     ]
   }

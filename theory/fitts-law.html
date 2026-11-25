@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>費茲定律 · 每日三理</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand"><h1>每日三理</h1><span class="en">Theoria</span></div>
+    <nav class="nav">
+      <a href="../index.html">今日</a>
+      <a href="../archive.html" class="active">歷史</a>
+      <a href="../discover.html">發現</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <a class="back-link" href="../archive.html">← 回理論庫</a>
+    <div class="date">進行中 · 第 1 天 / 3</div>
+    <div class="lead">回頭重讀這則理論的完整三天弧。（這則正在進行中，目前到第 1 天，其餘分頁解鎖後可讀。）</div>
+  </section>
+
+    <article class="theory" data-tabs>
+    <div class="card-head">
+      <div>
+        <div class="theory-name">費茲定律<span class="en">Fitts&#39;s Law</span></div>
+        <div class="theory-meta">Paul Fitts · 1954</div>
+      </div>
+      <span class="tag tag--design">人因工程</span>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="d1"><span class="tab-day">第 1 天</span><span class="tab-sub"> · 入門全貌</span></button>
+      <button class="tab-btn locked" disabled title="第 2 天 · 明天解鎖"><span class="tab-day">🔒 第 2 天</span><span class="tab-sub"> · 明天解鎖</span></button>
+      <button class="tab-btn locked" disabled title="第 3 天 · 後天解鎖"><span class="tab-day">🔒 第 3 天</span><span class="tab-sub"> · 後天解鎖</span></button>
+    </div>
+
+    <div class="tab-panel active" data-panel="d1">
+      <div class="prose"><p><strong>費茲定律的核心概念是「移動時間與目標大小、距離之間的關係」。</strong>費茲定律（Fitts&#39;s Law）是一個量化模型，它描述了從起點移動到目標所需的時間（MT），會受到目標距離（D）和目標寬度（W）的影響。這個定律的核心公式通常表示為 MT = a + b * log2(2D/W)，其中 log2(2D/W) 被稱為「難度指數」（Index of Difficulty, ID）。簡單來說，目標距離越遠、目標尺寸越小，使用者需要花費的移動時間就越長，操作難度也越高。</p><div class="eg"><span class="eg-label">例</span>在電腦螢幕上，點擊一個很小的「關閉」按鈕，通常會比點擊一個佔據大片區域的「確認」按鈕花費更多時間。</div><div class="eg"><span class="eg-label">例</span>伸手去拿放在桌子對面的一支筆，會比拿放在手邊的滑鼠花費更多的時間，因為距離更遠。</div><p><strong>費茲定律的「機制」在於人體運動系統的精準度需求。</strong>人體的大腦在控制肢體進行指向性移動時，會根據目標的難度來調整其運動計畫。當目標尺寸較小或距離較遠時，大腦需要更精細的肌肉控制和更頻繁的視覺回饋來確保動作的準確性。這種對高精準度的需求會增加神經處理的時間和潛在的錯誤率，因此導致整體移動時間的增加。</p><div class="eg"><span class="eg-label">例</span>在手機上打字時，如果虛擬鍵盤的按鈕非常小，你需要更專注地移動手指，否則很容易按錯字，這就是因為需要更高的精準度。</div><div class="eg"><span class="eg-label">例</span>在玩射擊遊戲時，瞄準遠處且移動中的小敵人，比瞄準近處且靜止的大目標需要更細微的滑鼠移動和更長的時間來鎖定目標。</div><p><strong>這個定律在「使用者介面設計」中扮演關鍵角色。</strong>數位產品的設計師廣泛利用費茲定律來優化網站、應用程式和軟體的易用性。透過將常用、重要的功能設計成較大的按鈕，或將它們放置在使用者滑鼠游標或手指容易觸及的位置，可以顯著縮短操作時間，提升使用者體驗，並減少操作錯誤。</p><div class="eg"><span class="eg-label">例</span>在網頁設計中，主要的「提交訂單」或「加入購物車」按鈕通常會做得比其他次要連結更大、更醒目，以鼓勵使用者快速完成主要動作。</div><div class="eg"><span class="eg-label">例</span>智慧型手機的虛擬鍵盤上，常用的字母（例如注音符號的「一」或英文的「e」）通常會設計得比不常用的符號更大，或位於手指更容易觸及的中央區域。</div><p><strong>費茲定律也廣泛應用於「實體產品設計」和「工作場域規劃」。</strong>不僅限於數位世界，在實體環境中，透過調整物件的尺寸和擺放位置，同樣可以提升操作效率和減少錯誤。這對於需要頻繁操作工具、設備或控制面板的場景尤其重要，例如汽車駕駛艙、廚房或工廠的生產線。</p><div class="eg"><span class="eg-label">例</span>汽車儀表板上的常用按鈕，如音量控制或空調開關，通常會設計得較大且位於駕駛員容易觸及的位置，以減少駕駛分心。</div><div class="eg"><span class="eg-label">例</span>在廚房設計時，將常用的餐具、調味料或鍋具放置在瓦斯爐或水槽附近，而不是放在遠處的櫃子裡，可以減少烹飪時的移動時間。</div><p><strong>儘管費茲定律應用廣泛，但它也有其「侷限性」。</strong>費茲定律主要適用於單一、直線的指向性動作，對於複雜的多步驟操作、手勢控制或非視覺目標的移動，其預測能力會有所降低。此外，它也未完全考慮到使用者的個人差異（如年齡、經驗、運動技能）和情境因素（如壓力、疲勞、環境干擾），這些都可能影響實際的移動時間。</p><div class="eg"><span class="eg-label">例</span>使用觸控螢幕進行多指縮放（pinch-to-zoom）手勢，這不是單純的指向性動作，費茲定律的原始模型難以直接精確預測其時間。</div><div class="eg"><span class="eg-label">例</span>在虛擬實境（VR）中，透過頭部追蹤來選擇一個在三維空間中浮動的非視覺目標，其移動時間可能就不完全符合費茲定律的預測，因為涉及更多感官和認知處理。</div></div>
+      <div class="mnemonic">🔑 一句話記憶點：<b>大近好點，小遠難點。</b></div>
+    </div>
+
+
+  </article>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">每日三理 · Theoria — 更新於 2026-11-25</div>
+</footer>
+
+<script src="../assets/app.js"></script>
+</body>
+</html>
