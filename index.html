@@ -22,13 +22,13 @@
 <main class="wrap">
 
   <section class="hero">
-    <div class="date">2026 年 11 月 25 日 · 週三</div>
+    <div class="date">2026 年 11 月 26 日 · 週四</div>
     <div class="lead">每天一個可應用的學術理論，同一個講三天、由淺入深；外加回想卡、一則跨界實用知識、一個新鮮發現。</div>
     <div class="cycle">
       <span>本輪進度</span>
       <span class="cycle-dots">
-<span class="dot filled current"></span><span class="dot"></span><span class="dot"></span>      </span>
-      <span>第 1 天 / 3 · 今天是完整入門</span>
+<span class="dot filled"></span><span class="dot filled current"></span><span class="dot"></span>      </span>
+      <span>第 2 天 / 3 · 今天進到「進階與爭論」</span>
     </div>
   </section>
 
@@ -45,62 +45,69 @@
     </div>
 
     <div class="tabs">
-      <button class="tab-btn active" data-tab="d1"><span class="tab-day">第 1 天</span><span class="tab-sub"> · 入門全貌</span></button>
-      <button class="tab-btn locked" disabled title="第 2 天 · 明天解鎖"><span class="tab-day">🔒 第 2 天</span><span class="tab-sub"> · 明天解鎖</span></button>
-      <button class="tab-btn locked" disabled title="第 3 天 · 後天解鎖"><span class="tab-day">🔒 第 3 天</span><span class="tab-sub"> · 後天解鎖</span></button>
+      <button class="tab-btn" data-tab="d1"><span class="tab-day">第 1 天</span><span class="tab-sub"> · 入門全貌</span></button>
+      <button class="tab-btn active" data-tab="d2"><span class="tab-day">第 2 天</span><span class="tab-sub"> · 進階與爭論</span></button>
+      <button class="tab-btn locked" disabled title="第 3 天 · 明天解鎖"><span class="tab-day">🔒 第 3 天</span><span class="tab-sub"> · 明天解鎖</span></button>
     </div>
 
-    <div class="tab-panel active" data-panel="d1">
+    <div class="tab-panel" data-panel="d1">
       <div class="prose"><p><strong>費茲定律的核心概念是「移動時間與目標大小、距離之間的關係」。</strong>費茲定律（Fitts&#39;s Law）是一個量化模型，它描述了從起點移動到目標所需的時間（MT），會受到目標距離（D）和目標寬度（W）的影響。這個定律的核心公式通常表示為 MT = a + b * log2(2D/W)，其中 log2(2D/W) 被稱為「難度指數」（Index of Difficulty, ID）。簡單來說，目標距離越遠、目標尺寸越小，使用者需要花費的移動時間就越長，操作難度也越高。</p><div class="eg"><span class="eg-label">例</span>在電腦螢幕上，點擊一個很小的「關閉」按鈕，通常會比點擊一個佔據大片區域的「確認」按鈕花費更多時間。</div><div class="eg"><span class="eg-label">例</span>伸手去拿放在桌子對面的一支筆，會比拿放在手邊的滑鼠花費更多的時間，因為距離更遠。</div><p><strong>費茲定律的「機制」在於人體運動系統的精準度需求。</strong>人體的大腦在控制肢體進行指向性移動時，會根據目標的難度來調整其運動計畫。當目標尺寸較小或距離較遠時，大腦需要更精細的肌肉控制和更頻繁的視覺回饋來確保動作的準確性。這種對高精準度的需求會增加神經處理的時間和潛在的錯誤率，因此導致整體移動時間的增加。</p><div class="eg"><span class="eg-label">例</span>在手機上打字時，如果虛擬鍵盤的按鈕非常小，你需要更專注地移動手指，否則很容易按錯字，這就是因為需要更高的精準度。</div><div class="eg"><span class="eg-label">例</span>在玩射擊遊戲時，瞄準遠處且移動中的小敵人，比瞄準近處且靜止的大目標需要更細微的滑鼠移動和更長的時間來鎖定目標。</div><p><strong>這個定律在「使用者介面設計」中扮演關鍵角色。</strong>數位產品的設計師廣泛利用費茲定律來優化網站、應用程式和軟體的易用性。透過將常用、重要的功能設計成較大的按鈕，或將它們放置在使用者滑鼠游標或手指容易觸及的位置，可以顯著縮短操作時間，提升使用者體驗，並減少操作錯誤。</p><div class="eg"><span class="eg-label">例</span>在網頁設計中，主要的「提交訂單」或「加入購物車」按鈕通常會做得比其他次要連結更大、更醒目，以鼓勵使用者快速完成主要動作。</div><div class="eg"><span class="eg-label">例</span>智慧型手機的虛擬鍵盤上，常用的字母（例如注音符號的「一」或英文的「e」）通常會設計得比不常用的符號更大，或位於手指更容易觸及的中央區域。</div><p><strong>費茲定律也廣泛應用於「實體產品設計」和「工作場域規劃」。</strong>不僅限於數位世界，在實體環境中，透過調整物件的尺寸和擺放位置，同樣可以提升操作效率和減少錯誤。這對於需要頻繁操作工具、設備或控制面板的場景尤其重要，例如汽車駕駛艙、廚房或工廠的生產線。</p><div class="eg"><span class="eg-label">例</span>汽車儀表板上的常用按鈕，如音量控制或空調開關，通常會設計得較大且位於駕駛員容易觸及的位置，以減少駕駛分心。</div><div class="eg"><span class="eg-label">例</span>在廚房設計時，將常用的餐具、調味料或鍋具放置在瓦斯爐或水槽附近，而不是放在遠處的櫃子裡，可以減少烹飪時的移動時間。</div><p><strong>儘管費茲定律應用廣泛，但它也有其「侷限性」。</strong>費茲定律主要適用於單一、直線的指向性動作，對於複雜的多步驟操作、手勢控制或非視覺目標的移動，其預測能力會有所降低。此外，它也未完全考慮到使用者的個人差異（如年齡、經驗、運動技能）和情境因素（如壓力、疲勞、環境干擾），這些都可能影響實際的移動時間。</p><div class="eg"><span class="eg-label">例</span>使用觸控螢幕進行多指縮放（pinch-to-zoom）手勢，這不是單純的指向性動作，費茲定律的原始模型難以直接精確預測其時間。</div><div class="eg"><span class="eg-label">例</span>在虛擬實境（VR）中，透過頭部追蹤來選擇一個在三維空間中浮動的非視覺目標，其移動時間可能就不完全符合費茲定律的預測，因為涉及更多感官和認知處理。</div></div>
       <div class="mnemonic">🔑 一句話記憶點：<b>大近好點，小遠難點。</b></div>
     </div>
 
+    <div class="tab-panel active" data-panel="d2">
+      <div class="day-badge">第 2 天 · 進階與爭論</div>
+      <div class="prose"><p><strong>費茲定律的數學模型深入揭示了「資訊理論」在人體運動控制中的應用。</strong>費茲定律中的「難度指數」（ID = log2(2D/W)）的計算方式，實際上是在衡量完成該動作所需的「資訊量」，單位是位元（bits）。這意味著，目標越小、距離越遠，完成動作所需的不確定性就越高，大腦需要處理的資訊量就越大，因此移動時間越長。這個觀點將人體運動視為一個資訊處理過程，強調了精準度需求與資訊熵之間的關聯。</p><div class="eg"><span class="eg-label">例</span>想像在一個漆黑的房間裡，要找到一個很小的開關（高資訊量），自然會比找到一個很大的開關（低資訊量）需要更多的摸索和時間。</div><div class="eg"><span class="eg-label">例</span>在電子表格中，精準地拖曳一個單元格邊界來調整大小（小目標，需要處理高資訊量），比拖曳一個視窗的邊緣來調整大小（大目標，處理低資訊量）更具挑戰性且耗時。</div><p><strong>費茲定律的變體與延伸，擴展了其應用範疇。</strong>除了最初的直線指向模型，後續研究也發展出適用於更複雜情境的變體。例如，有些模型考慮了二維目標的長與寬，而不僅是單一維度；另一些模型則將初始加速和減速階段納入考量，以更精確地預測移動時間。這些延伸讓費茲定律能應用於更多元的互動模式和目標形狀。</p><ul><li>**Welford&#39;s Law**: 這是費茲定律的一個變體，它考慮了目標的二維尺寸（長與寬），而不僅是單一維度。這讓它能更精確地預測點擊非正方形目標的時間。 <span class="eg" style="display:inline;border:none;padding:0;margin:0"><span class="eg-label">例</span>在設計一個長方形按鈕時，Welford&#39;s Law 會同時考慮按鈕的長和寬對點擊時間的影響，而不是只看其較短或較長的邊。</span></li></ul><div class="eg"><span class="eg-label">例</span>在圖形設計軟體中，點擊一個圓形的色彩選擇器，其難度計算可能需要考慮圓形的直徑，而不僅僅是單一維度的寬度。</div><div class="eg"><span class="eg-label">例</span>在觸控板上進行手勢操作，例如從螢幕邊緣滑入以開啟側邊欄，這類非直線路徑的動作，其時間預測會使用到費茲定律的延伸模型，考慮到路徑的複雜性。</div><p><strong>「邊緣效應」（Edge Effect）是費茲定律在介面設計中的一個重要應用。</strong>當互動目標位於螢幕的邊緣或角落時，由於螢幕邊界本身可以作為一個無限大的「目標」，使得這些區域的目標點擊難度大大降低。這是因為使用者可以將滑鼠游標「甩」到邊界，不必精確地停在目標上，游標會自動停留在邊界，大大減少了對精準度的要求，從而縮短了移動時間。</p><div class="eg"><span class="eg-label">例</span>Windows 作業系統的「開始」按鈕通常位於螢幕左下角，使用者可以非常快速地將滑鼠甩到角落，輕鬆點擊它，而無需擔心游標超出目標。</div><div class="eg"><span class="eg-label">例</span>Mac OS 的選單列位於螢幕頂部，使用者可以快速將滑鼠游標向上甩到頂端，輕鬆點擊選單項目，因為游標會被螢幕頂部邊界「捕獲」。</div><p><strong>儘管廣受認可，費茲定律也面臨「學界爭議與侷限」。</strong>費茲定律的爭議點主要在於其模型的簡化性。它假設所有動作都是單一、獨立的，但現實中許多操作是連續的、多步驟的，且會受到認知負荷、學習曲線、肌肉疲勞等因素的影響。此外，對於非視覺或三維空間中的目標，以及涉及手勢、語音等非指向性互動，其預測準確性會顯著下降，這使得它無法涵蓋所有複雜的人機互動情境。</p><div class="eg"><span class="eg-label">例</span>在玩複雜的即時戰略遊戲時，玩家需要同時管理多個單位、點擊多個目標，這種多工操作的總時間就難以單純用費茲定律來預測，因為它涉及認知策略和連續決策。</div><div class="eg"><span class="eg-label">例</span>在虛擬實境（VR）環境中，使用者透過手部控制器抓取一個在三維空間中浮動的物件，這個動作的複雜性超出了費茲定律的原始模型，因為它涉及深度感知和多軸移動。</div><p><strong>費茲定律與其他「認知心理學理論」存在跨理論連結。</strong>費茲定律與「認知負荷理論」有著密切關聯，因為高難度的費茲動作（例如點擊小而遠的目標）會增加使用者的認知負荷，導致操作疲勞和挫折感。同時，它也與「知覺運動學習」有關，透過重複練習，人們可以優化動作路徑和精準度，從而縮短費茲定律所預測的移動時間，這說明了技能習得對操作效率的影響。</p><div class="eg"><span class="eg-label">例</span>一個設計不佳、按鈕很小的應用程式，會讓使用者在操作時感到挫折和認知疲勞，這就是費茲定律所預測的高難度操作帶來的認知負荷。</div><div class="eg"><span class="eg-label">例</span>一位經驗豐富的電玩玩家，能夠以極快的速度和精準度點擊螢幕上的小目標，這反映了透過重複練習，他們已經內化了知覺運動技能，縮短了費茲定律所預測的移動時間。</div></div>
+      
+      <p class="peek">↑ 第 1 天是完整入門。第 3 天進「實戰與內化」收成日：把它變成拿得出手的工具。</p>
+      <div class="mnemonic">🔑 進階記憶點：<b>資訊量決定難度，邊緣是作弊點。</b></div>
+    </div>
 
   </article>
 
 
   <div class="section-eyebrow">今日回想卡 · 複習更早學過的</div>
   <div class="review-card">
-    <div class="review-top"><span class="tag tag--social">社會</span><span>複習 · 距上次 28 天</span></div>
-    <div class="review-q"><span class="name">史翠珊效應</span>　什麼是史翠珊效應，它為什麼會發生？</div>
+    <div class="review-top"><span class="tag tag--econ">經濟</span><span>複習 · 距上次 29 天</span></div>
+    <div class="review-q"><span class="name">資訊瀑布</span>　什麼是資訊瀑布（Information Cascades）？它如何影響我們的決策？</div>
     <div class="review-due">📅 排程：完成於 9/27，第 2 次複習到期</div>
     <button class="reveal-btn">顯示答案</button>
     <div class="review-a">
-      <div class="prose"><p>史翠珊效應是指當人們試圖隱藏、壓制或移除某些資訊時，反而會導致該資訊被更廣泛地傳播與關注的現象。它發生的原因主要基於人類的好奇心、對權威的反感、稀缺性偏誤以及社會證明，這些心理機制在數位媒體的放大下，使得被壓制的資訊更容易病毒式傳播。</p><div class="eg"><span class="eg-label">例</span>某公司為了避免負面新聞曝光，試圖透過法律手段阻止媒體報導，結果該新聞反而因此獲得了更多媒體和公眾的關注，甚至成為熱門話題，這就是史翠珊效應。</div></div>
-      <div class="mnemonic">🔑 <b>越想藏，越被看；越禁止，越傳播。</b></div>
+      <div class="prose"><p>資訊瀑布是指人們在決策時，會依序觀察他人的行為，並可能因此放棄自身所擁有的私有資訊，轉而模仿前人的選擇。這種現象導致群體行為迅速趨於一致，即使最初的決策是基於錯誤或有限的資訊，也可能引發集體非理性。</p><div class="eg"><span class="eg-label">例</span>當你在社群媒體上看到某個熱門話題，即使你對其內容一知半解，但因為看到許多朋友都在轉發和討論，你可能也會跟著分享，因為你推斷他們可能掌握了更多資訊，這就是資訊瀑布在社群傳播中的體現。</div></div>
+      <div class="mnemonic">🔑 <b>觀察他人行為，放棄私有資訊，盲目從眾決策。</b></div>
     </div>
   </div>
 
   <div class="section-eyebrow">今日一識 · 跨界實用知識</div>
     <article class="know-card">
-    <div class="know-top"><span class="know-cat">溝通與語言</span></div>
-    <h3 class="know-title">抱歉還是感謝？換句話說，人緣更好、溝通更有效！</h3>
-<p class="know-hook">你是不是習慣對朋友遲到說「不好意思，我遲到了」？或者對同事幫忙說「謝謝你，抱歉麻煩你了」？其實，換個說法，不只表達更精準，還能大大提升你的好感度！</p>    <div class="prose">
-<p>在許多日常情境中，我們習慣性地說「抱歉」或「不好意思」，即使只是造成一點點不便。然而，這種表達方式可能潛意識地將焦點放在你的「過失」上，讓對方也陷入一種「被麻煩」的感受，即便你真心感到歉意，也可能讓溝通氛圍停留在負面。</p><p>反之，若將「抱歉」轉化為「感謝」，則能將溝通焦點從你的「錯誤」轉移到對方的「付出」上。當你感謝對方付出的時間、耐心或幫助時，你不僅肯定了他們的價值，也讓他們感到被重視，強化了你們之間的正向連結。</p><p>這種轉變不只是話術上的調整，更是心態上的微調。它讓你從「為自己的錯誤感到不好意思」轉變為「欣賞對方的付出與包容」，不僅能減輕你內心的愧疚感，也讓對方感受到你的尊重與肯定。</p><div class="eg"><span class="eg-label">例</span>當你遲到時，不再說「不好意思，我遲到了」，改說「謝謝你等我！」。</div><div class="eg"><span class="eg-label">例</span>當同事幫忙你時，不再說「抱歉，又要麻煩你了」，改說「謝謝你願意幫忙！」。</div><div class="eg"><span class="eg-label">例</span>當你打斷別人說話時，不再說「抱歉，打擾一下」，改說「謝謝你撥冗聽我說！」。</div>    </div>
-<div class="action-box"><span class="label">下次這樣用</span>下次當你想說「抱歉」時，先想想對方為你付出了什麼，然後試著用「謝謝你的（付出）」來表達，你會發現溝通氛圍大不同，人際關係也更融洽。</div><p class="know-caveat">⚠ 這並不是說完全不說抱歉。在真正犯錯、造成損害或需要承擔責任時，真誠的道歉仍然是必要的。這裡的重點是針對「非嚴重過失，但帶來一點點不便」的情境，透過感謝來表達體貼與肯定。</p>  </article>
+    <div class="know-top"><span class="know-cat">歷史與文化典故</span></div>
+    <h3 class="know-title">週休二日不是天經地義？揭秘你我「週末」的誕生史！</h3>
+<p class="know-hook">禮拜六、禮拜天放假，享受悠閒時光，對現代人來說簡直是天經地義。但你可能不知道，這個看似理所當然的「週休二日」制度，其實在歷史上是個相對晚近的概念，而且它從無到有，背後還藏著一段充滿抗爭與變革的故事！</p>    <div class="prose">
+<p>在工業革命之前，大多數人的工作與生活節奏與農業社會掛鉤，沒有固定的「週末」概念，休息日多半與宗教節日、市集日或農閒相關。進入工業時代後，工廠制度讓工人長時間勞動，每週通常只有一天休息（例如週日），工時極長且缺乏彈性。</p><p>「週休二日」的推動，最初源於20世紀初美國的工會運動，尤其受到猶太裔工人爭取週六安息日休息的影響。他們不僅要求週日休息，更希望能在週六也能停止工作。當時許多企業認為這會降低生產力，但福特汽車公司在1926年率先實施週休二日制，證明此舉反而能提高員工士氣，進而提升生產效率。</p><p>隨著時間推移，週休二日的概念逐漸被世界各國採納，成為勞動權益進步的重要里程碑。這不僅讓勞工有更多時間陪伴家人、休閒娛樂，也刺激了消費，帶動了旅遊和服務業的發展，對現代社會的經濟與文化產生了深遠影響。</p><div class="eg"><span class="eg-label">例</span>想想看，如果沒有週休二日，你每週七天都得上班，很難有固定時間規劃家庭聚會、從事興趣嗜好或安排一趟小旅行，生活品質將會大受影響。</div><div class="eg"><span class="eg-label">例</span>現在你可以利用週六日去咖啡廳放鬆、上健身房運動、或和朋友相約看電影，這些都是享受前人爭取來的週休二日福利。</div>    </div>
+<div class="action-box"><span class="label">下次這樣用</span>下次享受週末時，不妨回想這份來之不易的制度，更懂得珍惜並善用這段休息時光，來平衡工作與生活。</div><p class="know-caveat">⚠ 雖然週休二日已是許多國家的常態，但全球各地的工時規範、休假制度仍有差異，某些行業或職位可能因其特殊性而有不同的工時安排。</p>  </article>
 
 
   <div class="section-eyebrow">新鮮發現 · GitHub / Hacker News</div>
   <article class="find-card">
     <div class="find-top">
-      <span class="find-kind ai">AI開發工具</span>
-      <span class="find-src">GitHub · ★ 3675</span>
+      <span class="find-kind ai">AI 工具</span>
+      <span class="find-src">GitHub · ★ 1048</span>
     </div>
-    <h3 class="find-name"><a href="https://github.com/EL4CTEO/fast-anything" target="_blank" rel="noopener">EL4CTEO/fast-anything ↗</a></h3>
-    <p class="find-one">透過 AI 代理人找出 Python、Node 或 Ruby 應用程式中的效能瓶頸，並自動將慢速部分重寫為高效能程式碼。</p>
+    <h3 class="find-name"><a href="https://github.com/qianyiai/kurocat" target="_blank" rel="noopener">KuroCat ↗</a></h3>
+<div class="find-repo">qianyiai/kurocat</div>    <p class="find-one">一款開源的 3D/2D 桌面打字小黑貓與 AI 程式碼夥伴，支援多平台。</p>
     <div class="find-body">
-<p><b>為什麼有趣</b>它不要求你將整個應用程式都用 Rust 等語言重寫，而是精準鎖定佔用 5% 執行時間但卻造成大部分延遲的熱點功能，讓 AI 代理人協助重寫，兼顧效率與開發成本。</p><p><b>可以怎麼用</b>當你的 Python/Node/Ruby 應用程式遇到效能瓶頸時，可以利用它來分析並自動優化關鍵功能，提升程式執行速度，且能確保重寫後的功能行為與原始程式碼一致。</p><p class="find-caveat"><b>留意</b>依專案介紹，需要開發者具備一定技術背景來操作 AI 代理人與整合重寫後的程式碼。</p>    </div>
+<p><b>為什麼有趣</b>它將可愛的桌面寵物（類似 Bongo Cat）與實用的 AI 程式碼輔助功能結合，提供獨特的互動體驗。不僅能讓桌面充滿趣味，還能在你寫程式時提供智慧幫助，概念新穎且應用廣泛。</p><p><b>可以怎麼用</b>你可以將它放在桌面上，看著它隨著你的打字動作而動，增添工作樂趣；同時，它能整合 Claude、Codex 等 AI 模型，在你需要時提供程式碼建議、解答疑問，是個兼具娛樂與效率的 AI 伴侶。</p><p class="find-caveat"><b>留意</b>依專案介紹，支援多種 AI 模型，但實際使用效果可能取決於你選擇的 AI 服務及其設定。</p>    </div>
   </article>
   <article class="find-card">
     <div class="find-top">
-      <span class="find-kind">效率工具</span>
-      <span class="find-src">GitHub · ★ 794</span>
+      <span class="find-kind">資料庫工具</span>
+      <span class="find-src">Hacker News · ▲ 101</span>
     </div>
-    <h3 class="find-name"><a href="https://github.com/Umbra9179/clipboard-history-manager-windows" target="_blank" rel="noopener">Umbra9179/clipboard-history-manager-windows ↗</a></h3>
-    <p class="find-one">一款免費開源的 Windows 剪貼簿管理工具，提供可搜尋的歷史紀錄、圖片預覽、標籤和備份功能。</p>
+    <h3 class="find-name"><a href="https://masondata.ai/" target="_blank" rel="noopener">Mason – A lightweight Postgres read-replica, built on columnar storage ↗</a></h3>
+    <p class="find-one">一個輕量級的開源 PostgreSQL 讀取副本替代方案，基於 DuckDB 的欄式儲存引擎。</p>
     <div class="find-body">
-<p><b>為什麼有趣</b>Windows 內建的剪貼簿歷史功能相對陽春，這個專案提供了更強大的管理能力，特別是可搜尋性、圖片預覽和自訂標籤，大幅提升日常工作效率。</p><p><b>可以怎麼用</b>無論是文字、圖片或其他檔案，你都可以輕鬆管理過去複製的內容。當你需要重複使用某段文字或圖片時，只需透過關鍵字搜尋，就能快速找到並貼上，省去重複複製的麻煩，還能將重要項目加上標籤以便快速查找。</p>    </div>
-  </article>
+<p><b>為什麼有趣</b>它提供了一個高效能的解決方案，用於處理 PostgreSQL 上的分析型查詢。透過整合 DuckDB 的欄式計算引擎，Mason 能顯著加速查詢，同時保持與 PostgreSQL 的介面相容性，對於需要優化資料分析效能的團隊來說非常實用。</p><p><b>可以怎麼用</b>如果你的應用程式或服務在 PostgreSQL 資料庫上有大量的分析查詢，導致主資料庫負載過高或查詢速度緩慢，你可以部署 Mason 作為讀取副本。它能承擔這些分析負載，讓你的報表或儀表板執行得更快，同時不影響主資料庫的交易處理。</p><p class="find-caveat"><b>留意</b>作為一個資料庫基礎設施工具，需要一定的技術背景來部署和管理。</p>    </div>
+<a class="find-discuss" href="https://news.ycombinator.com/item?id=50630294" target="_blank" rel="noopener">看 HN 討論 →</a>  </article>
   <p class="legend"><a href="discover.html">看過去的發現與知識 →</a></p>
 
 
@@ -109,7 +116,7 @@
 <footer class="site-footer">
   <div class="wrap">
     每日三理 · Theoria。第 1 天完整入門、第 2、3 天往更深推、每段都把話講透並配例子 ＋ 間隔回想複習。<br>
-    內容由 AI 每日生成、停在概念層級以求準確；不引用無法查證的具體研究數字。　更新於 2026-11-25。  </div>
+    內容由 AI 每日生成、停在概念層級以求準確；不引用無法查證的具體研究數字。　更新於 2026-11-26。  </div>
 </footer>
 
 <script src="assets/app.js"></script>
