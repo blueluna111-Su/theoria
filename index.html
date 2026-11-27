@@ -22,13 +22,13 @@
 <main class="wrap">
 
   <section class="hero">
-    <div class="date">2026 年 11 月 26 日 · 週四</div>
+    <div class="date">2026 年 11 月 27 日 · 週五</div>
     <div class="lead">每天一個可應用的學術理論，同一個講三天、由淺入深；外加回想卡、一則跨界實用知識、一個新鮮發現。</div>
     <div class="cycle">
       <span>本輪進度</span>
       <span class="cycle-dots">
-<span class="dot filled"></span><span class="dot filled current"></span><span class="dot"></span>      </span>
-      <span>第 2 天 / 3 · 今天進到「進階與爭論」</span>
+<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled current"></span>      </span>
+      <span>第 3 天 / 3 · 今天進到「實戰與內化」收成日</span>
     </div>
   </section>
 
@@ -46,8 +46,8 @@
 
     <div class="tabs">
       <button class="tab-btn" data-tab="d1"><span class="tab-day">第 1 天</span><span class="tab-sub"> · 入門全貌</span></button>
-      <button class="tab-btn active" data-tab="d2"><span class="tab-day">第 2 天</span><span class="tab-sub"> · 進階與爭論</span></button>
-      <button class="tab-btn locked" disabled title="第 3 天 · 明天解鎖"><span class="tab-day">🔒 第 3 天</span><span class="tab-sub"> · 明天解鎖</span></button>
+      <button class="tab-btn" data-tab="d2"><span class="tab-day">第 2 天</span><span class="tab-sub"> · 進階與爭論</span></button>
+      <button class="tab-btn active" data-tab="d3"><span class="tab-day">第 3 天</span><span class="tab-sub"> · 實戰與內化</span></button>
     </div>
 
     <div class="tab-panel" data-panel="d1">
@@ -55,7 +55,7 @@
       <div class="mnemonic">🔑 一句話記憶點：<b>大近好點，小遠難點。</b></div>
     </div>
 
-    <div class="tab-panel active" data-panel="d2">
+    <div class="tab-panel" data-panel="d2">
       <div class="day-badge">第 2 天 · 進階與爭論</div>
       <div class="prose"><p><strong>費茲定律的數學模型深入揭示了「資訊理論」在人體運動控制中的應用。</strong>費茲定律中的「難度指數」（ID = log2(2D/W)）的計算方式，實際上是在衡量完成該動作所需的「資訊量」，單位是位元（bits）。這意味著，目標越小、距離越遠，完成動作所需的不確定性就越高，大腦需要處理的資訊量就越大，因此移動時間越長。這個觀點將人體運動視為一個資訊處理過程，強調了精準度需求與資訊熵之間的關聯。</p><div class="eg"><span class="eg-label">例</span>想像在一個漆黑的房間裡，要找到一個很小的開關（高資訊量），自然會比找到一個很大的開關（低資訊量）需要更多的摸索和時間。</div><div class="eg"><span class="eg-label">例</span>在電子表格中，精準地拖曳一個單元格邊界來調整大小（小目標，需要處理高資訊量），比拖曳一個視窗的邊緣來調整大小（大目標，處理低資訊量）更具挑戰性且耗時。</div><p><strong>費茲定律的變體與延伸，擴展了其應用範疇。</strong>除了最初的直線指向模型，後續研究也發展出適用於更複雜情境的變體。例如，有些模型考慮了二維目標的長與寬，而不僅是單一維度；另一些模型則將初始加速和減速階段納入考量，以更精確地預測移動時間。這些延伸讓費茲定律能應用於更多元的互動模式和目標形狀。</p><ul><li>**Welford&#39;s Law**: 這是費茲定律的一個變體，它考慮了目標的二維尺寸（長與寬），而不僅是單一維度。這讓它能更精確地預測點擊非正方形目標的時間。 <span class="eg" style="display:inline;border:none;padding:0;margin:0"><span class="eg-label">例</span>在設計一個長方形按鈕時，Welford&#39;s Law 會同時考慮按鈕的長和寬對點擊時間的影響，而不是只看其較短或較長的邊。</span></li></ul><div class="eg"><span class="eg-label">例</span>在圖形設計軟體中，點擊一個圓形的色彩選擇器，其難度計算可能需要考慮圓形的直徑，而不僅僅是單一維度的寬度。</div><div class="eg"><span class="eg-label">例</span>在觸控板上進行手勢操作，例如從螢幕邊緣滑入以開啟側邊欄，這類非直線路徑的動作，其時間預測會使用到費茲定律的延伸模型，考慮到路徑的複雜性。</div><p><strong>「邊緣效應」（Edge Effect）是費茲定律在介面設計中的一個重要應用。</strong>當互動目標位於螢幕的邊緣或角落時，由於螢幕邊界本身可以作為一個無限大的「目標」，使得這些區域的目標點擊難度大大降低。這是因為使用者可以將滑鼠游標「甩」到邊界，不必精確地停在目標上，游標會自動停留在邊界，大大減少了對精準度的要求，從而縮短了移動時間。</p><div class="eg"><span class="eg-label">例</span>Windows 作業系統的「開始」按鈕通常位於螢幕左下角，使用者可以非常快速地將滑鼠甩到角落，輕鬆點擊它，而無需擔心游標超出目標。</div><div class="eg"><span class="eg-label">例</span>Mac OS 的選單列位於螢幕頂部，使用者可以快速將滑鼠游標向上甩到頂端，輕鬆點擊選單項目，因為游標會被螢幕頂部邊界「捕獲」。</div><p><strong>儘管廣受認可，費茲定律也面臨「學界爭議與侷限」。</strong>費茲定律的爭議點主要在於其模型的簡化性。它假設所有動作都是單一、獨立的，但現實中許多操作是連續的、多步驟的，且會受到認知負荷、學習曲線、肌肉疲勞等因素的影響。此外，對於非視覺或三維空間中的目標，以及涉及手勢、語音等非指向性互動，其預測準確性會顯著下降，這使得它無法涵蓋所有複雜的人機互動情境。</p><div class="eg"><span class="eg-label">例</span>在玩複雜的即時戰略遊戲時，玩家需要同時管理多個單位、點擊多個目標，這種多工操作的總時間就難以單純用費茲定律來預測，因為它涉及認知策略和連續決策。</div><div class="eg"><span class="eg-label">例</span>在虛擬實境（VR）環境中，使用者透過手部控制器抓取一個在三維空間中浮動的物件，這個動作的複雜性超出了費茲定律的原始模型，因為它涉及深度感知和多軸移動。</div><p><strong>費茲定律與其他「認知心理學理論」存在跨理論連結。</strong>費茲定律與「認知負荷理論」有著密切關聯，因為高難度的費茲動作（例如點擊小而遠的目標）會增加使用者的認知負荷，導致操作疲勞和挫折感。同時，它也與「知覺運動學習」有關，透過重複練習，人們可以優化動作路徑和精準度，從而縮短費茲定律所預測的移動時間，這說明了技能習得對操作效率的影響。</p><div class="eg"><span class="eg-label">例</span>一個設計不佳、按鈕很小的應用程式，會讓使用者在操作時感到挫折和認知疲勞，這就是費茲定律所預測的高難度操作帶來的認知負荷。</div><div class="eg"><span class="eg-label">例</span>一位經驗豐富的電玩玩家，能夠以極快的速度和精準度點擊螢幕上的小目標，這反映了透過重複練習，他們已經內化了知覺運動技能，縮短了費茲定律所預測的移動時間。</div></div>
       
@@ -63,51 +63,97 @@
       <div class="mnemonic">🔑 進階記憶點：<b>資訊量決定難度，邊緣是作弊點。</b></div>
     </div>
 
+    <div class="tab-panel active" data-panel="d3">
+      <span class="harvest-tag">🌾 收成日 · 把理解變成拿得出手的工具</span>
+      <div class="prose">
+        <p>今天我們將把費茲定律的深刻理解轉化為日常生活與工作中的實用工具，學習如何主動運用它來優化設計、提升效率，並避免常見的設計陷阱。</p>
+
+        <div class="subhead"><span class="ico">🗺️</span>一、跨領域應用地圖：它出現在你生活的哪些角落</div>
+        <div class="app-map">
+          <div class="app-row"><div class="app-domain">數位產品設計</div><div class="app-body">在設計網站、應用程式或軟體介面時，應將最常用、最重要的功能按鈕設計得更大、更容易點擊，並放置在使用者視線或手指容易觸及的區域。同時，善用螢幕邊緣的「邊緣效應」來放置關鍵元素，以提升可點擊性。<div class="eg"><span class="eg-label">例</span>智慧型手機的拍照應用程式中，快門按鈕通常會做得很大，且位於螢幕下方中央，方便使用者單手操作，即使在移動中也能快速點擊。</div></div></div>
+          <div class="app-row"><div class="app-domain">實體空間規劃</div><div class="app-body">在規劃辦公室、廚房、工廠產線或任何需要人機互動的實體空間時，應將最常用工具、設備或控制面板放置在操作者最近、最容易觸及的位置，並確保其操作介面足夠大，以減少移動時間和操作失誤。<div class="eg"><span class="eg-label">例</span>辦公桌上，常用的滑鼠、鍵盤、電話都應放在手臂伸直即可觸及的範圍內，而較不常用的文件或文具則可放在稍遠的抽屜或櫃子裡。</div></div></div>
+          <div class="app-row"><div class="app-domain">簡報與教學</div><div class="app-body">在製作簡報投影片或教學內容時，如果需要觀眾點擊連結、掃描QR Code或互動，應確保這些目標足夠大、清晰，且距離觀眾的「虛擬手指」不遠（例如，QR Code不要小到需要湊近看或難以掃描），以確保互動的順暢性。<div class="eg"><span class="eg-label">例</span>在線上會議中分享一個連結，直接將連結文字放大並置中顯示，比將連結縮小放在角落更容易讓參與者點擊或複製，提升互動效率。</div></div></div>
+          <div class="app-row"><div class="app-domain">運動訓練與技能學習</div><div class="app-body">在訓練需要精準度或反應速度的運動技能時，可以透過調整目標的大小或距離來漸進式地提升難度。從大目標、近距離開始，逐步過渡到小目標、遠距離，以優化運動員的知覺運動控制，幫助他們更有效地掌握技能。<div class="eg"><span class="eg-label">例</span>籃球新手練習投籃時，一開始可以從近距離、籃框較寬鬆的練習框開始，熟練後再逐步增加距離或使用標準籃框，以循序漸進地提升精準度。</div></div></div>
+        </div>
+
+        <div class="subhead"><span class="ico">🛡️</span>二、運用費茲定律提升效率與體驗的三個設計原則</div>
+        <div class="scene"><b>目標放大原則 (Magnify Targets)。</b>為了縮短使用者點擊或操作目標所需的時間，最直接且有效的方法就是增加目標的尺寸。目標越大，使用者需要精準控制的程度就越低，操作起來就越快、越輕鬆。這不僅適用於數位按鈕，也適用於實體開關或操作區域的設計。<div class="eg"><span class="eg-label">例</span>在設計智慧型手錶的應用程式時，將常用的功能圖示（如運動追蹤、訊息通知）設計得比不常用的圖示更大，可以大幅提升在小螢幕上的操作便利性。</div></div>
+        <div class="scene"><b>距離縮短原則 (Minimize Distance)。</b>將使用者最常互動的目標放置在距離其當前操作點最近的位置，可以顯著減少移動時間。在數位介面中，這意味著將常用功能放在滑鼠或手指的預期路徑上；在實體空間中，則意味著將常用工具或設備放置在操作者伸手可及的範圍內。<div class="eg"><span class="eg-label">例</span>電腦軟體中，常用的「儲存」、「複製」、「貼上」功能通常會放在工具列的顯眼位置，或提供快速鍵，以減少滑鼠移動到選單的距離和時間。</div></div>
+        <div class="scene"><b>利用邊緣效應 (Leverage Edge Effect)。</b>螢幕的邊緣和角落可以被視為無限大的目標，因為滑鼠游標可以「撞」到邊界而不會超出。因此，將重要的、常用的互動元素放置在螢幕的邊緣或角落，可以極大地提升其可點擊性，減少使用者精準定位的負擔，從而加快操作速度。<div class="eg"><span class="eg-label">例</span>許多作業系統的任務列或Dock欄都位於螢幕底部或側面，使用者可以快速將滑鼠游標甩到底部或側面來點擊應用程式圖示，而無需精確瞄準。</div></div>
+
+        <div class="subhead"><span class="ico">✊</span>三、組合拳：和其他理論一起搭著用</div>
+        <p><strong>＋ 認知負荷理論 (Cognitive Load Theory)：</strong>當介面設計違反費茲定律（目標小、距離遠）時，使用者需要投入更多的注意力來精準操作，這會顯著增加他們的認知負荷。兩者結合提醒我們，優化操作效率不僅是物理層面，也是心理層面，減少操作難度能釋放認知資源，讓使用者能更專注於任務本身。</p>
+        <div class="eg"><span class="eg-label">例</span>一個導航應用程式，如果目的地輸入按鈕很小，且位於螢幕右上角，駕駛員在開車時操作會非常困難，不僅因為費茲定律預測的移動時間長，更因為高難度操作分散了駕駛的認知資源，增加了行車危險。</div>
+        <p><strong>＋ 尼爾森十大可用性原則 (Nielsen&#39;s 10 Usability Heuristics)：</strong>費茲定律直接支持了尼爾森的「錯誤預防」原則，因為更大的目標和更短的距離能減少誤點擊的機率。同時，它也提升了「彈性與效率」，讓使用者能更快地完成任務。兩者是從不同層面評估和優化使用者體驗的互補工具，共同指向更直觀、更有效率的設計。</p>
+        <div class="eg"><span class="eg-label">例</span>在一個線上購物網站上，將「加入購物車」按鈕設計得足夠大且醒目，這既符合費茲定律，減少了點擊錯誤，也符合尼爾森原則中的錯誤預防，同時提升了購物流程的效率和使用者滿意度。</div>
+
+        <div class="subhead"><span class="ico">⚠️</span>四、反模式：別這樣用它</div>
+        <ul>
+          <li>**為了簡潔而犧牲可用性**：設計師有時會為了追求極簡或美觀，將所有按鈕都設計得很小，或將功能藏在多層選單中，這嚴重違反了費茲定律，導致使用者操作困難、效率低下，甚至產生挫折感。 <span class="eg" style="display:inline;border:none;padding:0;margin:0"><span class="eg-label">例</span>某個手機應用程式為了視覺簡潔，將所有設定按鈕都設計成只有圖示、且尺寸極小的微型按鈕，讓使用者必須非常小心地點擊，否則容易點錯，大大降低了操作效率。</span></li>
+          <li>**忽略使用情境與裝置差異**：在設計時沒有考慮到使用者可能在移動中、單手操作，或在不同尺寸的螢幕上使用。一個在桌上型電腦上看似合理的按鈕大小，在手機或智慧手錶上可能就變得難以點擊，導致跨裝置體驗不佳。 <span class="eg" style="display:inline;border:none;padding:0;margin:0"><span class="eg-label">例</span>一個為大螢幕平板設計的應用程式，直接移植到智慧手錶上，其按鈕大小和間距沒有重新調整，導致在小螢幕上根本無法精準點擊，使得應用程式在手錶上幾乎無法使用。</span></li>
+          <li>**過度依賴「學習曲線」**：認為使用者會隨著時間習慣並學會精準操作困難的介面。雖然學習確實能提升效率，但初始的學習成本高昂，且會造成使用者挫折感，最終可能導致放棄產品，尤其是在競爭激烈的市場中。 <span class="eg" style="display:inline;border:none;padding:0;margin:0"><span class="eg-label">例</span>某款專業軟體的操作介面，所有功能按鈕都密密麻麻地排列在一起，尺寸也很小。開發者認為專業使用者會花時間學習並習慣，但新用戶往往望而卻步，難以入門，導致產品的普及率受限。</span></li>
+        </ul>
+
+        <div class="checklist">
+          <span class="ct">🌾 設計互動介面時的費茲定律檢核清單</span>
+          <ul><li>我是否將最常用、最重要的功能按鈕設計得足夠大，方便使用者點擊？</li><li>我是否將關鍵互動元素放置在使用者最容易觸及（最近距離）的位置？</li><li>我是否充分利用了螢幕邊緣或角落的「邊緣效應」來放置重要功能？</li><li>對於需要精準操作的元素，我是否提供了足夠的「點擊區域」或視覺提示，以減少錯誤？</li><li>我是否考慮了不同裝置（手機、平板、電腦）和使用情境（靜態、移動中）下，目標大小和距離的適用性？</li></ul>
+        </div>
+
+        <div class="action-box">
+          <span class="label">本週實作 · 三級進階</span>
+          <b>觀察：</b>觀察你今天使用的任何三個數位產品（App、網站）或實體物品（遙控器、家電面板），找出其中哪些設計符合費茲定律，哪些設計違反了它。記錄下你的觀察和感受，例如「這個按鈕太小了，我好幾次都點錯。」<br>
+          <b>介入：</b>挑選一個你認為違反費茲定律的產品或介面，試著想像如何重新設計它。具體說明你會如何調整目標的大小和位置，以及為什麼這樣做會改善使用者體驗。例如，你可以畫一個草圖。<br>
+          <b>建立習慣：</b>在接下來的一週內，每次當你感到某個數位或實體操作「難用」時，立刻停下來思考：這是否與費茲定律有關？是目標太小？距離太遠？還是沒有利用邊緣效應？將這種思考變成一種習慣，訓練你的「設計眼光」。
+        </div>
+      </div>
+      
+      <div class="mnemonic">🔑 內化記憶點：<b>大近邊緣好用，小遠簡潔難用。</b></div>
+    </div>
   </article>
 
 
   <div class="section-eyebrow">今日回想卡 · 複習更早學過的</div>
   <div class="review-card">
     <div class="review-top"><span class="tag tag--econ">經濟</span><span>複習 · 距上次 29 天</span></div>
-    <div class="review-q"><span class="name">資訊瀑布</span>　什麼是資訊瀑布（Information Cascades）？它如何影響我們的決策？</div>
+    <div class="review-q"><span class="name">限制理論</span>　什麼是限制理論（TOC）的核心思想，以及它如何幫助我們提升效能？</div>
     <div class="review-due">📅 排程：完成於 9/27，第 2 次複習到期</div>
     <button class="reveal-btn">顯示答案</button>
     <div class="review-a">
-      <div class="prose"><p>資訊瀑布是指人們在決策時，會依序觀察他人的行為，並可能因此放棄自身所擁有的私有資訊，轉而模仿前人的選擇。這種現象導致群體行為迅速趨於一致，即使最初的決策是基於錯誤或有限的資訊，也可能引發集體非理性。</p><div class="eg"><span class="eg-label">例</span>當你在社群媒體上看到某個熱門話題，即使你對其內容一知半解，但因為看到許多朋友都在轉發和討論，你可能也會跟著分享，因為你推斷他們可能掌握了更多資訊，這就是資訊瀑布在社群傳播中的體現。</div></div>
-      <div class="mnemonic">🔑 <b>觀察他人行為，放棄私有資訊，盲目從眾決策。</b></div>
+      <div class="prose"><p>限制理論的核心思想是，任何系統的效能都受限於其最弱的一環，即「限制」。它提供五步驟聚焦法，引導我們識別、利用、遷就、提升限制，並打破慣性，從而系統性地優化整體產出，而不是盲目地追求局部優化。</p><div class="eg"><span class="eg-label">例</span>一家工廠的生產線，如果其中一台機器（例如：烤箱）的產能最低，那麼整條生產線的產出都會被這台機器限制住。限制理論會建議我們優先確保這台機器不閒置、不故障（利用），並讓其他機器配合它（遷就），最終才考慮升級這台機器（提升），以最大化整體產能。</div></div>
+      <div class="mnemonic">🔑 <b>找出瓶頸，專注突破，整體效能自然提升。</b></div>
     </div>
   </div>
 
   <div class="section-eyebrow">今日一識 · 跨界實用知識</div>
     <article class="know-card">
-    <div class="know-top"><span class="know-cat">歷史與文化典故</span></div>
-    <h3 class="know-title">週休二日不是天經地義？揭秘你我「週末」的誕生史！</h3>
-<p class="know-hook">禮拜六、禮拜天放假，享受悠閒時光，對現代人來說簡直是天經地義。但你可能不知道，這個看似理所當然的「週休二日」制度，其實在歷史上是個相對晚近的概念，而且它從無到有，背後還藏著一段充滿抗爭與變革的故事！</p>    <div class="prose">
-<p>在工業革命之前，大多數人的工作與生活節奏與農業社會掛鉤，沒有固定的「週末」概念，休息日多半與宗教節日、市集日或農閒相關。進入工業時代後，工廠制度讓工人長時間勞動，每週通常只有一天休息（例如週日），工時極長且缺乏彈性。</p><p>「週休二日」的推動，最初源於20世紀初美國的工會運動，尤其受到猶太裔工人爭取週六安息日休息的影響。他們不僅要求週日休息，更希望能在週六也能停止工作。當時許多企業認為這會降低生產力，但福特汽車公司在1926年率先實施週休二日制，證明此舉反而能提高員工士氣，進而提升生產效率。</p><p>隨著時間推移，週休二日的概念逐漸被世界各國採納，成為勞動權益進步的重要里程碑。這不僅讓勞工有更多時間陪伴家人、休閒娛樂，也刺激了消費，帶動了旅遊和服務業的發展，對現代社會的經濟與文化產生了深遠影響。</p><div class="eg"><span class="eg-label">例</span>想想看，如果沒有週休二日，你每週七天都得上班，很難有固定時間規劃家庭聚會、從事興趣嗜好或安排一趟小旅行，生活品質將會大受影響。</div><div class="eg"><span class="eg-label">例</span>現在你可以利用週六日去咖啡廳放鬆、上健身房運動、或和朋友相約看電影，這些都是享受前人爭取來的週休二日福利。</div>    </div>
-<div class="action-box"><span class="label">下次這樣用</span>下次享受週末時，不妨回想這份來之不易的制度，更懂得珍惜並善用這段休息時光，來平衡工作與生活。</div><p class="know-caveat">⚠ 雖然週休二日已是許多國家的常態，但全球各地的工時規範、休假制度仍有差異，某些行業或職位可能因其特殊性而有不同的工時安排。</p>  </article>
+    <div class="know-top"><span class="know-cat">自然與地理</span></div>
+    <h3 class="know-title">家裡蚊子揮之不去？抓對「孳生源」才是根本之道！</h3>
+<p class="know-hook">夏天到了，蚊子也跟著大軍壓境。但你有沒有想過，為什麼明明家裡都關好門窗，也點了蚊香、用了捕蚊燈，還是常常被叮？其實，蚊子很可能就「住」在你家附近！</p>    <div class="prose">
+<p>蚊子的生命週期從「水」開始。雌蚊需要積水來產卵，即使只是瓶蓋大小、硬幣厚度的水量，也足以讓數十隻蚊子幼蟲（孑孓）快樂成長、羽化成蚊，再飛出來吸你的血。</p><p>這些容易被忽略的積水容器，往往就是蚊子大軍的「育兒室」。如果沒有定期巡檢並清除這些孳生源，家裡就等於是蚊子源源不絕的補給站，治標不治本，自然怎麼抓都抓不完。</p><p>常見的蚊子孳生源包括：花盆底盤、廢棄輪胎、水桶、臉盆、帆布凹陷處、盆栽葉片積水，甚至是排水溝或屋簷的堵塞處。只要有不流動的積水，就有潛在風險。</p><div class="eg"><span class="eg-label">例</span>每次澆完花，記得把花盆底盤的積水倒掉，並定期刷洗底盤去除蚊卵。</div><div class="eg"><span class="eg-label">例</span>把陽台或庭院不用的水桶、臉盆倒扣收好，或直接丟棄，避免下雨時積水。</div><div class="eg"><span class="eg-label">例</span>定期檢查戶外排水溝是否暢通，若有堵塞或淤積，應清理使其排水順暢。</div>    </div>
+<div class="action-box"><span class="label">下次這樣用</span>防治蚊子最有效的方法，就是定期巡視居家內外，澈底清除任何可能積水的容器，從根本上斷絕蚊子的孳生源，才能擁有一個少蚊子的夏天。</div><p class="know-caveat">⚠ 若住家周圍有大片積水、廢棄物堆積或環境髒亂，超出個人清理範圍時，建議通報當地環保單位協助處理。</p>  </article>
 
 
   <div class="section-eyebrow">新鮮發現 · GitHub / Hacker News</div>
   <article class="find-card">
     <div class="find-top">
-      <span class="find-kind ai">AI 工具</span>
-      <span class="find-src">GitHub · ★ 1048</span>
+      <span class="find-kind ai">AI 效率工具</span>
+      <span class="find-src">GitHub · ★ 1751</span>
     </div>
-    <h3 class="find-name"><a href="https://github.com/qianyiai/kurocat" target="_blank" rel="noopener">KuroCat ↗</a></h3>
-<div class="find-repo">qianyiai/kurocat</div>    <p class="find-one">一款開源的 3D/2D 桌面打字小黑貓與 AI 程式碼夥伴，支援多平台。</p>
+    <h3 class="find-name"><a href="https://github.com/INK-Q/agy-fast" target="_blank" rel="noopener">INK-Q/agy-fast ↗</a></h3>
+    <p class="find-one">一款為 Google Antigravity 設計的非侵入式加速器外掛，能有效減少大型語言模型的使用成本與時間。</p>
     <div class="find-body">
-<p><b>為什麼有趣</b>它將可愛的桌面寵物（類似 Bongo Cat）與實用的 AI 程式碼輔助功能結合，提供獨特的互動體驗。不僅能讓桌面充滿趣味，還能在你寫程式時提供智慧幫助，概念新穎且應用廣泛。</p><p><b>可以怎麼用</b>你可以將它放在桌面上，看著它隨著你的打字動作而動，增添工作樂趣；同時，它能整合 Claude、Codex 等 AI 模型，在你需要時提供程式碼建議、解答疑問，是個兼具娛樂與效率的 AI 伴侶。</p><p class="find-caveat"><b>留意</b>依專案介紹，支援多種 AI 模型，但實際使用效果可能取決於你選擇的 AI 服務及其設定。</p>    </div>
+<p><b>為什麼有趣</b>它能在不影響原始使用者介面或差異比對的情況下，顯著降低 LLM 互動的回合數、減少 Token 使用量和上傳流量，對於頻繁使用 Google Antigravity 的工作者來說，是個實用的成本與效率優化工具。</p><p><b>可以怎麼用</b>如果您是 Google Antigravity 的使用者，可以安裝此插件來加速您的 LLM 查詢過程，有效節省時間與 Token 費用。對於需要頻繁與 AI 互動的開發者或內容創作者，這能提高工作效率。</p><p class="find-caveat"><b>留意</b>依專案介紹，此工具專為 Google Antigravity 設計，不適用於其他 LLM 平台。</p>    </div>
   </article>
   <article class="find-card">
     <div class="find-top">
-      <span class="find-kind">資料庫工具</span>
-      <span class="find-src">Hacker News · ▲ 101</span>
+      <span class="find-kind">資料管理工具</span>
+      <span class="find-src">Hacker News · ▲ 53</span>
     </div>
-    <h3 class="find-name"><a href="https://masondata.ai/" target="_blank" rel="noopener">Mason – A lightweight Postgres read-replica, built on columnar storage ↗</a></h3>
-    <p class="find-one">一個輕量級的開源 PostgreSQL 讀取副本替代方案，基於 DuckDB 的欄式儲存引擎。</p>
+    <h3 class="find-name"><a href="https://www.rchive.computer/" target="_blank" rel="noopener">Rchive ↗</a></h3>
+    <p class="find-one">一款跨平台的桌面應用程式，能幫助你將數十年來散落在各種儲存裝置上的檔案進行編目、搜尋與整理。</p>
     <div class="find-body">
-<p><b>為什麼有趣</b>它提供了一個高效能的解決方案，用於處理 PostgreSQL 上的分析型查詢。透過整合 DuckDB 的欄式計算引擎，Mason 能顯著加速查詢，同時保持與 PostgreSQL 的介面相容性，對於需要優化資料分析效能的團隊來說非常實用。</p><p><b>可以怎麼用</b>如果你的應用程式或服務在 PostgreSQL 資料庫上有大量的分析查詢，導致主資料庫負載過高或查詢速度緩慢，你可以部署 Mason 作為讀取副本。它能承擔這些分析負載，讓你的報表或儀表板執行得更快，同時不影響主資料庫的交易處理。</p><p class="find-caveat"><b>留意</b>作為一個資料庫基礎設施工具，需要一定的技術背景來部署和管理。</p>    </div>
-<a class="find-discuss" href="https://news.ycombinator.com/item?id=50630294" target="_blank" rel="noopener">看 HN 討論 →</a>  </article>
+<p><b>為什麼有趣</b>許多人都有數位檔案雜亂、散佈在多個硬碟或舊媒體上的困擾，Rchive 提供了統一的介面來管理這些檔案，解決了長久以來數位資產難以整理的問題，非常實用且切中痛點。</p><p><b>可以怎麼用</b>你可以用它來建立所有內外接硬碟、USB 隨身碟、記憶卡、甚至舊光碟或軟碟的檔案索引，讓你在單一視窗中搜尋任何檔案。對於數位收藏家、攝影師或任何擁有大量歷史檔案的使用者來說，這能大幅提升檔案找尋與管理的效率。</p><p class="find-caveat"><b>留意</b>依專案介紹，此工具旨在編目與搜尋，實際的檔案整理可能仍需手動操作，且需要時間建立初次索引。</p>    </div>
+<a class="find-discuss" href="https://news.ycombinator.com/item?id=50624684" target="_blank" rel="noopener">看 HN 討論 →</a>  </article>
   <p class="legend"><a href="discover.html">看過去的發現與知識 →</a></p>
 
 
@@ -116,7 +162,7 @@
 <footer class="site-footer">
   <div class="wrap">
     每日三理 · Theoria。第 1 天完整入門、第 2、3 天往更深推、每段都把話講透並配例子 ＋ 間隔回想複習。<br>
-    內容由 AI 每日生成、停在概念層級以求準確；不引用無法查證的具體研究數字。　更新於 2026-11-26。  </div>
+    內容由 AI 每日生成、停在概念層級以求準確；不引用無法查證的具體研究數字。　更新於 2026-11-27。  </div>
 </footer>
 
 <script src="assets/app.js"></script>
