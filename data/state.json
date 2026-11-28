@@ -11,10 +11,10 @@
   "review_cards_per_day": 1,
   "current": {
     "active": [
-      "fitts-law"
+      "entropy"
     ],
-    "day": 3,
-    "cycle_started": "2026-11-25"
+    "day": 1,
+    "cycle_started": "2026-11-28"
   },
   "completed": [
     {
@@ -614,13 +614,13 @@
     {
       "id": "baumol-cost-disease",
       "completed_date": "2026-08-20",
-      "last_seen": "2026-09-19",
+      "last_seen": "2026-11-28",
       "review_due": [
         "2026-08-27",
         "2026-09-10",
         "2026-10-19"
       ],
-      "reviews_done": 2
+      "reviews_done": 3
     },
     {
       "id": "fundamental-attribution-error",
@@ -1534,6 +1534,17 @@
         "2027-01-24"
       ],
       "reviews_done": 0
+    },
+    {
+      "id": "fitts-law",
+      "completed_date": "2026-11-28",
+      "last_seen": "2026-11-28",
+      "review_due": [
+        "2026-12-05",
+        "2026-12-19",
+        "2027-01-27"
+      ],
+      "reviews_done": 0
     }
   ],
   "used_ids": [
@@ -1675,20 +1686,21 @@
     "curse-of-knowledge",
     "desirable-difficulties",
     "psychological-safety",
-    "fitts-law"
+    "fitts-law",
+    "entropy"
   ],
-  "last_run_date": "2026-11-27",
+  "last_run_date": "2026-11-28",
   "pool_min_unused": 12,
   "pool_replenish_batch": 9,
   "extras_start": "2026-11-07",
   "today_reviews": {
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "cards": [
       {
-        "id": "theory-of-constraints",
-        "completed_date": "2026-09-27",
-        "nth": 2,
-        "distance_days": 29
+        "id": "baumol-cost-disease",
+        "completed_date": "2026-08-20",
+        "nth": 3,
+        "distance_days": 70
       }
     ]
   }
